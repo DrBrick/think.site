@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 浪潮</title>
-    <link>http://ow.pengchangwen.site/posts/</link>
+    <link>http://think.pengchangwen.site/posts/</link>
     <description>Recent content in Posts on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -10,7 +10,7 @@
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     
-        <atom:link href="http://ow.pengchangwen.site/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://think.pengchangwen.site/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     

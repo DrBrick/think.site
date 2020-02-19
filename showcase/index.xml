@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Showcase overview on 浪潮</title>
-    <link>http://ow.pengchangwen.site/showcase/</link>
+    <link>http://think.pengchangwen.site/showcase/</link>
     <description>Recent content in Showcase overview on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,17 +11,17 @@
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Jan 2020 15:43:38 +0900</lastBuildDate>
     
-        <atom:link href="http://ow.pengchangwen.site/showcase/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://think.pengchangwen.site/showcase/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Hugo</title>
-        <link>http://ow.pengchangwen.site/showcase/hugo/</link>
+        <link>http://think.pengchangwen.site/showcase/hugo/</link>
         <pubDate>Sun, 19 Jan 2020 21:04:11 +0900</pubDate>
         <author>iierwin37@gmail.com (langchao)</author>
-        <guid>http://ow.pengchangwen.site/showcase/hugo/</guid>
+        <guid>http://think.pengchangwen.site/showcase/hugo/</guid>
         <description></description>
       </item>
       

@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://ow.pengchangwen.site/ko/categories/</loc>
+    <loc>http://think.pengchangwen.site/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://ow.pengchangwen.site/categories/"
+                href="http://think.pengchangwen.site/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://ow.pengchangwen.site/ko/categories/"
+                href="http://think.pengchangwen.site/ko/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://ow.pengchangwen.site/ko/</loc>
+    <loc>http://think.pengchangwen.site/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://ow.pengchangwen.site/"
+                href="http://think.pengchangwen.site/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://ow.pengchangwen.site/ko/"
+                href="http://think.pengchangwen.site/ko/"
                 />
   </url>
   
   <url>
-    <loc>http://ow.pengchangwen.site/ko/series/</loc>
+    <loc>http://think.pengchangwen.site/ko/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://ow.pengchangwen.site/series/"
+                href="http://think.pengchangwen.site/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://ow.pengchangwen.site/ko/series/"
+                href="http://think.pengchangwen.site/ko/series/"
                 />
   </url>
   
   <url>
-    <loc>http://ow.pengchangwen.site/ko/tags/</loc>
+    <loc>http://think.pengchangwen.site/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://ow.pengchangwen.site/tags/"
+                href="http://think.pengchangwen.site/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://ow.pengchangwen.site/ko/tags/"
+                href="http://think.pengchangwen.site/ko/tags/"
                 />
   </url>
   

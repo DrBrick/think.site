@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hugo Zzo Theme</title>
-    <link>http://think.pengchangwen.site/ko/categories/</link>
-    <description>Recent content in Categories on Hugo Zzo Theme</description>
+    <title>think on 浪潮</title>
+    <link>http://think.pengchangwen.site/think/</link>
+    <description>Recent content in think on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko</language>
+    <language>en</language>
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     
-        <atom:link href="http://think.pengchangwen.site/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://think.pengchangwen.site/think/index.xml" rel="self" type="application/rss+xml" />
     
     
     
