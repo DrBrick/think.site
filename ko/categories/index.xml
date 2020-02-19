@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo Zzo Theme</title>
+    <link>http://ow.pengchangwen.site/ko/categories/</link>
+    <description>Recent content in Categories on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
+    <webMaster>iierwin37@gmail.com (langchao)</webMaster>
+    <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
+    
+        <atom:link href="http://ow.pengchangwen.site/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+    
+  </channel>
+</rss>

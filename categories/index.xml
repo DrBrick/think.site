@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 浪潮</title>
+    <link>http://ow.pengchangwen.site/categories/</link>
+    <description>Recent content in Categories on 浪潮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
+    <webMaster>iierwin37@gmail.com (langchao)</webMaster>
+    <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 21:38:46 +0800</lastBuildDate>
+    
+        <atom:link href="http://ow.pengchangwen.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>转载</title>
+        <link>http://ow.pengchangwen.site/categories/%E8%BD%AC%E8%BD%BD/</link>
+        <pubDate>Wed, 19 Feb 2020 21:38:46 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://ow.pengchangwen.site/categories/%E8%BD%AC%E8%BD%BD/</guid>
+        <description></description>
+      </item>
+      
+    
+  </channel>
+</rss>
