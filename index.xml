@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 11 Mar 2020 21:26:06 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 22:35:02 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,15 @@
         <author>iierwin37@gmail.com (langchao)</author>
         <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>4.13_Servlet和JSP学习</title>
+        <link>http://think.pengchangwen.site/posts/servlet-jsp-study/</link>
+        <pubDate>Thu, 23 Apr 2020 22:35:02 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/servlet-jsp-study/</guid>
+        <description>★第一部分 Tomcat介绍 tomcat是什么？ Tomcat是一个Web应用服务器，它可以使得你写的Java程序被别人访问（通过网络），类似的</description>
       </item>
       
       <item>

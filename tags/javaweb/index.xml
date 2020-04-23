@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 浪潮</title>
-    <link>http://think.pengchangwen.site/posts/</link>
-    <description>Recent content in Posts on 浪潮</description>
+    <title>JavaWeb on 浪潮</title>
+    <link>http://think.pengchangwen.site/tags/javaweb/</link>
+    <description>Recent content in JavaWeb on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
@@ -11,7 +11,7 @@
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 23 Apr 2020 22:35:02 +0800</lastBuildDate>
     
-        <atom:link href="http://think.pengchangwen.site/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://think.pengchangwen.site/tags/javaweb/index.xml" rel="self" type="application/rss+xml" />
     
     
     
