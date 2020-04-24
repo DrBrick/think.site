@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 23 Apr 2020 22:35:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 23:36:40 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/tags/javaweb/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,16 @@
     
       
       <item>
-        <title>4.13_Servlet和JSP学习</title>
+        <title>4.24_Session、Cookie和EL学习</title>
+        <link>http://think.pengchangwen.site/posts/session-cookie-el-study/</link>
+        <pubDate>Fri, 24 Apr 2020 23:36:40 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/session-cookie-el-study/</guid>
+        <description>★HTTP请求状态码 200 正常 404 资源找不到 400 请求类型不匹配 500 Java程序抛出异常 response常用方法 转发 getRequestDispatcher 和重定向 sendRedirect 的区别 转发是指将同一个请</description>
+      </item>
+      
+      <item>
+        <title>4.23_Servlet和JSP学习</title>
         <link>http://think.pengchangwen.site/posts/servlet-jsp-study/</link>
         <pubDate>Thu, 23 Apr 2020 22:35:02 +0800</pubDate>
         <author>iierwin37@gmail.com (langchao)</author>
