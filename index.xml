@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 24 Apr 2020 23:36:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 23:10:52 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,15 @@
         <author>iierwin37@gmail.com (langchao)</author>
         <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>4.25_JSTL和JDBC的学习</title>
+        <link>http://think.pengchangwen.site/posts/jstl-jdbc-study/</link>
+        <pubDate>Sat, 25 Apr 2020 23:10:52 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/jstl-jdbc-study/</guid>
+        <description>★JSTL详解 JSP标准标签库，JSP为开发者提供的一些列的标签；使用这些标签可以完成一些逻辑处理，比如循环遍历集合，让代码更加简洁，不会再</description>
       </item>
       
       <item>

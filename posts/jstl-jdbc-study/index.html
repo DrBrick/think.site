@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>4.24_Session、Cookie和EL学习 – 浪潮</title>
+    <title>4.25_JSTL和JDBC的学习 – 浪潮</title>
     
 
 
@@ -489,7 +489,7 @@
 
   
     
-    var permalink = JSON.parse("\"http://think.pengchangwen.site/posts/session-cookie-el-study/\"");
+    var permalink = JSON.parse("\"http://think.pengchangwen.site/posts/jstl-jdbc-study/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1141,26 +1141,26 @@
 
 
     
-<meta name="description" content="今天主要学习的是Session和Cookie以及JSP内置对象和作用域的学习，还顺便学习了EL表达式。一步步的演进，让我懂得了技术的发展并不是一蹴而就的，有不方便的地方就要去解决，比如EL表达式就极大的简化了JSP页面的代码。相信还会有更加简便的工具来代替EL表达式；" />
+<meta name="description" content="今天主要学习的是JSTL标签库和JDBC相关知识。正如昨天所说，肯定会有更好的东西取代EL表达式的，JSTL就是如此。JDBC提供了一组标准接口去访问数据库，C3P0对数据库连接做了优化，由此而来数据库连接池..." />
 <meta name="keywords" content="">
-<meta name="created" content="2020-04-24T23:36:40&#43;0800">
-<meta name="modified" content="2020-04-24T23:36:40&#43;0800">
-<meta property="article:published_time" content="2020-04-24T23:36:40&#43;0800">
+<meta name="created" content="2020-04-25T23:10:52&#43;0800">
+<meta name="modified" content="2020-04-25T23:10:52&#43;0800">
+<meta property="article:published_time" content="2020-04-25T23:10:52&#43;0800">
 
 <meta name="author" content="langchao">
-<meta property="article:author" content="http://think.pengchangwen.site/posts/session-cookie-el-study/@langchao">
+<meta property="article:author" content="http://think.pengchangwen.site/posts/jstl-jdbc-study/@langchao">
 
 
 <meta property="og:site_name" content="浪潮">
-<meta property="og:title" content="4.24_Session、Cookie和EL学习">
-<meta property="og:url" content="http://think.pengchangwen.site/posts/session-cookie-el-study/">
+<meta property="og:title" content="4.25_JSTL和JDBC的学习">
+<meta property="og:url" content="http://think.pengchangwen.site/posts/jstl-jdbc-study/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="今天主要学习的是Session和Cookie以及JSP内置对象和作用域的学习，还顺便学习了EL表达式。一步步的演进，让我懂得了技术的发展并不是一蹴而就的，有不方便的地方就要去解决，比如EL表达式就极大的简化了JSP页面的代码。相信还会有更加简便的工具来代替EL表达式；">
+<meta property="og:description" content="今天主要学习的是JSTL标签库和JDBC相关知识。正如昨天所说，肯定会有更好的东西取代EL表达式的，JSTL就是如此。JDBC提供了一组标准接口去访问数据库，C3P0对数据库连接做了优化，由此而来数据库连接池...">
 
 <meta name="generator" content="Hugo 0.62.2" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="http://think.pengchangwen.site/posts/session-cookie-el-study/">
+<link rel="canonical" href="http://think.pengchangwen.site/posts/jstl-jdbc-study/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -1172,11 +1172,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "4.24_Session、Cookie和EL学习",
-    "datePublished": "2020-04-24T23:36:40+08:00",
-    "dateModified": "2020-04-24T23:36:40+08:00",
-    "url" : "http://think.pengchangwen.site/posts/session-cookie-el-study/",
-    "description": "今天主要学习的是Session和Cookie以及JSP内置对象和作用域的学习，还顺便学习了EL表达式。一步步的演进，让我懂得了技术的发展并不是一蹴而就的，有不方便的地方就要去解决，比如EL表达式就极大的简化了JSP页面的代码。相信还会有更加简便的工具来代替EL表达式；",
+    "headline": "4.25_JSTL和JDBC的学习",
+    "datePublished": "2020-04-25T23:10:52+08:00",
+    "dateModified": "2020-04-25T23:10:52+08:00",
+    "url" : "http://think.pengchangwen.site/posts/jstl-jdbc-study/",
+    "description": "今天主要学习的是JSTL标签库和JDBC相关知识。正如昨天所说，肯定会有更好的东西取代EL表达式的，JSTL就是如此。JDBC提供了一组标准接口去访问数据库，C3P0对数据库连接做了优化，由此而来数据库连接池...",
     "keywords": ["JavaWeb",""],
     "author": {
       "@type": "Person",
@@ -1429,7 +1429,7 @@
   
   <li  class="is-active" >
     
-      <span>4.24_Session、Cookie和EL学习</span>
+      <span>4.25_JSTL和JDBC的学习</span>
     
   </li>
   
@@ -1442,11 +1442,11 @@
   </noscript>
   <div class="single hide">
     <script>document.querySelector('.single').classList.remove('hide')</script>
-    <h2 class="single__title">4.24_Session、Cookie和EL学习</h2>
+    <h2 class="single__title">4.25_JSTL和JDBC的学习</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Written At">📅&nbsp;Apr 24, 2020 </time>  &middot; <span class="single__info" title="Reading Time"> ☕ 5 min read </span>&middot; <span class="single__info" title="WRITTEN BY">✍️&nbsp;langchao</span>
+  <time class="single__info" title="Written At">📅&nbsp;Apr 25, 2020 </time>  &middot; <span class="single__info" title="Reading Time"> ☕ 6 min read </span>&middot; <span class="single__info" title="WRITTEN BY">✍️&nbsp;langchao</span>
   <span class="single__info">
     
   </span>
@@ -1478,192 +1478,142 @@
   <div class="expand__content expand__content--toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#http请求状态码">★HTTP请求状态码</a>
+    <li><a href="#jstl详解">★JSTL详解</a>
       <ul>
-        <li><a href="#response常用方法">response常用方法</a></li>
+        <li><a href="#jstl的使用">JSTL的使用</a></li>
+        <li><a href="#jstl优点">JSTL优点</a></li>
+        <li><a href="#jstl常用标签">JSTL常用标签</a></li>
       </ul>
     </li>
-    <li><a href="#session和cookie">★Session和Cookie</a>
+    <li><a href="#jdbc">★JDBC</a>
       <ul>
-        <li><a href="#session常用方法">session常用方法</a></li>
-        <li><a href="#cookie">Cookie</a></li>
-        <li><a href="#cookie常用方法">Cookie常用方法</a></li>
-        <li><a href="#session-和-cookie的区别">Session 和 Cookie的区别</a></li>
+        <li><a href="#jdbc是什么">JDBC是什么？</a></li>
+        <li><a href="#jdbc体系结构">JDBC体系结构</a></li>
+        <li><a href="#jdbc的使用">JDBC的使用</a></li>
       </ul>
     </li>
-    <li><a href="#jsp内置对象的作用域">★JSP内置对象的作用域</a></li>
-    <li><a href="#el表达式">★EL表达式</a></li>
+    <li><a href="#web综合案例">★Web综合案例</a>
+      <ul>
+        <li><a href="#1测试数据库是否连接成功">◇1.测试数据库是否连接成功</a></li>
+        <li><a href="#2实现增删改查操作">◇2.实现增删改查操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据库连接池c3p0">★数据库连接池C3P0</a>
+      <ul>
+        <li><a href="#1c3p0概述">◇1.C3P0概述</a></li>
+        <li><a href="#2使用c3p0的两种方式">◇2.使用C3P0的两种方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#windows10安装ubuntu1804-lts子系统">★Windows10安装Ubuntu18.04 LTS子系统</a>
+      <ul>
+        <li><a href="#1如何安装linux子系统">1.如何安装Linux子系统</a></li>
+        <li><a href="#2安装成功后相应的设置">2.安装成功后相应的设置</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
 </div>
 
-      <h2 id="http请求状态码">★HTTP请求状态码</h2>
-<ul>
-<li>200  正常</li>
-<li>404  资源找不到</li>
-<li>400  请求类型不匹配</li>
-<li>500  Java程序抛出异常</li>
-</ul>
-<h3 id="response常用方法">response常用方法</h3>
-<p>转发 getRequestDispatcher 和重定向 sendRedirect 的区别</p>
-<p>转发是指将<strong>同一个请求</strong>传给下一个页面，重定向是创建新的请求（客户端重新请求）传给下一个页面，之前的请求结束生命周期；</p>
-<p>转发：同一个请求在服务器内部传递，浏览器地址栏不变，也叫做服务器跳转；</p>
-<p>重定向：由客户端发送新的请求，访问跳转后的新的资源，浏览器地址栏改变，也叫客户端跳转；</p>
-<p>如果服务器两个页面之间需要通过<strong>request传值</strong>，则必须使用转发，不能使用重定向；</p>
+      <h2 id="jstl详解">★JSTL详解</h2>
+<p>JSP标准标签库，JSP为开发者提供的一些列的标签；使用这些标签可以完成一些逻辑处理，比如循环遍历集合，让代码更加简洁，不会再出现JSP脚本穿插的情况；算是在EL表达式上又<strong>再一次简化</strong>了JSP的开发。</p>
+<p>实际开发中EL表达式和JSTL结合使用，EL通常用来<strong>展示数据</strong>，逻辑处理用JSTL；</p>
+<h3 id="jstl的使用">JSTL的使用</h3>
 <ol>
-<li>sendRedirect(String path) 重定向，完成页面之间的跳转</li>
-<li>使用转发和重定向完成一个登录的demo，如果用户名和密码有一个不对，就重定向到登录页面，如果都正确就返回欢迎页面，并带上用户名；</li>
-</ol>
-<h2 id="session和cookie">★Session和Cookie</h2>
-<p>服务器无法识别http请求来自哪个终端，只会接收到请求信号，http是无状态协议。因此就产生了会话技术，session就是其中的一种技术；</p>
-<p>会话：客户端和服务器之间发生的<strong>一系列</strong>连续的请求和响应的过程；</p>
-<p>会话状态：服务器和浏览器在会话过程中产生的状态信息</p>
-<p>实现会话的两种方式：</p>
-<ul>
-<li>session</li>
-<li>cookie（作用在客户端，如浏览器）</li>
-</ul>
-<p>属于同一个会话的请求都有同一个请求标识符——sessionID；</p>
+<li>
+<p>导入jstl.jar和standard.jar包，放在WEB-INF/lib下</p>
+</li>
+<li>
+<p>在JSP页面开始的地方导入JSPL标签库</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">sessionId</span> <span class="o">=</span> <span class="n">seesion</span><span class="o">.</span><span class="na">getId</span><span class="o">(</span><span class="o">)</span><span class="o">;</span> <span class="c1">// 获取会话的id
-</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span><span class="err">@</span> <span class="n">taglib</span> <span class="n">prefix</span><span class="o">=</span><span class="s">&#34;c&#34;</span> <span class="n">uri</span><span class="o">=</span><span class="s">&#34;http://java.sun.com/jsp/jstl/core&#34;</span> <span class="o">%</span><span class="o">&gt;</span>
+</code></pre></td></tr></table>
 </div>
-</div><h3 id="session常用方法">session常用方法</h3>
+</div></li>
+<li>
+<p>使用</p>
+<pre><code class="language-jsp" data-lang="jsp">&lt;c:forEach items=&quot;${list}&quot; var=&quot;user&quot;&gt;
+ &lt;tr&gt;
+     &lt;td&gt;${user.id}&lt;/td&gt;
+        &lt;td&gt;${user.name}&lt;/td&gt;
+        &lt;td&gt;${user.score}&lt;/td&gt;
+        &lt;td&gt;${user.address.value}&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/c:forEach&gt;
+</code></pre></li>
+</ol>
+<h3 id="jstl优点">JSTL优点</h3>
 <ol>
-<li>String getId()	获取sessionID</li>
-<li>void setMaxInactiveInterval()  设置session的失效时间，单位为秒</li>
-<li>int getMaxInactiveInterval()    获取当前session的失效时间</li>
-<li>void invalidate()   设置session立即失效</li>
-<li>void setAttribute()   通过键值对存储数据</li>
-<li>通过key获取对应的value值</li>
-<li>void removeAttribute(String name)  通过key删除对应的value值</li>
+<li>提供了统一的标签</li>
+<li>可以编写各种动态功能</li>
 </ol>
-<p>使用session完成一个登录跳转页面；</p>
-<h3 id="cookie">Cookie</h3>
-<p>创建cookie</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 创建cookie并响应到客户端
-</span><span class="c1"></span><span class="n">Cookie</span> <span class="n">cookie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cookie</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;langchao&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="n">response</span><span class="o">.</span><span class="na">addCookie</span><span class="o">(</span><span class="n">cookie</span><span class="o">)</span><span class="o">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>读取cookie</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Cookie</span><span class="o">[</span><span class="o">]</span> <span class="n">cookies</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getCookies</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-<span class="k">for</span> <span class="o">(</span><span class="n">Cookie</span> <span class="n">cookie</span><span class="o">:</span><span class="n">cookies</span><span class="o">)</span> <span class="o">{</span>
-    <span class="c1">// out.write(cookie.toString());
-</span><span class="c1"></span>    <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">cookie</span><span class="o">.</span><span class="na">getName</span><span class="o">(</span><span class="o">)</span><span class="o">+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="n">cookie</span><span class="o">.</span><span class="na">getValue</span><span class="o">(</span><span class="o">)</span> <span class="o">+</span> <span class="s">&#34;&lt;br /&gt;&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="cookie常用方法">Cookie常用方法</h3>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>setMaxAge(int age)</td>
-<td>设置Cookie的有效时间，单位为秒</td>
-</tr>
-<tr>
-<td>getMaxAge(int age)</td>
-<td>获取Cookie的有效时间，单位为秒</td>
-</tr>
-<tr>
-<td>getName()</td>
-<td>获取Cookie的name</td>
-</tr>
-<tr>
-<td>getValue()</td>
-<td>获取Cookie的value</td>
-</tr>
-</tbody>
-</table>
-<h3 id="session-和-cookie的区别">Session 和 Cookie的区别</h3>
-<p>session：保存在服务器（jvm中），保存的类型是Object类型，会随着会话的结束而销毁，保存重要信息（如账户和密码）；</p>
-<p>cookie：保存在浏览器中，保存的数据是String类型，可以长期保存在浏览器汇总，与会话无关；保存并不是很重要的信息（如你在网站观看视频的进度信息）；</p>
-<p>使用cookie完成一个登录跳转页面；</p>
-<p>存储用户信息：</p>
-<p>session：setAttribute(name, &ldquo;admin&rdquo;) 存</p>
-<p>getAttribute(name) 取</p>
-<p>退出登录：session.invalidate()</p>
-<p>生命周期：Web服务器一关闭/重启就被销毁，客户端一关闭也会被销毁；</p>
-<p>cookie：response.addCookie(name, &ldquo;admin&rdquo;) 存</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 取到cookie
-</span><span class="c1"></span><span class="n">Cookie</span><span class="o">[</span><span class="o">]</span> <span class="n">cookies</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getCookies</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-<span class="k">for</span> <span class="o">(</span><span class="n">Cookie</span> <span class="n">cookie</span><span class="o">:</span><span class="n">cookies</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">cookie</span><span class="o">.</span><span class="na">getName</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">&#34;Welcome&#34;</span> <span class="o">+</span> <span class="n">cookie</span><span class="o">.</span><span class="na">getValue</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>生命周期：不随服务端的重启而销毁，客户端默认是关闭就被销毁，但是可以通过setMaxAge()方法设置有效期，销毁由设置的时间来决定；</p>
-<p>退出登录：setMaxAge(0)</p>
-<h2 id="jsp内置对象的作用域">★JSP内置对象的作用域</h2>
-<p>下面四个内置对象都具备setAttribute和getAttribute方法，所以才讨论其作用域。（传输数据，考虑能不能拿到数据）</p>
+<h3 id="jstl常用标签">JSTL常用标签</h3>
+<p>set、out、remove、catch</p>
 <ul>
 <li>
-<p>page，page只在当前页面有效</p>
-<blockquote>
-<p>page作用域：对应的内置对象是 pageContext</p>
-</blockquote>
-</li>
+<p>set 向<strong>域对象</strong>中添加数据</p>
+<pre><code class="language-jsp" data-lang="jsp">&lt;c:set var=&quot;name&quot; scope=&quot;request&quot; value=&quot;langchao&quot;&gt;&lt;/c:set&gt;
+${requestScope.name}
+</code></pre></li>
 <li>
-<p>request，在一次<strong>请求</strong>内有效</p>
-<blockquote>
-<p>request作用域：对应的内置对象是 request</p>
-</blockquote>
-</li>
+<p>out 输出域对象中的数据（如果属性不存在时可以默认输出）</p>
+<pre><code class="language-jsp" data-lang="jsp">&lt;c:set var=&quot;name&quot; scope=&quot;request&quot; value=&quot;langchao&quot;&gt;&lt;/c:set&gt;
+&lt;c:out value=&quot;${name}&quot; default=&quot;未定义&quot;&gt;&lt;/c:out&gt;
+</code></pre></li>
 <li>
-<p>session，在一次<strong>会话</strong>内有效</p>
-<blockquote>
-<p>session作用域：对应的内置对象是 session</p>
-</blockquote>
-</li>
+<p>remove 移除域对象中的数据</p>
+<pre><code class="language-jsp" data-lang="jsp">&lt;c:remove var=&quot;name&quot; scope=&quot;page&quot;&gt;&lt;/c:set&gt;
+&lt;c:out value=&quot;${name}&quot; default=&quot;未定义&quot;&gt;&lt;/c:out&gt;
+</code></pre></li>
 <li>
-<p>application，作用整个WEB应用</p>
-<blockquote>
-<p>application作用域：对应的内置对象是 application</p>
-</blockquote>
-</li>
+<p>catch 处理异常信息</p>
+<pre><code class="language-jsp" data-lang="jsp">&lt;c:catch var=&quot;error&quot;&gt;
+  &lt;%
+      int a = 10 / 0;
+    %&gt;
+&lt;/c:catch&gt;
+${error}
+</code></pre></li>
 </ul>
-<p>作用域的大小：page &lt; request &lt; session &lt; application</p>
-<p>demo：写一个网站访问量统计程序；</p>
+<h2 id="jdbc">★JDBC</h2>
+<h3 id="jdbc是什么">JDBC是什么？</h3>
+<p>Java DataBase Connectivity是一个<strong>独立于特定数据库</strong>的管理系统，是通用的SQL数据库存取和操作的公共接口；定义了一组标准，为访问不同的数据库提供了<strong>统一</strong>的途径；</p>
+<p><img src="/posts/image-20200425134636138.png" alt="JDBC模型1" /></p>
+<h3 id="jdbc体系结构">JDBC体系结构</h3>
+<ul>
+<li>面向应用的API（供开发者调用）</li>
+<li>面向数据库API（供数据库厂商开发驱动程序）</li>
+<li><img src="/posts/image-20200425135342289.png" alt="JDBC模型2" /></li>
+</ul>
+<h4 id="jdbc-api">JDBC API</h4>
+<p>提供者: Java 官方<br />
+内容:供开发者调用的接口<br />
+java.sq| 和javax.sql</p>
+<ul>
+<li>DriverManager 类</li>
+<li>Connection 接口</li>
+<li>Statement 接口</li>
+<li>ResultSet 接口</li>
+</ul>
+<h4 id="drivermanager">DriverManager</h4>
+<p>提供者: Java官方<br />
+作用：<strong>管理不同的JDBC驱动</strong>（比如MySQL、Oracle、Redis等）<br />
+JDBC驱动<br />
+提供者：数据库厂商<br />
+作用：负责连接不同的数据库</p>
+<h3 id="jdbc的使用">JDBC的使用</h3>
+<ol>
+<li>加载数据库驱动，该驱动是Java程序和数据库之间的桥梁；</li>
+<li>获取Connection，表示Java程序与数据库的一次连接；</li>
+<li>创建Statement对象，由Connection产生，用来执行SQL语句；</li>
+<li>如果需要接受返回值，则创建ResulSet对象，保存Statement执行之后所查询到的结果；</li>
+</ol>
+<p>增删改用的是statement对象的executeUpdate方法，查询使用的是executeQuery方法；</p>
+<p>案例：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1677,43 +1627,68 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>
-    <span class="n">Integer</span> <span class="n">count</span> <span class="o">=</span> <span class="o">(</span><span class="n">Integer</span><span class="o">)</span> <span class="n">application</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">count</span> <span class="o">=</span><span class="o">=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">count</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
-        <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">,</span> <span class="n">count</span><span class="o">)</span><span class="o">;</span>
-    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-        <span class="n">count</span><span class="o">+</span><span class="o">+</span><span class="o">;</span>
-        <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">,</span> <span class="n">count</span><span class="o">)</span><span class="o">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">{</span>
+    <span class="c1">//            	 1、加载数据库驱动(通过反射加载)
+</span><span class="c1"></span>    <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="s">&#34;com.mysql.cj.jdbc.Driver&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            2、获取连接
+</span><span class="c1"></span>    <span class="n">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#34;jdbc:mysql://localhost:3306/library?useUnicode=true&amp;characterEncoding=UTF-8&#34;</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">user</span> <span class="o">=</span> <span class="s">&#34;root&#34;</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">password</span> <span class="o">=</span> <span class="s">&#34;123123&#34;</span><span class="o">;</span>
+    <span class="n">Connection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="n">user</span><span class="o">,</span> <span class="n">password</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            System.out.println(connection);
+</span><span class="c1"></span>    <span class="c1">//            3、创建相关的SQL语句,并使用statement对象的相关方法执行
+</span><span class="c1"></span>    <span class="n">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="s">&#34;INSERT INTO book(name, author, publish) values(&#39;算法导论&#39;,&#39;大牛&#39;,&#39;机械工业出版社&#39;)&#34;</span><span class="o">;</span>
+    <span class="c1">//            String sql = &#34;UPDATE book SET author=&#39;路过的萌牛&#39;&#34;;
+</span><span class="c1"></span>    <span class="n">Statement</span> <span class="n">statement</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">createStatement</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">statement</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="n">sql</span><span class="o">)</span><span class="o">;</span>
+
+    <span class="c1">// 使用PreparedStatement(Statement的子类),其提供了占位符功能
+</span><span class="c1"></span>    <span class="n">String</span> <span class="n">find</span> <span class="o">=</span> <span class="s">&#34;SELECT * FROM book WHERE publish = ?&#34;</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">publishTest</span> <span class="o">=</span> <span class="s">&#34;三联出版社&#34;</span><span class="o">;</span>
+    <span class="n">PreparedStatement</span> <span class="n">preparedStatement</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">find</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="n">1</span><span class="o">,</span> <span class="n">publishTest</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">ResultSet</span> <span class="n">resultSet</span> <span class="o">=</span> <span class="n">preparedStatement</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            拿出Result中的数据
+</span><span class="c1"></span>    <span class="k">while</span> <span class="o">(</span><span class="n">resultSet</span><span class="o">.</span><span class="na">next</span><span class="o">(</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="s">&#34;id&#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">2</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">author</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;author&#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">publish</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">4</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">id</span> <span class="o">+</span> <span class="s">&#34;\t&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;\t&#34;</span> <span class="o">+</span> <span class="n">author</span> <span class="o">+</span> <span class="s">&#34;\t&#34;</span> <span class="o">+</span> <span class="n">publish</span><span class="o">)</span><span class="o">;</span>
     <span class="o">}</span>
-<span class="o">%</span><span class="o">&gt;</span>
-<span class="n">您当前是第</span><span class="o">&lt;</span><span class="o">%</span><span class="o">=</span><span class="n">count</span><span class="o">%</span><span class="o">&gt;</span><span class="n">位访客</span><span class="err">！</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="el表达式">★EL表达式</h2>
-<p>Expression Language（<strong>EL</strong>）表达式语言，可以替代JSP页面中数据访问时的复杂编码，为简化JSP页面而生；语法是：${变量名}；可以方便的从<strong>域对象</strong>（page、request、session、application）中保存的数据，前提是需要先setAttribute；(EL表达式只能在JSP中使用，HTML和Servlet中都无法使用；)</p>
-<p>为什么说是简化了JSP页面呢？看一个例子就知道；</p>
-<p>比如el.jsp页面中需要向el2.jsp页面中传递一个name的变量，所以应该是这样写：</p>
-<p>el.jsp</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>
-    <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;langchao&#34;</span><span class="o">;</span>
-    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="n">name</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">request</span><span class="o">.</span><span class="na">getRequestDispatcher</span><span class="o">(</span><span class="s">&#34;el2.jsp&#34;</span><span class="o">)</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">request</span><span class="o">,</span><span class="n">response</span><span class="o">)</span><span class="o">;</span>
-<span class="o">%</span><span class="o">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>el2.jsp取到name</p>
+</div><p>从数据库中取出的数据如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1722,65 +1697,283 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>
-    <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">request</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="o">%</span><span class="o">&gt;</span>
-<span class="n">el</span><span class="o">.</span><span class="na">jsp中传递过来的name为</span><span class="err">：</span><span class="o">&lt;</span><span class="o">%</span><span class="o">=</span><span class="n">name</span><span class="o">%</span><span class="o">&gt;</span>
+<pre class="chroma"><code class="language-text" data-lang="text">11	水浒传	路过的萌牛	三联出版社
+12	三国演义	路过的萌牛	三联出版社
+13	红楼梦	路过的萌牛	三联出版社
+14	西游记	路过的萌牛	三联出版社
 </code></pre></td></tr></table>
 </div>
-</div><p>用<strong>EL表达式</strong>简化后的写法：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">el</span><span class="o">.</span><span class="na">jsp中传递过来的name为</span><span class="err">：</span><span class="n">$</span><span class="o">{</span><span class="n">name</span><span class="o">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>那问题来了，如果四个<strong>域对象</strong>都设置了同一个属性值（比如name），EL表达式该如何取呢？</p>
-<p>答：EL表达式查找顺序是：page-》request-》session》application</p>
-<p>问题又来了，如果就要取来自<strong>session中</strong>的属性值呢？</p>
-<p>答：<strong>${sessionScope.name}</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>    
-    <span class="n">pageContext</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;page&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;request&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">session</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;session&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;application&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="o">%</span><span class="o">&gt;</span>
-<span class="n">$</span><span class="o">{</span><span class="n">sessionScope</span><span class="o">.</span><span class="na">name</span><span class="o">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>还可以很方便的取出<strong>对象</strong>的属性值；</p>
-<pre><code>${user}
-${user.id}或者${user[&quot;id&quot;]}
-${user.name}
-${user.address}
-</code></pre><blockquote>
-<p>${user.id}实际上是通过调用User类的getId()方法得到id的值；</p>
+</div><ul>
+<li>
+<p>开发中使用<strong>PreparedStatement</strong>（是Statement的子类）</p>
+<blockquote>
+<p>提供了SQL占位符的功能</p>
 </blockquote>
-<p>EL可以执行表达式，比如与、或、非运算。</p>
+</li>
+<li>
+<p>使用Statement进行开发的两大问题</p>
+<ul>
+<li>需要频繁拼接String字符串，出错率较高</li>
+<li>存在<strong>SQL注入</strong>风险</li>
+</ul>
+</li>
+</ul>
+<h2 id="web综合案例">★Web综合案例</h2>
+<h3 id="1测试数据库是否连接成功">◇1.测试数据库是否连接成功</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">&amp;&amp; || ! &lt; &gt; &lt;= &gt;= ==
-${not empty num}
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
+</span><span class="cm"> * 测试是否能够成功连接数据库
+</span><span class="cm"> * 1.加载驱动
+</span><span class="cm"> * 2.创建连接
+</span><span class="cm"> * 3.PreparedStatement执行相关语句
+</span><span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="s">&#34;com.mysql.cj.jdbc.Driver&#34;</span><span class="o">)</span><span class="o">;</span>
+            <span class="n">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#34;jdbc:mysql://127.0.0.1:3306/library?useUnicode=true&amp;characterEncoding=UTF-8&#34;</span><span class="o">;</span>
+            <span class="n">String</span> <span class="n">user</span> <span class="o">=</span> <span class="s">&#34;root&#34;</span><span class="o">;</span>
+            <span class="n">String</span> <span class="n">password</span> <span class="o">=</span> <span class="s">&#34;root123456&#34;</span><span class="o">;</span>
+            <span class="n">Connection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="n">user</span><span class="o">,</span> <span class="n">password</span><span class="o">)</span><span class="o">;</span>
+            <span class="n">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="s">&#34;SELECT * FROM book WHERE publish = ?&#34;</span><span class="o">;</span>
+            <span class="n">PreparedStatement</span> <span class="n">preparedStatement</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">sql</span><span class="o">)</span><span class="o">;</span>
+            <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="n">1</span><span class="o">,</span> <span class="s">&#34;三联出版社&#34;</span><span class="o">)</span><span class="o">;</span>
+            <span class="c1">//            获取查询结果
+</span><span class="c1"></span>            <span class="n">ResultSet</span> <span class="n">resultSet</span> <span class="o">=</span> <span class="n">preparedStatement</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">resultSet</span><span class="o">.</span><span class="na">next</span><span class="o">(</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">Integer</span> <span class="n">id</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
+                <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">;</span>
+                <span class="n">String</span> <span class="n">publish</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;publish&#34;</span><span class="o">)</span><span class="o">;</span>
+                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">id</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span> <span class="o">+</span> <span class="n">publish</span><span class="o">)</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
+</div><h3 id="2实现增删改查操作">◇2.实现增删改查操作</h3>
+<ul>
+<li>
+<p>Servlet+JSP+JDBC</p>
+</li>
+<li>
+<p>使用过滤器Filter处理中文乱码问题</p>
+</li>
+<li>
+<p>数据库的连接封装成JDBCTools类</p>
+</li>
+</ul>
+<h2 id="数据库连接池c3p0">★数据库连接池C3P0</h2>
+<h3 id="1c3p0概述">◇1.C3P0概述</h3>
+<p>C3P0是为<strong>优化Java程序连接</strong>（Connection）数据库而产生，传统JDBC操作数据库（如执行一次查询操作就需要拿到一个connection对象（由DriverManger产生），但是查询完了之后就释放掉了，资源没有得到很好的利用）。如果放大操作次数，比如查询5000次，就得产生5000个连接并且每次用完就得释放掉。于是C3P0应运而生，它是一个数据库连接池，提前将若干个连接放到数据库连接池，Java程序需要用到的时候直接从<strong>数据库连接池</strong>中取，用完之后也不释放，继续还到连接池中，<strong>连接资源</strong>得到了很好的复用。</p>
+<h3 id="2使用c3p0的两种方式">◇2.使用C3P0的两种方式</h3>
+<ul>
+<li>
+<p>在Java程序中使用(需要引入c3p0第三方包)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//        创建C3P0
+</span><span class="c1"></span><span class="n">ComboPooledDataSource</span> <span class="n">dataSource</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ComboPooledDataSource</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="k">try</span> <span class="o">{</span>
+    <span class="n">dataSource</span><span class="o">.</span><span class="na">setDriverClass</span><span class="o">(</span><span class="s">&#34;com.mysql.cj.jdbc.Driver&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">dataSource</span><span class="o">.</span><span class="na">setJdbcUrl</span><span class="o">(</span><span class="s">&#34;jdbc:mysql://localhost:3306/library?useUnicode=true&amp;character=UTF-8&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">dataSource</span><span class="o">.</span><span class="na">setUser</span><span class="o">(</span><span class="s">&#34;root&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">dataSource</span><span class="o">.</span><span class="na">setPassword</span><span class="o">(</span><span class="s">&#34;root123456&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            获取连接
+</span><span class="c1"></span>    <span class="n">Connection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">dataSource</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">// 设置若干连接池配置信息....    
+</span><span class="c1"></span>    <span class="c1">//            若干操作....
+</span><span class="c1"></span>    <span class="n">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="s">&#34;SELECT * FROM book WHERE publish = ?&#34;</span><span class="o">;</span>
+    <span class="n">PreparedStatement</span> <span class="n">preparedStatement</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">sql</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="n">1</span><span class="o">,</span> <span class="s">&#34;三联出版社&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            获取查询结果
+</span><span class="c1"></span>    <span class="n">ResultSet</span> <span class="n">resultSet</span> <span class="o">=</span> <span class="n">preparedStatement</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">resultSet</span><span class="o">.</span><span class="na">next</span><span class="o">(</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Integer</span> <span class="n">id</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">publish</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;publish&#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">id</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span> <span class="o">+</span> <span class="n">publish</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//            还回到数据库连接池中
+</span><span class="c1"></span>    <span class="n">connection</span><span class="o">.</span><span class="na">close</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">PropertyVetoException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
+</div></li>
+<li>
+<p>在c3p0-config.xml文件中配置数据库连接池的相关信息(配置文件名必须是c3p0-config.xml且必须是在src根目录下)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;c3p0-config</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;named-config</span> <span class="na">name=</span><span class="s">&#34;otherc3p0&#34;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!--</span><span class="c">  连接参数 </span><span class="c">--&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;driverClass&#34;</span><span class="nt">&gt;</span>com.mysql.cj.jdbc.Driver<span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jdbcUrl&#34;</span><span class="nt">&gt;</span>jdbc:mysql://localhost:3306/library?useUnicode=true<span class="ni">&amp;amp;</span>character=UTF-8<span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;user&#34;</span><span class="nt">&gt;</span>root<span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;password&#34;</span><span class="nt">&gt;</span>root123456<span class="nt">&lt;/property&gt;</span>
+  
+        <span class="c">&lt;!--</span><span class="c"> 连接池参数 </span><span class="c">--&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;initialPoolSize&#34;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;maxPoolSize&#34;</span><span class="nt">&gt;</span>8<span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;checkoutTimeout&#34;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/property&gt;</span>
+    <span class="nt">&lt;/named-config&gt;</span>
+<span class="nt">&lt;/c3p0-config&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//        创建C3P0 (otherc3p0对应c3p0-config.xml文件中的name属性值)
+</span><span class="c1"></span><span class="n">ComboPooledDataSource</span> <span class="n">dataSource</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ComboPooledDataSource</span><span class="o">(</span><span class="s">&#34;otherc3p0&#34;</span><span class="o">)</span><span class="o">;</span>
+<span class="k">try</span> <span class="o">{</span>
+    <span class="c1">//            获取连接
+</span><span class="c1"></span>    <span class="n">Connection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">dataSource</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            若干操作....
+</span><span class="c1"></span>    <span class="n">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="s">&#34;SELECT * FROM book WHERE publish = ?&#34;</span><span class="o">;</span>
+    <span class="n">PreparedStatement</span> <span class="n">preparedStatement</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">sql</span><span class="o">)</span><span class="o">;</span>
+    <span class="n">preparedStatement</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="n">1</span><span class="o">,</span> <span class="s">&#34;三联出版社&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="c1">//            获取查询结果
+</span><span class="c1"></span>    <span class="n">ResultSet</span> <span class="n">resultSet</span> <span class="o">=</span> <span class="n">preparedStatement</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">resultSet</span><span class="o">.</span><span class="na">next</span><span class="o">(</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Integer</span> <span class="n">id</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">publish</span> <span class="o">=</span> <span class="n">resultSet</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">&#34;publish&#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">id</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span> <span class="o">+</span> <span class="n">publish</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//            还回到数据库连接池中
+</span><span class="c1"></span>    <span class="n">connection</span><span class="o">.</span><span class="na">close</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span>  <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h2 id="windows10安装ubuntu1804-lts子系统">★Windows10安装Ubuntu18.04 LTS子系统</h2>
+<h3 id="1如何安装linux子系统">1.如何安装Linux子系统</h3>
+<h3 id="2安装成功后相应的设置">2.安装成功后相应的设置</h3>
+<ul>
+<li>设置root密码</li>
+<li>更换国内阿里软件源</li>
+<li>更新系统</li>
+<li>安装并启用ssh服务</li>
+<li>安装MySQL等常用软件</li>
+<li>配置IP地址</li>
+</ul>
+
     </article>
     <script>
   'use strict';
@@ -1840,13 +2033,13 @@ ${not empty num}
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fsession-cookie-el-study%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fjstl-jdbc-study%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=4.24_Session%e3%80%81Cookie%e5%92%8cEL%e5%ad%a6%e4%b9%a0&url=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fsession-cookie-el-study%2f&hashtags=JavaWeb%2c&via=twitter" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=4.25_JSTL%e5%92%8cJDBC%e7%9a%84%e5%ad%a6%e4%b9%a0&url=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fjstl-jdbc-study%2f&hashtags=JavaWeb%2c&via=twitter" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -1983,6 +2176,10 @@ ${not empty num}
     <ul class="related-ul">
         
         <li>
+          <a href="/posts/session-cookie-el-study/" class="related__link">4.24_Session、Cookie和EL学习</a>
+        </li>
+        
+        <li>
           <a href="/posts/servlet-jsp-study/" class="related__link">4.23_Servlet和JSP学习</a>
         </li>
         
@@ -2001,21 +2198,14 @@ ${not empty num}
 <nav class="pagination-single">
   
     
-      <a href="http://think.pengchangwen.site/posts/servlet-jsp-study/" class="pagination-single__left">
+      <a href="http://think.pengchangwen.site/posts/session-cookie-el-study/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">4.23_Servlet和JSP学习</div>      
+        <div class="pagination-single__left-title">4.24_Session、Cookie和EL学习</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="http://think.pengchangwen.site/posts/jstl-jdbc-study/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">4.25_JSTL和JDBC的学习</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2371,21 +2561,38 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="false">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#http请求状态码">★HTTP请求状态码</a>
+    <li><a href="#jstl详解">★JSTL详解</a>
       <ul>
-        <li><a href="#response常用方法">response常用方法</a></li>
+        <li><a href="#jstl的使用">JSTL的使用</a></li>
+        <li><a href="#jstl优点">JSTL优点</a></li>
+        <li><a href="#jstl常用标签">JSTL常用标签</a></li>
       </ul>
     </li>
-    <li><a href="#session和cookie">★Session和Cookie</a>
+    <li><a href="#jdbc">★JDBC</a>
       <ul>
-        <li><a href="#session常用方法">session常用方法</a></li>
-        <li><a href="#cookie">Cookie</a></li>
-        <li><a href="#cookie常用方法">Cookie常用方法</a></li>
-        <li><a href="#session-和-cookie的区别">Session 和 Cookie的区别</a></li>
+        <li><a href="#jdbc是什么">JDBC是什么？</a></li>
+        <li><a href="#jdbc体系结构">JDBC体系结构</a></li>
+        <li><a href="#jdbc的使用">JDBC的使用</a></li>
       </ul>
     </li>
-    <li><a href="#jsp内置对象的作用域">★JSP内置对象的作用域</a></li>
-    <li><a href="#el表达式">★EL表达式</a></li>
+    <li><a href="#web综合案例">★Web综合案例</a>
+      <ul>
+        <li><a href="#1测试数据库是否连接成功">◇1.测试数据库是否连接成功</a></li>
+        <li><a href="#2实现增删改查操作">◇2.实现增删改查操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据库连接池c3p0">★数据库连接池C3P0</a>
+      <ul>
+        <li><a href="#1c3p0概述">◇1.C3P0概述</a></li>
+        <li><a href="#2使用c3p0的两种方式">◇2.使用C3P0的两种方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#windows10安装ubuntu1804-lts子系统">★Windows10安装Ubuntu18.04 LTS子系统</a>
+      <ul>
+        <li><a href="#1如何安装linux子系统">1.如何安装Linux子系统</a></li>
+        <li><a href="#2安装成功后相应的设置">2.安装成功后相应的设置</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
