@@ -14,7 +14,7 @@
   
   <url>
     <loc>http://think.pengchangwen.site/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+    <lastmod>2020-04-26T23:30:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,13 +28,13 @@
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/posts/jstl-jdbc-study/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+    <loc>http://think.pengchangwen.site/posts/book-manage-system/</loc>
+    <lastmod>2020-04-26T23:30:52+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://think.pengchangwen.site/categories/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+    <lastmod>2020-04-26T23:30:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -48,23 +48,13 @@
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/categories/java/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://think.pengchangwen.site/tags/javaweb/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://think.pengchangwen.site/posts/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+    <lastmod>2020-04-26T23:30:52+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://think.pengchangwen.site/series/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+    <lastmod>2020-04-26T23:30:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -79,7 +69,7 @@
   
   <url>
     <loc>http://think.pengchangwen.site/tags/</loc>
-    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+    <lastmod>2020-04-26T23:30:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -90,6 +80,21 @@
                 hreflang="en"
                 href="http://think.pengchangwen.site/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/posts/jstl-jdbc-study/</loc>
+    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/categories/java/</loc>
+    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/tags/javaweb/</loc>
+    <lastmod>2020-04-25T23:10:52+08:00</lastmod>
   </url>
   
   <url>
@@ -108,7 +113,7 @@
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/series/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>http://think.pengchangwen.site/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   
@@ -118,7 +123,7 @@
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>http://think.pengchangwen.site/series/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   

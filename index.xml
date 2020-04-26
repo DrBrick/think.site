@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 23:10:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 23:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,15 @@
         <author>iierwin37@gmail.com (langchao)</author>
         <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>4.26_基础版图书管理系统(使用最纯粹的Java Web开发方式)</title>
+        <link>http://think.pengchangwen.site/posts/book-manage-system/</link>
+        <pubDate>Sun, 26 Apr 2020 23:30:52 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/book-manage-system/</guid>
+        <description>★MVC开发模式 MVC是将程序分层的一种开发思想。 M：Model 业务数据（service、repository、entity） V：View 试</description>
       </item>
       
       <item>
