@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 26 Apr 2020 23:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 23:29:57 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,15 @@
         <author>iierwin37@gmail.com (langchao)</author>
         <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>4.27_Mybatis基础学习</title>
+        <link>http://think.pengchangwen.site/posts/mybatis-study/</link>
+        <pubDate>Mon, 27 Apr 2020 23:29:57 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/mybatis-study/</guid>
+        <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
       </item>
       
       <item>
