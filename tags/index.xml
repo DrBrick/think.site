@@ -9,12 +9,21 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 28 Apr 2020 22:51:15 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 23:49:08 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>SSM项目</title>
+        <link>http://think.pengchangwen.site/tags/ssm%E9%A1%B9%E7%9B%AE/</link>
+        <pubDate>Wed, 29 Apr 2020 23:49:08 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/tags/ssm%E9%A1%B9%E7%9B%AE/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>JavaWeb</title>
