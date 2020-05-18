@@ -1157,7 +1157,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="今天主要学习的是Session和Cookie以及JSP内置对象和作用域的学习，还顺便学习了EL表达式。一步步的演进，让我懂得了技术的发展并不是一蹴而就的，有不方便的地方就要去解决，比如EL表达式就极大的简化了JSP页面的代码。相信还会有更加简便的工具来代替EL表达式；">
 
-<meta name="generator" content="Hugo 0.62.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="http://think.pengchangwen.site/posts/session-cookie-el-study/">
@@ -1530,7 +1530,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">sessionId</span> <span class="o">=</span> <span class="n">seesion</span><span class="o">.</span><span class="na">getId</span><span class="o">(</span><span class="o">)</span><span class="o">;</span> <span class="c1">// 获取会话的id
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">sessionId</span> <span class="o">=</span> <span class="n">seesion</span><span class="o">.</span><span class="na">getId</span><span class="o">();</span> <span class="c1">// 获取会话的id
 </span></code></pre></td></tr></table>
 </div>
 </div><h3 id="session常用方法">session常用方法</h3>
@@ -1554,8 +1554,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 创建cookie并响应到客户端
-</span><span class="c1"></span><span class="n">Cookie</span> <span class="n">cookie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cookie</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;langchao&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="n">response</span><span class="o">.</span><span class="na">addCookie</span><span class="o">(</span><span class="n">cookie</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span><span class="n">Cookie</span> <span class="n">cookie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cookie</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;langchao&#34;</span><span class="o">);</span>
+<span class="n">response</span><span class="o">.</span><span class="na">addCookie</span><span class="o">(</span><span class="n">cookie</span><span class="o">);</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>读取cookie</p>
@@ -1568,10 +1568,10 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Cookie</span><span class="o">[</span><span class="o">]</span> <span class="n">cookies</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getCookies</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Cookie</span><span class="o">[]</span> <span class="n">cookies</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getCookies</span><span class="o">();</span>
 <span class="k">for</span> <span class="o">(</span><span class="n">Cookie</span> <span class="n">cookie</span><span class="o">:</span><span class="n">cookies</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// out.write(cookie.toString());
-</span><span class="c1"></span>    <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">cookie</span><span class="o">.</span><span class="na">getName</span><span class="o">(</span><span class="o">)</span><span class="o">+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="n">cookie</span><span class="o">.</span><span class="na">getValue</span><span class="o">(</span><span class="o">)</span> <span class="o">+</span> <span class="s">&#34;&lt;br /&gt;&#34;</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>    <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">cookie</span><span class="o">.</span><span class="na">getName</span><span class="o">()+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="n">cookie</span><span class="o">.</span><span class="na">getValue</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;&lt;br /&gt;&#34;</span><span class="o">);</span>
 <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -1624,10 +1624,10 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 取到cookie
-</span><span class="c1"></span><span class="n">Cookie</span><span class="o">[</span><span class="o">]</span> <span class="n">cookies</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getCookies</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span><span class="n">Cookie</span><span class="o">[]</span> <span class="n">cookies</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getCookies</span><span class="o">();</span>
 <span class="k">for</span> <span class="o">(</span><span class="n">Cookie</span> <span class="n">cookie</span><span class="o">:</span><span class="n">cookies</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">cookie</span><span class="o">.</span><span class="na">getName</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">&#34;Welcome&#34;</span> <span class="o">+</span> <span class="n">cookie</span><span class="o">.</span><span class="na">getValue</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">cookie</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">&#34;Welcome&#34;</span> <span class="o">+</span> <span class="n">cookie</span><span class="o">.</span><span class="na">getValue</span><span class="o">());</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></td></tr></table>
@@ -1679,17 +1679,17 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>
-    <span class="n">Integer</span> <span class="n">count</span> <span class="o">=</span> <span class="o">(</span><span class="n">Integer</span><span class="o">)</span> <span class="n">application</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">count</span> <span class="o">=</span><span class="o">=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;%</span>
+    <span class="n">Integer</span> <span class="n">count</span> <span class="o">=</span> <span class="o">(</span><span class="n">Integer</span><span class="o">)</span> <span class="n">application</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">);</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">count</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">count</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
-        <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">,</span> <span class="n">count</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">,</span> <span class="n">count</span><span class="o">);</span>
     <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-        <span class="n">count</span><span class="o">+</span><span class="o">+</span><span class="o">;</span>
-        <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">,</span> <span class="n">count</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">count</span><span class="o">++;</span>
+        <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;count&#34;</span><span class="o">,</span> <span class="n">count</span><span class="o">);</span>
     <span class="o">}</span>
-<span class="o">%</span><span class="o">&gt;</span>
-<span class="n">您当前是第</span><span class="o">&lt;</span><span class="o">%</span><span class="o">=</span><span class="n">count</span><span class="o">%</span><span class="o">&gt;</span><span class="n">位访客</span><span class="err">！</span>
+<span class="o">%&gt;</span>
+<span class="n">您当前是第</span><span class="o">&lt;%=</span><span class="n">count</span><span class="o">%&gt;</span><span class="n">位访客</span><span class="err">！</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="el表达式">★EL表达式</h2>
@@ -1706,11 +1706,11 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;%</span>
     <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&#34;langchao&#34;</span><span class="o">;</span>
-    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="n">name</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">request</span><span class="o">.</span><span class="na">getRequestDispatcher</span><span class="o">(</span><span class="s">&#34;el2.jsp&#34;</span><span class="o">)</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">request</span><span class="o">,</span><span class="n">response</span><span class="o">)</span><span class="o">;</span>
-<span class="o">%</span><span class="o">&gt;</span>
+    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
+    <span class="n">request</span><span class="o">.</span><span class="na">getRequestDispatcher</span><span class="o">(</span><span class="s">&#34;el2.jsp&#34;</span><span class="o">).</span><span class="na">forward</span><span class="o">(</span><span class="n">request</span><span class="o">,</span><span class="n">response</span><span class="o">);</span>
+<span class="o">%&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>el2.jsp取到name</p>
@@ -1722,10 +1722,10 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>
-    <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">request</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="o">%</span><span class="o">&gt;</span>
-<span class="n">el</span><span class="o">.</span><span class="na">jsp中传递过来的name为</span><span class="err">：</span><span class="o">&lt;</span><span class="o">%</span><span class="o">=</span><span class="n">name</span><span class="o">%</span><span class="o">&gt;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;%</span>
+    <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">request</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">);</span>
+<span class="o">%&gt;</span>
+<span class="n">el</span><span class="o">.</span><span class="na">jsp中传递过来的name为</span><span class="err">：</span><span class="o">&lt;%=</span><span class="n">name</span><span class="o">%&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>用<strong>EL表达式</strong>简化后的写法：</p>
@@ -1752,12 +1752,12 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="o">%</span>    
-    <span class="n">pageContext</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;page&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;request&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">session</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;session&#34;</span><span class="o">)</span><span class="o">;</span>
-    <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;application&#34;</span><span class="o">)</span><span class="o">;</span>
-<span class="o">%</span><span class="o">&gt;</span>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;%</span>    
+    <span class="n">pageContext</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;page&#34;</span><span class="o">);</span>
+    <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;request&#34;</span><span class="o">);</span>
+    <span class="n">session</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;session&#34;</span><span class="o">);</span>
+    <span class="n">application</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">,</span> <span class="s">&#34;application&#34;</span><span class="o">);</span>
+<span class="o">%&gt;</span>
 <span class="n">$</span><span class="o">{</span><span class="n">sessionScope</span><span class="o">.</span><span class="na">name</span><span class="o">}</span>
 </code></pre></td></tr></table>
 </div>

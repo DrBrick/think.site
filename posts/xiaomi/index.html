@@ -1157,7 +1157,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="在B站上找的一个SSM项目——小米商城，今天主要是把项目的框架搭建好了，并且前后端能够正常通信。SSM整合、配置、MyBatis逆向工程、Ajax、单元测试、响应数据封装...还是能够学到不少东西的。">
 
-<meta name="generator" content="Hugo 0.62.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="http://think.pengchangwen.site/posts/xiaomi/">
@@ -1481,7 +1481,7 @@
         <li><a href="#1数据库数据">1.数据库数据</a></li>
         <li><a href="#2-ssm框架整合">2. SSM框架整合</a></li>
         <li><a href="#3-单元测试">3. 单元测试</a></li>
-        <li><a href="#4-业务模型开发--响应封装">4. 业务模型开发 & 响应封装</a></li>
+        <li><a href="#4-业务模型开发--响应封装">4. 业务模型开发 &amp; 响应封装</a></li>
       </ul>
     </li>
     <li><a href="#项目前后端整合">★项目前后端整合</a>
@@ -1564,34 +1564,34 @@
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
   
 <span class="nd">@RunWith</span><span class="o">(</span><span class="n">SpringJUnit4ClassRunner</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
-<span class="nd">@ContextConfiguration</span><span class="o">(</span><span class="n">locations</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;classpath:applicationContext.xml&#34;</span><span class="o">}</span><span class="o">)</span>
+<span class="nd">@ContextConfiguration</span><span class="o">(</span><span class="n">locations</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;classpath:applicationContext.xml&#34;</span><span class="o">})</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">DaoTest</span> <span class="o">{</span>
     <span class="nd">@Autowired</span>
     <span class="kd">private</span> <span class="n">ConsumerMapper</span> <span class="n">consumerMapper</span><span class="o">;</span>
   
     <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testConsumerInsert</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testConsumerInsert</span><span class="o">()</span> <span class="o">{</span>
 <span class="c1">//        创建consumer对象
-</span><span class="c1"></span>        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">(</span><span class="s">&#34;浪花之颠&#34;</span><span class="o">,</span> <span class="s">&#34;123123&#34;</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">(</span><span class="s">&#34;浪花之颠&#34;</span><span class="o">,</span> <span class="s">&#34;123123&#34;</span><span class="o">);</span>
 <span class="c1">//        将consumer对象插入到数据库中
-</span><span class="c1"></span>        <span class="n">consumerMapper</span><span class="o">.</span><span class="na">insertSelective</span><span class="o">(</span><span class="n">consumer</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Insert操作成功！用户&#34;</span> <span class="o">+</span> <span class="n">consumer</span><span class="o">.</span><span class="na">getUsername</span><span class="o">(</span><span class="o">)</span> <span class="o">+</span> <span class="s">&#34;已添加成功！&#34;</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">consumerMapper</span><span class="o">.</span><span class="na">insertSelective</span><span class="o">(</span><span class="n">consumer</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Insert操作成功！用户&#34;</span> <span class="o">+</span> <span class="n">consumer</span><span class="o">.</span><span class="na">getUsername</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;已添加成功！&#34;</span><span class="o">);</span>
     <span class="o">}</span>
     <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testConsumerSelectById</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="n">consumerMapper</span><span class="o">.</span><span class="na">selectByPrimaryKey</span><span class="o">(</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testConsumerSelectById</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="n">consumerMapper</span><span class="o">.</span><span class="na">selectByPrimaryKey</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
     <span class="o">}</span>
   
     <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testConsumerSelectByExample</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testConsumerSelectByExample</span><span class="o">()</span> <span class="o">{</span>
 <span class="c1">//        创建条件查询【用户+密码】
-</span><span class="c1"></span>        <span class="n">ConsumerExample</span> <span class="n">ce</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConsumerExample</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">ce</span><span class="o">.</span><span class="na">createCriteria</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">andUsernameEqualTo</span><span class="o">(</span><span class="s">&#34;langchao&#34;</span><span class="o">)</span>
-                <span class="o">.</span><span class="na">andPasswordEqualTo</span><span class="o">(</span><span class="s">&#34;root123&#34;</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">ConsumerExample</span> <span class="n">ce</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConsumerExample</span><span class="o">();</span>
+        <span class="n">ce</span><span class="o">.</span><span class="na">createCriteria</span><span class="o">().</span><span class="na">andUsernameEqualTo</span><span class="o">(</span><span class="s">&#34;langchao&#34;</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">andPasswordEqualTo</span><span class="o">(</span><span class="s">&#34;root123&#34;</span><span class="o">);</span>
 <span class="c1">//        查询结果集
-</span><span class="c1"></span>        <span class="n">List</span><span class="o">&lt;</span><span class="n">Consumer</span><span class="o">&gt;</span> <span class="n">consumerList</span> <span class="o">=</span> <span class="n">consumerMapper</span><span class="o">.</span><span class="na">selectByExample</span><span class="o">(</span><span class="n">ce</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">consumerList</span><span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">consumer</span> <span class="o">-</span><span class="o">&gt;</span> <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">List</span><span class="o">&lt;</span><span class="n">Consumer</span><span class="o">&gt;</span> <span class="n">consumerList</span> <span class="o">=</span> <span class="n">consumerMapper</span><span class="o">.</span><span class="na">selectByExample</span><span class="o">(</span><span class="n">ce</span><span class="o">);</span>
+        <span class="n">consumerList</span><span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">consumer</span> <span class="o">-&gt;</span> <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">toString</span><span class="o">()));</span>
     <span class="o">}</span>
 <span class="o">}</span>
   
@@ -1649,13 +1649,13 @@
     <span class="kd">private</span> <span class="n">ConsumerMapper</span> <span class="n">consumerMapper</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">findConsumerWithUsernameAndPassword</span><span class="o">(</span><span class="n">Consumer</span> <span class="n">consumer</span><span class="o">)</span> <span class="o">{</span>
         <span class="c1">//        1. 创建条件查询对象
-</span><span class="c1"></span>        <span class="n">ConsumerExample</span> <span class="n">ce</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConsumerExample</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">ce</span><span class="o">.</span><span class="na">createCriteria</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">andUsernameEqualTo</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">getUsername</span><span class="o">(</span><span class="o">)</span><span class="o">)</span>
-            <span class="o">.</span><span class="na">andPasswordEqualTo</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">getPassword</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">ConsumerExample</span> <span class="n">ce</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ConsumerExample</span><span class="o">();</span>
+        <span class="n">ce</span><span class="o">.</span><span class="na">createCriteria</span><span class="o">().</span><span class="na">andUsernameEqualTo</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">getUsername</span><span class="o">())</span>
+            <span class="o">.</span><span class="na">andPasswordEqualTo</span><span class="o">(</span><span class="n">consumer</span><span class="o">.</span><span class="na">getPassword</span><span class="o">());</span>
         <span class="c1">//        2. 查询数据
-</span><span class="c1"></span>        <span class="n">List</span><span class="o">&lt;</span><span class="n">Consumer</span><span class="o">&gt;</span> <span class="n">consumerList</span> <span class="o">=</span> <span class="n">consumerMapper</span><span class="o">.</span><span class="na">selectByExample</span><span class="o">(</span><span class="n">ce</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">List</span><span class="o">&lt;</span><span class="n">Consumer</span><span class="o">&gt;</span> <span class="n">consumerList</span> <span class="o">=</span> <span class="n">consumerMapper</span><span class="o">.</span><span class="na">selectByExample</span><span class="o">(</span><span class="n">ce</span><span class="o">);</span>
         <span class="c1">//        3. 返回结果
-</span><span class="c1"></span>        <span class="k">return</span> <span class="n">consumerList</span> <span class="o">!</span><span class="o">=</span> <span class="kc">null</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">consumerList</span><span class="o">.</span><span class="na">size</span><span class="o">(</span><span class="o">)</span> <span class="o">=</span><span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="k">return</span> <span class="n">consumerList</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">consumerList</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">==</span> <span class="n">1</span><span class="o">;</span>
     <span class="o">}</span>
 <span class="o">}</span>
 
@@ -1710,8 +1710,8 @@
     <span class="nd">@PostMapping</span><span class="o">(</span><span class="s">&#34;/login/auth&#34;</span><span class="o">)</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="nf">login</span><span class="o">(</span><span class="nd">@RequestParam</span> <span class="n">String</span> <span class="n">username</span><span class="o">,</span>
                         <span class="nd">@RequestParam</span> <span class="n">String</span> <span class="n">password</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">)</span><span class="o">;</span>
-        <span class="kt">boolean</span> <span class="n">result</span> <span class="o">=</span> <span class="n">consumerService</span><span class="o">.</span><span class="na">findConsumerWithUsernameAndPassword</span><span class="o">(</span><span class="n">consumer</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">);</span>
+        <span class="kt">boolean</span> <span class="n">result</span> <span class="o">=</span> <span class="n">consumerService</span><span class="o">.</span><span class="na">findConsumerWithUsernameAndPassword</span><span class="o">(</span><span class="n">consumer</span><span class="o">);</span>
         <span class="k">return</span> <span class="n">result</span> <span class="o">?</span> <span class="s">&#34;success&#34;</span> <span class="o">:</span> <span class="s">&#34;error&#34;</span><span class="o">;</span>
     <span class="o">}</span>
 <span class="o">}</span>
@@ -1791,9 +1791,9 @@
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ResponseMessage</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">errorCode</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">errorMsg</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">objectmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="o">&gt;</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">objectmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getErrorCode</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getErrorCode</span><span class="o">()</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">errorCode</span><span class="o">;</span>
     <span class="o">}</span>
 
@@ -1801,7 +1801,7 @@
         <span class="k">this</span><span class="o">.</span><span class="na">errorCode</span> <span class="o">=</span> <span class="n">errorCode</span><span class="o">;</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getErrorMsg</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getErrorMsg</span><span class="o">()</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">errorMsg</span><span class="o">;</span>
     <span class="o">}</span>
 
@@ -1809,7 +1809,7 @@
         <span class="k">this</span><span class="o">.</span><span class="na">errorMsg</span> <span class="o">=</span> <span class="n">errorMsg</span><span class="o">;</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="nf">getObjectmap</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="nf">getObjectmap</span><span class="o">()</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">objectmap</span><span class="o">;</span>
     <span class="o">}</span>
 
@@ -1817,19 +1817,19 @@
         <span class="k">this</span><span class="o">.</span><span class="na">objectmap</span> <span class="o">=</span> <span class="n">objectmap</span><span class="o">;</span>
     <span class="o">}</span>
     <span class="kd">public</span> <span class="n">ResponseMessage</span> <span class="nf">addObject</span><span class="o">(</span><span class="n">String</span> <span class="n">key</span><span class="o">,</span> <span class="n">Object</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">objectmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">key</span><span class="o">,</span><span class="n">object</span><span class="o">)</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">objectmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">key</span><span class="o">,</span><span class="n">object</span><span class="o">);</span>
         <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
     <span class="o">}</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ResponseMessage</span> <span class="nf">success</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">ResponseMessage</span> <span class="n">responseMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ResponseMessage</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorCode</span><span class="o">(</span><span class="s">&#34;100&#34;</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorMsg</span><span class="o">(</span><span class="s">&#34;处理成功！&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ResponseMessage</span> <span class="nf">success</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">ResponseMessage</span> <span class="n">responseMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ResponseMessage</span><span class="o">();</span>
+        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorCode</span><span class="o">(</span><span class="s">&#34;100&#34;</span><span class="o">);</span>
+        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorMsg</span><span class="o">(</span><span class="s">&#34;处理成功！&#34;</span><span class="o">);</span>
         <span class="k">return</span> <span class="n">responseMessage</span><span class="o">;</span>
     <span class="o">}</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ResponseMessage</span> <span class="nf">error</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">ResponseMessage</span> <span class="n">responseMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ResponseMessage</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorCode</span><span class="o">(</span><span class="s">&#34;200&#34;</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorMsg</span><span class="o">(</span><span class="s">&#34;处理失败！&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ResponseMessage</span> <span class="nf">error</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">ResponseMessage</span> <span class="n">responseMessage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ResponseMessage</span><span class="o">();</span>
+        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorCode</span><span class="o">(</span><span class="s">&#34;200&#34;</span><span class="o">);</span>
+        <span class="n">responseMessage</span><span class="o">.</span><span class="na">setErrorMsg</span><span class="o">(</span><span class="s">&#34;处理失败！&#34;</span><span class="o">);</span>
         <span class="k">return</span> <span class="n">responseMessage</span><span class="o">;</span>
     <span class="o">}</span>
 
@@ -1897,7 +1897,7 @@
 <span class="kn">import</span> <span class="nn">org.springframework.web.context.WebApplicationContext</span><span class="o">;</span>
 
 <span class="nd">@RunWith</span><span class="o">(</span><span class="n">SpringJUnit4ClassRunner</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
-<span class="nd">@ContextConfiguration</span><span class="o">(</span><span class="n">locations</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;classpath:applicationContext.xml&#34;</span><span class="o">,</span> <span class="s">&#34;classpath:springMVC.xml&#34;</span><span class="o">}</span><span class="o">)</span>
+<span class="nd">@ContextConfiguration</span><span class="o">(</span><span class="n">locations</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;classpath:applicationContext.xml&#34;</span><span class="o">,</span> <span class="s">&#34;classpath:springMVC.xml&#34;</span><span class="o">})</span>
 <span class="nd">@WebAppConfiguration</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">WebTest</span> <span class="o">{</span>
     <span class="c1">//    申明一个模拟请求的对象
@@ -1907,16 +1907,16 @@
     <span class="kd">private</span> <span class="n">WebApplicationContext</span> <span class="n">webApplicationContext</span><span class="o">;</span>
 
     <span class="nd">@Before</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setUp</span><span class="o">(</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">mockMvc</span> <span class="o">=</span> <span class="n">MockMvcBuilders</span><span class="o">.</span><span class="na">webAppContextSetup</span><span class="o">(</span><span class="n">webApplicationContext</span><span class="o">)</span><span class="o">.</span><span class="na">build</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setUp</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">mockMvc</span> <span class="o">=</span> <span class="n">MockMvcBuilders</span><span class="o">.</span><span class="na">webAppContextSetup</span><span class="o">(</span><span class="n">webApplicationContext</span><span class="o">).</span><span class="na">build</span><span class="o">();</span>
     <span class="o">}</span>
 
     <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testLogin</span><span class="o">(</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testLogin</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
         <span class="c1">//        模拟发送请求
-</span><span class="c1"></span>        <span class="n">MvcResult</span> <span class="n">mvcResult</span> <span class="o">=</span> <span class="n">mockMvc</span><span class="o">.</span><span class="na">perform</span><span class="o">(</span><span class="n">MockMvcRequestBuilders</span><span class="o">.</span><span class="na">post</span><span class="o">(</span><span class="s">&#34;/consumer/login/auth&#34;</span><span class="o">)</span><span class="o">.</span><span class="na">param</span><span class="o">(</span><span class="s">&#34;username&#34;</span><span class="o">,</span> <span class="s">&#34;langchao&#34;</span><span class="o">)</span>
-                                              <span class="o">.</span><span class="na">param</span><span class="o">(</span><span class="s">&#34;password&#34;</span><span class="o">,</span> <span class="s">&#34;root123&#34;</span><span class="o">)</span><span class="o">)</span><span class="o">.</span><span class="na">andReturn</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mvcResult</span><span class="o">.</span><span class="na">getResponse</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">getContentAsString</span><span class="o">(</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+</span><span class="c1"></span>        <span class="n">MvcResult</span> <span class="n">mvcResult</span> <span class="o">=</span> <span class="n">mockMvc</span><span class="o">.</span><span class="na">perform</span><span class="o">(</span><span class="n">MockMvcRequestBuilders</span><span class="o">.</span><span class="na">post</span><span class="o">(</span><span class="s">&#34;/consumer/login/auth&#34;</span><span class="o">).</span><span class="na">param</span><span class="o">(</span><span class="s">&#34;username&#34;</span><span class="o">,</span> <span class="s">&#34;langchao&#34;</span><span class="o">)</span>
+                                              <span class="o">.</span><span class="na">param</span><span class="o">(</span><span class="s">&#34;password&#34;</span><span class="o">,</span> <span class="s">&#34;root123&#34;</span><span class="o">)).</span><span class="na">andReturn</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mvcResult</span><span class="o">.</span><span class="na">getResponse</span><span class="o">().</span><span class="na">getContentAsString</span><span class="o">());</span>
     <span class="o">}</span>
 <span class="o">}</span>
 
@@ -1992,12 +1992,12 @@
     <span class="nd">@ResponseBody</span>
     <span class="kd">public</span> <span class="n">ResponseMessage</span> <span class="nf">login</span><span class="o">(</span><span class="nd">@RequestParam</span> <span class="n">String</span> <span class="n">username</span><span class="o">,</span>
                                  <span class="nd">@RequestParam</span> <span class="n">String</span> <span class="n">password</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;接收到请求：/consumer/login/auth&#34;</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;账号：&#34;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s">&#34;; 密码&#34;</span> <span class="o">+</span> <span class="n">password</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">)</span><span class="o">;</span>
-        <span class="kt">boolean</span> <span class="n">result</span> <span class="o">=</span> <span class="n">consumerService</span><span class="o">.</span><span class="na">findConsumerWithUsernameAndPassword</span><span class="o">(</span><span class="n">consumer</span><span class="o">)</span><span class="o">;</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;登录结果：&#34;</span> <span class="o">+</span> <span class="n">result</span><span class="o">)</span><span class="o">;</span>
-        <span class="k">return</span> <span class="n">result</span> <span class="o">?</span> <span class="n">ResponseMessage</span><span class="o">.</span><span class="na">success</span><span class="o">(</span><span class="o">)</span> <span class="o">:</span> <span class="n">ResponseMessage</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;接收到请求：/consumer/login/auth&#34;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;账号：&#34;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s">&#34;; 密码&#34;</span> <span class="o">+</span> <span class="n">password</span><span class="o">);</span>
+        <span class="n">Consumer</span> <span class="n">consumer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Consumer</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">);</span>
+        <span class="kt">boolean</span> <span class="n">result</span> <span class="o">=</span> <span class="n">consumerService</span><span class="o">.</span><span class="na">findConsumerWithUsernameAndPassword</span><span class="o">(</span><span class="n">consumer</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;登录结果：&#34;</span> <span class="o">+</span> <span class="n">result</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">result</span> <span class="o">?</span> <span class="n">ResponseMessage</span><span class="o">.</span><span class="na">success</span><span class="o">()</span> <span class="o">:</span> <span class="n">ResponseMessage</span><span class="o">.</span><span class="na">error</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
 
@@ -2044,38 +2044,38 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">//    点击登录按钮时,发送ajax请求
-</span><span class="c1"></span>    <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#login-btn&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="c1"></span>    <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#login-btn&#34;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
         <span class="c1">//    发送ajax请求
 </span><span class="c1"></span>        <span class="c1">//     alert($(&#34;#username&#34;).val()+&#34;:&#34;+$(&#34;#password&#34;).val())
-</span><span class="c1"></span>        <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">(</span><span class="p">{</span>
+</span><span class="c1"></span>        <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
             <span class="nx">url</span><span class="o">:</span> <span class="s2">&#34;/consumer/login/auth&#34;</span><span class="p">,</span>
             <span class="nx">method</span><span class="o">:</span> <span class="s2">&#34;post&#34;</span><span class="p">,</span>
             <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
-                <span class="s2">&#34;username&#34;</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#username&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">val</span><span class="p">(</span><span class="p">)</span><span class="p">,</span>
-                <span class="s2">&#34;password&#34;</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#password&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">val</span><span class="p">(</span><span class="p">)</span>
-            <span class="p">}</span><span class="p">,</span>
+                <span class="s2">&#34;username&#34;</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#username&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">(),</span>
+                <span class="s2">&#34;password&#34;</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#password&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span>
+            <span class="p">},</span>
             <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;请求发送成功&#34;</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span><span class="p">;</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;请求发送成功&#34;</span><span class="p">);</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
                 <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">errorCode</span> <span class="o">===</span> <span class="s2">&#34;100&#34;</span><span class="p">)</span> <span class="p">{</span>
                     <span class="c1">// 登录成功
-</span><span class="c1"></span>                    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;恭喜，用户登录成功！&#34;</span><span class="p">)</span><span class="p">;</span>
+</span><span class="c1"></span>                    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;恭喜，用户登录成功！&#34;</span><span class="p">);</span>
                     <span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="s2">&#34;/index.jsp&#34;</span><span class="p">;</span>
                 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                     <span class="c1">// 登录失败
-</span><span class="c1"></span>                    <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#error-username&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="s2">&#34;账号或者密码有误，请重新登录&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">css</span><span class="p">(</span><span class="p">{</span>
+</span><span class="c1"></span>                    <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#error-username&#34;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">&#34;账号或者密码有误，请重新登录&#34;</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span>
                         <span class="s2">&#34;color&#34;</span><span class="o">:</span> <span class="s2">&#34;red&#34;</span>
-                    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+                    <span class="p">});</span>
                 <span class="p">}</span>
-            <span class="p">}</span><span class="p">,</span>
-            <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;请求发送失败..&#34;</span><span class="p">)</span><span class="p">;</span>
+            <span class="p">},</span>
+            <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;请求发送失败..&#34;</span><span class="p">);</span>
             <span class="p">}</span>
-        <span class="p">}</span><span class="p">)</span>
-    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
-<span class="p">}</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">})</span>
+    <span class="p">});</span>
+<span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -2675,7 +2675,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#1数据库数据">1.数据库数据</a></li>
         <li><a href="#2-ssm框架整合">2. SSM框架整合</a></li>
         <li><a href="#3-单元测试">3. 单元测试</a></li>
-        <li><a href="#4-业务模型开发--响应封装">4. 业务模型开发 & 响应封装</a></li>
+        <li><a href="#4-业务模型开发--响应封装">4. 业务模型开发 &amp; 响应封装</a></li>
       </ul>
     </li>
     <li><a href="#项目前后端整合">★项目前后端整合</a>
