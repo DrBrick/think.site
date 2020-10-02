@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hive on 浪潮</title>
+    <link>http://think.pengchangwen.site/tags/hive/</link>
+    <description>Recent content in Hive on 浪潮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
+    <webMaster>iierwin37@gmail.com (langchao)</webMaster>
+    <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 01 Oct 2020 17:08:58 +0800</lastBuildDate>
+    
+        <atom:link href="http://think.pengchangwen.site/tags/hive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Hive认识我的第一天</title>
+        <link>http://think.pengchangwen.site/posts/hive-meeting/</link>
+        <pubDate>Thu, 01 Oct 2020 17:08:58 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/hive-meeting/</guid>
+        <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
+      </item>
+      
+    
+  </channel>
+</rss>

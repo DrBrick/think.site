@@ -9,12 +9,30 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 29 Sep 2020 23:44:55 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 19:10:59 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>浅谈SQL语句的执行顺序</title>
+        <link>http://think.pengchangwen.site/posts/sql-execution-sequence/</link>
+        <pubDate>Fri, 02 Oct 2020 19:10:59 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/sql-execution-sequence/</guid>
+        <description>浅谈SQL语句的执行顺序 一、SQL语句执行顺序解析 SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句</description>
+      </item>
+      
+      <item>
+        <title>Hive认识我的第一天</title>
+        <link>http://think.pengchangwen.site/posts/hive-meeting/</link>
+        <pubDate>Thu, 01 Oct 2020 17:08:58 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/hive-meeting/</guid>
+        <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
+      </item>
       
       <item>
         <title>时隔五个月的少年又回来了</title>
