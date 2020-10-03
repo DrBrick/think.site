@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浅谈SQL语句的执行顺序 – 浪潮</title>
+    <title>请为Hive开扇窗 – 浪潮</title>
     
 
 
@@ -489,7 +489,7 @@
 
   
     
-    var permalink = JSON.parse("\"http://think.pengchangwen.site/posts/sql-execution-sequence/\"");
+    var permalink = JSON.parse("\"http://think.pengchangwen.site/posts/hive-window-func/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1141,26 +1141,26 @@
 
 
     
-<meta name="description" content="SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。" />
+<meta name="description" content="聚合函数是SQL的基本函数，其功能是对一组值执行计算，并返回单个值。" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-10-02T19:10:59&#43;0800">
-<meta name="modified" content="2020-10-02T19:10:59&#43;0800">
-<meta property="article:published_time" content="2020-10-02T19:10:59&#43;0800">
+<meta name="created" content="2020-10-03T21:01:25&#43;0800">
+<meta name="modified" content="2020-10-03T21:01:25&#43;0800">
+<meta property="article:published_time" content="2020-10-03T21:01:25&#43;0800">
 
 <meta name="author" content="niuniu">
-<meta property="article:author" content="http://think.pengchangwen.site/posts/sql-execution-sequence/@niuniu">
+<meta property="article:author" content="http://think.pengchangwen.site/posts/hive-window-func/@niuniu">
 
 
 <meta property="og:site_name" content="浪潮">
-<meta property="og:title" content="浅谈SQL语句的执行顺序">
-<meta property="og:url" content="http://think.pengchangwen.site/posts/sql-execution-sequence/">
+<meta property="og:title" content="请为Hive开扇窗">
+<meta property="og:url" content="http://think.pengchangwen.site/posts/hive-window-func/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。">
+<meta property="og:description" content="聚合函数是SQL的基本函数，其功能是对一组值执行计算，并返回单个值。">
 
 <meta name="generator" content="Hugo 0.75.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="http://think.pengchangwen.site/posts/sql-execution-sequence/">
+<link rel="canonical" href="http://think.pengchangwen.site/posts/hive-window-func/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -1172,12 +1172,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "浅谈SQL语句的执行顺序",
-    "datePublished": "2020-10-02T19:10:59+08:00",
-    "dateModified": "2020-10-02T19:10:59+08:00",
-    "url" : "http://think.pengchangwen.site/posts/sql-execution-sequence/",
-    "description": "SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。",
-    "keywords": ["SQL","Hive SQL"],
+    "headline": "请为Hive开扇窗",
+    "datePublished": "2020-10-03T21:01:25+08:00",
+    "dateModified": "2020-10-03T21:01:25+08:00",
+    "url" : "http://think.pengchangwen.site/posts/hive-window-func/",
+    "description": "聚合函数是SQL的基本函数，其功能是对一组值执行计算，并返回单个值。",
+    "keywords": ["",""],
     "author": {
       "@type": "Person",
       "name": "niuniu"
@@ -1429,7 +1429,7 @@
   
   <li  class="is-active" >
     
-      <span>浅谈SQL语句的执行顺序</span>
+      <span>请为Hive开扇窗</span>
     
   </li>
   
@@ -1442,11 +1442,11 @@
   </noscript>
   <div class="single hide">
     <script>document.querySelector('.single').classList.remove('hide')</script>
-    <h2 class="single__title">浅谈SQL语句的执行顺序</h2>
+    <h2 class="single__title">请为Hive开扇窗</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Written At">📅&nbsp;Oct 2, 2020 </time>  &middot; <span class="single__info" title="Reading Time"> ☕ 4 min read </span>&middot; <span class="single__info" title="WRITTEN BY">✍️&nbsp;niuniu</span>
+  <time class="single__info" title="Written At">📅&nbsp;Oct 3, 2020 </time>  &middot; <span class="single__info" title="Reading Time"> ☕ 8 min read </span>&middot; <span class="single__info" title="WRITTEN BY">✍️&nbsp;niuniu</span>
   <span class="single__info">
     
   </span>
@@ -1455,25 +1455,66 @@
 <div class="single__tags caption">
 
   
-    🏷️
   
-  
-    <li><a href="http://think.pengchangwen.site/tags/sql/" class="single__tag" title="SQL">#SQL</a></li>
+    <li><a href="http://think.pengchangwen.site/tags/" class="single__tag" title="">#</a></li>
   
 
   
   
-    <li><a href="http://think.pengchangwen.site/tags/hive-sql/" class="single__tag" title="Hive SQL">#Hive SQL</a></li>
+    <li><a href="http://think.pengchangwen.site/tags/" class="single__tag" title="">#</a></li>
   
 
 </div>
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h2 id="浅谈sql语句的执行顺序">浅谈SQL语句的执行顺序</h2>
-<h3 id="一sql语句执行顺序解析">一、SQL语句执行顺序解析</h3>
-<p>SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。因此在写SQL语句的时候很容易出现问题，最主要的问题还是记不住SQL命令，死记硬背效果好像也不是很好。</p>
-<p>需要知道的是，在SQL语句执行的过程中，都会产生一个<em>虚拟表</em>，<code>用来保存SQL语句的执行结果</code>。这些虚拟表对用户来说是透明的，只有最后一步生成的虚拟表才会返回给用户。如果没有再查询中指定某一子句，则将跳过相应的步骤。下面先给出SQL语句的执行顺序，并加以简单的解释。</p>
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    What&#39;s on this Page
+  </button>
+  <div class="expand__content expand__content--toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一hive中的开窗函数">一、Hive中的开窗函数</a>
+      <ul>
+        <li><a href="#11-关于开窗函数">1.1 关于开窗函数</a></li>
+        <li><a href="#12-举个不太熟栗子">1.2 举个不太熟栗子。</a></li>
+      </ul>
+    </li>
+    <li><a href="#二几道关于hive-sql的题">二、几道关于Hive SQL的题</a>
+      <ul>
+        <li><a href="#21-单月访问次数和总访问次数">2.1 单月访问次数和总访问次数</a></li>
+        <li><a href="#22-学生课程成绩">2.2 学生课程成绩</a></li>
+      </ul>
+    </li>
+    <li><a href="#三附送科普virtualbox虚拟机网络">三、附送：科普VirtualBox虚拟机网络</a>
+      <ul>
+        <li><a href="#31-声明几个名词">3.1 声明几个名词</a></li>
+        <li><a href="#32-virtualbox中常见的网络接入模式">3.2 VirtualBox中常见的网络接入模式</a></li>
+        <li><a href="#33-各种网络接入模式详解">3.3 各种网络接入模式详解</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+      <h2 id="一hive中的开窗函数">一、Hive中的开窗函数</h2>
+<h3 id="11-关于开窗函数">1.1 关于开窗函数</h3>
+<p>什么是开窗函数？</p>
+<p>回答这个问题之前先要了解一下什么是<strong>聚合函数</strong>。聚合函数是SQL的基本函数，其功能是对一组值执行计算，并返回单个值。再说一遍，聚合函数是SQL的基本函数，其功能是<code>对一组值执行计算，并返回单个值</code>。</p>
+<p>常见的聚合函数有：sum()，count()，max()，min()， avg()等，这些聚合函数<strong>通常与group by 子句连用</strong>，除了count以外，聚合函数忽略空值；</p>
+<p>上面有说到，聚合函数只返回单个值，而开窗函数则可为窗口中的<code>每行都返回一个值</code>。更简单的理解就是，对查询的结果多出一列或者多列，列中可以是聚合值也可以试排序值。</p>
+<p>一般地，开窗函数也叫分析函数，有两类：聚合开窗函数、排序开窗函数。</p>
+<p>另外：</p>
+<ol>
+<li>SQL标准运行将所有的聚合函数用作开窗函数，用<strong>OVER</strong>关键字区分开窗函数和聚合函数。</li>
+<li>聚合函数每组只返回一个值，开窗函数每组（每个窗口）可返回多个值。（上面也有说到过为每行都返回一个值）</li>
+</ol>
+<h3 id="12-举个不太熟栗子">1.2 举个不太熟栗子。</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1486,74 +1527,746 @@
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="mi">7</span><span class="p">)</span> <span class="k">select</span>
-<span class="mi">8</span><span class="p">)</span> <span class="k">distinct</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
-<span class="mi">1</span><span class="p">)</span> <span class="k">from</span> <span class="o">&lt;</span><span class="n">left_table</span><span class="o">&gt;</span>
-<span class="mi">3</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">join_type</span><span class="o">&gt;</span> <span class="k">join</span> <span class="o">&lt;</span><span class="n">right_table</span><span class="o">&gt;</span>
-<span class="mi">2</span><span class="p">)</span> <span class="k">on</span> <span class="o">&lt;</span><span class="n">join_condition</span><span class="o">&gt;</span>
-<span class="mi">4</span><span class="p">)</span> <span class="k">where</span> <span class="o">&lt;</span><span class="n">where_condition</span><span class="o">&gt;</span>
-<span class="mi">5</span><span class="p">)</span> <span class="k">group</span> <span class="k">by</span> <span class="o">&lt;</span><span class="n">group_by_list</span><span class="o">&gt;</span>
-<span class="mi">6</span><span class="p">)</span> <span class="k">having</span> <span class="o">&lt;</span><span class="n">having_condition</span><span class="o">&gt;</span>
-<span class="mi">9</span><span class="p">)</span> <span class="k">order</span> <span class="k">by</span> <span class="o">&lt;</span><span class="n">order_by_list</span><span class="o">&gt;</span>
-<span class="mi">10</span><span class="p">)</span> <span class="k">limit</span> <span class="o">&lt;</span><span class="n">limit_number</span><span class="o">&gt;</span>
+<pre class="chroma"><code class="language-tex" data-lang="tex">[root@hadoop200m mydata]# more student<span class="nb">_</span>score.data
+1       zs1     chinese 80
+2       zs1     math    90
+3       zs1     english 89
+4       zs2     chinese 60
+5       zs2     math    75
+6       zs2     english 80
+7       zs3     chinese 79
+8       zs3     math    83
+9       zs3     english 72
+10      zs4     chinese 90
+11      zs4     math    76
+12      zs4     english 80
+13      zs5     chinese 98
+14      zs5     math    80
+15      zs5     english 70
 </code></pre></td></tr></table>
 </div>
-</div><p>1）<code>from</code>：对FROM子句中的左表&lt;left_table&gt;和右表&lt;right_table&gt;执行笛卡儿积（Cartesian product），产生虚拟表VT1。</p>
-<p>2）<code>on</code>： 对虚拟表VT1应用ON筛选，只有那些符合&lt;join_condition&gt;的行才被插入虚拟表VT2中。</p>
-<p>3）<code>join</code>：如果指定了OUTER JOIN（如LEFT OUTER JOIN、RIGHT OUTERJOIN），那么保留表中未匹配的行作为外部行添加到虚拟表VT2中，产生虚拟表VT3。如果FROM子句包含两个以上表，则对上一个连接生成的结果表VT3和下一个表重复执行步骤1）～步骤3），直到处理完所有的表为止。</p>
-<blockquote>
-<p>这里出现了两个陌生的名词：“保留表”、“外部行”。</p>
-<p>LEFT OUTER JOIN把左表记为保留表，RIGHT OUTER JOIN把右表记为保留表&hellip;</p>
-<p>一时半会也解释不清这个东西，我自己懂了就好了，先挖个坑，日后再补上具体数据来做详细解释说明。</p>
-</blockquote>
-<p>4）<code>where</code>：对虚拟表VT3应用WHERE过滤条件，只有符合&lt;where_condition&gt;的记录才被插入虚拟表VT4中。</p>
-<p>5）<code>group by</code>：根据GROUP BY子句中的列，对VT4中的记录进行分组操作，产生VT5。</p>
-<p>6）<code>having</code>：对虚拟表VT6应用HAVING过滤器，只有符合&lt;having_condition&gt;的记录才被插入虚拟表VT6中。</p>
-<p>7）<code>select</code>：选择指定的列，插入到虚拟表V7中。</p>
-<blockquote>
-<p>看到没有，select到第7步才被执行，所以千万别人认为写在第一行的就是第一个被执行的。</p>
-</blockquote>
-<p>8）<code>distinct</code>：去除重复数据，产生虚拟表V8。</p>
-<p>9）<code>order by</code>：将虚拟表V8中的记录按照&lt;order_by_list&gt;进行排序操作，产生虚拟表V9。</p>
-<blockquote>
-<p>ORDER BY 默认是升序排序，如果要指定为降序排序则需要加上 DESC 修饰。</p>
-</blockquote>
-<p>10）<code>limit</code>：取出指定行的记录，产生虚拟表V10，<strong>并返回给查询用户</strong>。</p>
-<blockquote>
-<p>值得注意的是：LIMIT n, m 表示从第n条记录开始选择m条记录。少量数据时，使用limit进行分页查询是没有任何问题的，但是对于大量数据而言，<code>LIMIT n, m</code>是很低效的。原因是LIMIT每次都是从头开始扫描，如果要取第100万行开始3条数据的话，就需要先扫描定位到第100万行，然后再取，可见其效率是很低很低的。</p>
-</blockquote>
-<h3 id="二附送hive中四个by的区别">二、附送：Hive中四个BY的区别</h3>
-<p>所谓四个BY指的是：</p>
-<ol>
-<li>order by</li>
-<li>sort by</li>
-<li>distribute by</li>
-<li>cluster by</li>
-</ol>
-<p><code>关于order by</code>：</p>
-<blockquote>
-<p>order by会对输入做<code>全局排序</code>，因此只有一个reducer，然而当只有一个reducer会导致当输入数据规模很大时，消耗较长的计算时间。</p>
-</blockquote>
-<p><code>关于sort by</code>：</p>
-<blockquote>
-<p>sort by会在数据进入reducer前完成排序，实现的是局部排序。因此，如果用 sort by进行排序并且设置 mapped. reduce. tasks &gt;1，则 sort by只会保证每个 reducer的输出有序，并不保证全局有序。</p>
-<p>所以在使用sort by之前还需要设置reduce的个数：</p>
-<p>set mapreduce.job.reducers=4;</p>
-</blockquote>
-<p><code>关于distribute by</code>：</p>
-<blockquote>
-<p>distribute by是控制在map端如何拆分数据给 reduce端的。hive会根据 distribute by后面的列，对应  reduce的个数进行分发，默认是采用hash算法。sort by为每个 reduce产生一个排序文件。在有些情况下，<strong>你需要控制某个特定行应该到哪个 reducer</strong>，这通常是为了进行后续的<code>聚集操作</code>。distribute by刚好可以做这件事。因此， distribute by经常和 sort by配合使用。并且hive规定distribute by  语句要写在sort by语句之前。</p>
-</blockquote>
-<p><code>关于cluster by</code>：</p>
-<blockquote>
-<p>当distribute by 和 sort by 所指定的字段相同时，cluster by的效果等同于sort by + distribute by，但是cluster by 指定的列<code>只能是升序</code>，且补鞥呢指定asc和desc。</p>
-</blockquote>
-<p>其实本人还有两个疑问，那就是<code>group by</code>和<code>partition by</code>。</p>
-<p>group by操作表示按照某些字段的值进行分组，有相同的值放到一起。</p>
-<p>partition by 按照字段对数据进行分组。</p>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-tex" data-lang="tex">select * from student<span class="nb">_</span>score;
 
++-------------------+---------------------+--------------------+----------------------+
+| student<span class="nb">_</span>score.id  | student<span class="nb">_</span>score.name  | student<span class="nb">_</span>score.sub  | student<span class="nb">_</span>score.score  |
++-------------------+---------------------+--------------------+----------------------+
+| 1                 | zs1                 | chinese            | 80                   |
+| 2                 | zs1                 | math               | 90                   |
+| 3                 | zs1                 | english            | 89                   |
+| 4                 | zs2                 | chinese            | 60                   |
+| 5                 | zs2                 | math               | 75                   |
+| 6                 | zs2                 | english            | 80                   |
+| 7                 | zs3                 | chinese            | 79                   |
+| 8                 | zs3                 | math               | 83                   |
+| 9                 | zs3                 | english            | 72                   |
+| 10                | zs4                 | chinese            | 90                   |
+| 11                | zs4                 | math               | 76                   |
+| 12                | zs4                 | english            | 80                   |
+| 13                | zs5                 | chinese            | 98                   |
+| 14                | zs5                 | math               | 80                   |
+| 15                | zs5                 | english            | 70                   |
++-------------------+---------------------+--------------------+----------------------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>※ 需求是：计算出班级中单科排名前三的学生姓名以及成绩信息。</p>
+<p>这题的思路大概是使用开窗函数并按照sub划分窗口，且按照score排序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">select</span>
+    <span class="o">*</span>
+<span class="k">from</span>
+    <span class="p">(</span>
+        <span class="k">select</span>
+            <span class="o">*</span><span class="p">,</span>
+            <span class="n">row_number</span><span class="p">()</span> <span class="n">over</span><span class="p">(</span>
+                <span class="n">partition</span> <span class="k">by</span> <span class="n">sub</span>
+                <span class="k">order</span> <span class="k">by</span>
+                    <span class="n">score</span> <span class="k">desc</span>
+            <span class="p">)</span> <span class="k">as</span> <span class="n">rank</span>
+        <span class="k">from</span>
+            <span class="n">student_score</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">ss</span>
+<span class="k">where</span>
+    <span class="n">ss</span><span class="p">.</span><span class="n">rank</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>row_number()，对数据进行编号，从1开始</li>
+<li>over()函数将数据划分到一个窗口内</li>
+<li>partition by表示按照字段对数据进行<strong>分组</strong></li>
+<li>order by<strong>对分组内的数据按照某个字段进行排序</strong></li>
+</ul>
+<p>得到的结果如下所示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-tex" data-lang="tex">+--------+----------+----------+-----------+----------+
+| ss.id  | ss.name  |  ss.sub  | ss.score  | ss.rank  |
++--------+----------+----------+-----------+----------+
+| 13     | zs5      | chinese  | 98        | 1        |
+| 10     | zs4      | chinese  | 90        | 2        |
+| 1      | zs1      | chinese  | 80        | 3        |
+| 3      | zs1      | english  | 89        | 1        |
+| 6      | zs2      | english  | 80        | 2        |
+| 12     | zs4      | english  | 80        | 3        |
+| 2      | zs1      | math     | 90        | 1        |
+| 8      | zs3      | math     | 83        | 2        |
+| 14     | zs5      | math     | 80        | 3        |
++--------+----------+----------+-----------+----------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>其中关于排序（排名先后顺序问题）</p>
+<ul>
+<li>row_number() over() 正常顺序</li>
+<li>rank() over() 跳跃排序，有两个第一名时接下来就是第三名（在各个分组内）</li>
+<li>dense_rank() over() 连续排序，有两个第一名时接下来是二名（在各个分组内）</li>
+</ul>
+<p>比如<code>dense_rank() over() </code>连续排序（个人认为这种还是比较符合实际的情况，并列第一也是第一！）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-tex" data-lang="tex">+--------+----------+----------+-----------+----------+
+| ss.id  | ss.name  |  ss.sub  | ss.score  | ss.rank  |
++--------+----------+----------+-----------+----------+
+| 13     | zs5      | chinese  | 98        | 1        |
+| 10     | zs4      | chinese  | 90        | 2        |
+| 1      | zs1      | chinese  | 80        | 3        |
+| 3      | zs1      | english  | 89        | 1        |
+| 12     | zs4      | english  | 80        | 2        |
+| 6      | zs2      | english  | 80        | 2        |
+| 9      | zs3      | english  | 72        | 3        |
+| 2      | zs1      | math     | 90        | 1        |
+| 8      | zs3      | math     | 83        | 2        |
+| 14     | zs5      | math     | 80        | 3        |
++--------+----------+----------+-----------+----------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>总结一下</strong>：从写的Hive SQL来看，开窗函数的调用格式为：</p>
+<blockquote>
+<p>函数名(列名) over(partition by 列名 order by 列名)。</p>
+</blockquote>
+<h2 id="二几道关于hive-sql的题">二、几道关于Hive SQL的题</h2>
+<h3 id="21-单月访问次数和总访问次数">2.1 单月访问次数和总访问次数</h3>
+<p>数据是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-tex" data-lang="tex">+-----------------+------------------+------------------+
+| t<span class="nb">_</span>access.uname  | t<span class="nb">_</span>access.umonth  | t<span class="nb">_</span>access.ucount  |
++-----------------+------------------+------------------+
+| A               | 2015-01          | 5                |
+| A               | 2015-01          | 15               |
+| B               | 2015-01          | 5                |
+| A               | 2015-01          | 8                |
+| B               | 2015-01          | 25               |
+| A               | 2015-01          | 5                |
+| A               | 2015-02          | 4                |
+| A               | 2015-02          | 6                |
+| B               | 2015-02          | 10               |
+| B               | 2015-02          | 5                |
+| A               | 2015-03          | 16               |
+| A               | 2015-03          | 22               |
+| B               | 2015-03          | 23               |
+| B               | 2015-03          | 10               |
+| B               | 2015-03          | 1                |
++-----------------+------------------+------------------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>※ 需求是：求出每个用户截止到每月为止的<code>最大单月访问次数</code>、<code>累计到该月的总访问次数</code>和当月访问次数。大概长这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-tex" data-lang="tex">+-----------+------------+------------+--------------+------------+
+| t1.uname  | t1.umonth  | t1.ucount  | current<span class="nb">_</span>max  | total<span class="nb">_</span>cnt  |
++-----------+------------+------------+--------------+------------+
+| A         | 2015-01    | 33         | 33           | 33         |
+| A         | 2015-02    | 10         | 33           | 43         |
+| A         | 2015-03    | 38         | 38           | 81         |
+| B         | 2015-01    | 30         | 30           | 30         |
+| B         | 2015-02    | 15         | 30           | 45         |
+| B         | 2015-03    | 34         | 34           | 79         |
++-----------+------------+------------+--------------+------------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>这题的关键是求出当月的访问次数，然后再使用开窗函数累加截止到本月的总访问次数以及最大访问次数。</p>
+<p>求出当月访问次数，很简单，使用如下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">select</span>
+    <span class="n">uname</span><span class="p">,</span>
+    <span class="n">umonth</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">ucount</span><span class="p">)</span> <span class="k">as</span> <span class="n">ucount</span>
+<span class="k">from</span>
+    <span class="n">t_access</span>
+<span class="k">group</span> <span class="k">by</span>
+    <span class="n">uname</span><span class="p">,</span>
+    <span class="n">umonth</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>得到的结果是：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="o">+</span><span class="c1">--------+----------+---------+
+</span><span class="c1"></span><span class="o">|</span> <span class="n">uname</span>  <span class="o">|</span>  <span class="n">umonth</span>  <span class="o">|</span> <span class="n">ucount</span>  <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------+----------+---------+
+</span><span class="c1"></span><span class="o">|</span> <span class="n">A</span>      <span class="o">|</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span>  <span class="o">|</span> <span class="mi">33</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">A</span>      <span class="o">|</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">02</span>  <span class="o">|</span> <span class="mi">10</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">A</span>      <span class="o">|</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">03</span>  <span class="o">|</span> <span class="mi">38</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">B</span>      <span class="o">|</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span>  <span class="o">|</span> <span class="mi">30</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">B</span>      <span class="o">|</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">02</span>  <span class="o">|</span> <span class="mi">15</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">B</span>      <span class="o">|</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">03</span>  <span class="o">|</span> <span class="mi">34</span>      <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------+----------+---------+
+</span><span class="c1"></span>
+</code></pre></td></tr></table>
+</div>
+</div><p>紧接着，使用开窗函数累加<code>截止到本月的总访问次数以及最大访问次数</code>。贴上参考SQL：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">select</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="k">max</span><span class="p">(</span><span class="n">ucount</span><span class="p">)</span> <span class="n">over</span><span class="p">(</span>
+        <span class="n">partition</span> <span class="k">by</span> <span class="n">uname</span>
+        <span class="k">order</span> <span class="k">by</span>
+            <span class="n">umonth</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">current_max</span><span class="p">,</span>
+    <span class="k">sum</span><span class="p">(</span><span class="n">ucount</span><span class="p">)</span> <span class="n">over</span><span class="p">(</span>
+        <span class="n">partition</span> <span class="k">by</span> <span class="n">uname</span>
+        <span class="k">order</span> <span class="k">by</span>
+            <span class="n">umonth</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">total_cnt</span>
+<span class="k">from</span>
+    <span class="p">(</span>
+        <span class="k">select</span>
+            <span class="n">uname</span><span class="p">,</span>
+            <span class="n">umonth</span><span class="p">,</span>
+            <span class="k">sum</span><span class="p">(</span><span class="n">ucount</span><span class="p">)</span> <span class="k">as</span> <span class="n">ucount</span>
+        <span class="k">from</span>
+            <span class="n">t_access</span>
+        <span class="k">group</span> <span class="k">by</span>
+            <span class="n">uname</span><span class="p">,</span>
+            <span class="n">umonth</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">t1</span><span class="p">;</span>
+    
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="22-学生课程成绩">2.2 学生课程成绩</h3>
+<p>数据是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">+------------+-------------+----------------+---------------+
+| course.id  | course.sid  | course.course  | course.score  |
++------------+-------------+----------------+---------------+
+| 1          | 1           | yuwen          | 43            |
+| 2          | 1           | shuxue         | 55            |
+| 3          | 2           | yuwen          | 77            |
+| 4          | 2           | shuxue         | 88            |
+| 5          | 3           | yuwen          | 98            |
+| 6          | 3           | shuxue         | 65            |
++------------+-------------+----------------+---------------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>※ 需求：求所有数学课程成绩大于语文课程成绩的学生的信息，格式如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-tex" data-lang="tex">+--------+
+| a.sid  |
++--------+
+| 1      |
+| 2      |
++--------+
+
+# 为了方便展示，把成绩也贴出来
++--------+-----------+----------+-----------+----------+
+| a.sid  | a.course  | a.score  | b.course  | b.score  |
++--------+-----------+----------+-----------+----------+
+| 1      | shuxue    | 55       | yuwen     | 43       |
+| 2      | shuxue    | 88       | yuwen     | 77       |
++--------+-----------+----------+-----------+----------+
+
+</code></pre></td></tr></table>
+</div>
+</div><p>解决的思路：course表先自连接，根据过滤条件筛选出符合要求的记录。参考SQL如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">select</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">sid</span><span class="p">,</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">course</span><span class="p">,</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">score</span><span class="p">,</span>
+    <span class="n">b</span><span class="p">.</span><span class="n">course</span><span class="p">,</span>
+    <span class="n">b</span><span class="p">.</span><span class="n">score</span>
+<span class="k">from</span>
+    <span class="n">course</span> <span class="n">a</span>
+    <span class="k">join</span> <span class="n">course</span> <span class="n">b</span> <span class="k">on</span> <span class="n">a</span><span class="p">.</span><span class="n">sid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">sid</span>
+    <span class="k">and</span> <span class="n">a</span><span class="p">.</span><span class="n">course</span> <span class="o">=</span> <span class="s1">&#39;shuxue&#39;</span>
+    <span class="k">and</span> <span class="n">b</span><span class="p">.</span><span class="n">course</span> <span class="o">=</span> <span class="s1">&#39;yuwen&#39;</span>
+<span class="k">where</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">score</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">.</span><span class="n">score</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>另一种解法，使用开窗函数：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">select</span>
+    <span class="o">*</span>
+<span class="k">from</span>
+    <span class="p">(</span>
+        <span class="k">select</span>
+            <span class="n">sid</span><span class="p">,</span>
+            <span class="k">sum</span><span class="p">(</span>
+                <span class="k">case</span>
+                    <span class="n">course</span>
+                    <span class="k">when</span> <span class="s2">&#34;shuxue&#34;</span> <span class="k">then</span> <span class="n">score</span>
+                    <span class="k">else</span> <span class="mi">0</span>
+                <span class="k">end</span>
+            <span class="p">)</span> <span class="k">as</span> <span class="n">math</span><span class="p">,</span>
+            <span class="k">sum</span><span class="p">(</span>
+                <span class="k">case</span>
+                    <span class="n">course</span>
+                    <span class="k">when</span> <span class="s2">&#34;yuwen&#34;</span> <span class="k">then</span> <span class="n">score</span>
+                    <span class="k">else</span> <span class="mi">0</span>
+                <span class="k">end</span>
+            <span class="p">)</span> <span class="k">as</span> <span class="n">chinese</span>
+        <span class="k">from</span>
+            <span class="n">course</span>
+        <span class="k">group</span> <span class="k">by</span>
+            <span class="n">sid</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">t1</span>
+<span class="k">where</span>
+    <span class="n">t1</span><span class="p">.</span><span class="n">math</span> <span class="o">&gt;</span> <span class="n">t1</span><span class="p">.</span><span class="n">chinese</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="三附送科普virtualbox虚拟机网络">三、附送：科普VirtualBox虚拟机网络</h2>
+<h3 id="31-声明几个名词">3.1 声明几个名词</h3>
+<p>一般来说诸如VirtualBox、VMwareWorkstation Pro等虚拟机才叫虚拟机。真正的Linux系统是装在虚拟机中的，但是此文为了方便，<code>把虚拟机中的Linux系统称之为“虚拟机”</code>安装虚拟机（VirtualBox、VMwareWorkstation Pro&hellip;）的机器叫<code>主机</code>。特此声明！</p>
+<h3 id="32-virtualbox中常见的网络接入模式">3.2 VirtualBox中常见的网络接入模式</h3>
+<ol>
+<li>NAT模式</li>
+<li>Host-Only</li>
+<li>桥接</li>
+<li>Internal</li>
+</ol>
+<h3 id="33-各种网络接入模式详解">3.3 各种网络接入模式详解</h3>
+<p><strong>【01 NAT模式的特点】</strong>：</p>
+<ol>
+<li>如果主机可以上网，虚拟机可以上网</li>
+<li>虚拟机之间不能ping通</li>
+<li>虚拟机可以ping通主机（此时ping虚拟机的网关，即是ping主机）</li>
+<li>主机不能ping通虚拟机</li>
+</ol>
+<p><strong>NAT模式的应用场景</strong>：</p>
+<ul>
+<li>虚拟机只要求可以上网，无其它特殊要求。</li>
+</ul>
+<p><strong>NAT模式下的IP样式</strong>：</p>
+<ul>
+<li>IP：10.0.2.15</li>
+<li>网关：10.0.2.2</li>
+</ul>
+<p><strong>【02 Bridged Adapter桥接模式的特点】：</strong></p>
+<ol>
+<li>如果主机可以上网，虚拟机可以上网</li>
+<li>虚拟机之间可以ping通</li>
+<li>虚拟机可以ping通主机</li>
+<li>主机可以ping通虚拟机</li>
+</ol>
+<p>以上四点都基于一个前提：主机可以上网。由此可以引申出一个很重要的结论：</p>
+<blockquote>
+<p>如果在同一个局域网下，多台主机里面的虚拟机是可以互相访问的（特点2），因此在一定条件下可以充分利用多台主机的资源，比如硬盘和内存。想到一个不错的利用方式是用来搭建Hadoop集群~</p>
+<p>桥接很形象的解释是，通过主机网卡，架设一条桥，直接连入到网络中。<strong>它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样。</strong></p>
+</blockquote>
+<p><strong>桥接模式的IP样式：</strong></p>
+<ul>
+<li>IP与本机IP在同一网段内（很重要）</li>
+<li>网关与本机网关相同</li>
+</ul>
+<p><strong>【03 Host-only Adapter模式的特点】</strong>：</p>
+<ol>
+<li>虚拟机不可以上网</li>
+<li>虚拟机之间可以ping通</li>
+<li>虚拟机可以ping通主机（注意虚拟机与主机通信是通过主机的名为VirtualBox Host-Only Network的网卡，因此ip是该网卡ip 192.168.56.1，而不是你现在正在上网所用的ip）</li>
+<li>主机可以ping通虚拟机</li>
+</ol>
+<p><strong>桥接模式的应用场景</strong>：</p>
+<ul>
+<li>在主机无法上网的情况下，也可以搭建一个模拟局域网，因为所有的虚拟机之间都是可以互相访问的。</li>
+</ul>
+<p><strong>桥接模式的IP样式</strong>：</p>
+<ul>
+<li>IP 与本机VirtualBox Host-Only Network的网卡IP在同一网段内（默认192.168.56.*）</li>
+<li>网关 本机VirtualBox Host-Only Network的网卡IP（默认192.168.56.1）</li>
+</ul>
+<p>稍微引申一下：</p>
+<blockquote>
+<p>在本地搭建大数据集群的时候，一般选择<strong>NAT模式+Host-Only模式</strong>的组合方式进行网络配置。NAT模式允许虚拟机能够访问外网，做一些软件下载、更新等操作；Host-Only模式下的虚拟机与虚拟机之间可以相互访问，因此可以模拟搭建一个模拟局域网。</p>
+</blockquote>
+<p><strong>【04 Internal模式的特点】</strong>：</p>
+<ol>
+<li>虚拟机不可以上网</li>
+<li>虚拟机之间可以ping通</li>
+<li>虚拟机不能ping通主机</li>
+<li>主机不能ping通虚拟机</li>
+</ol>
+<p><strong>Internal模式的应用场景</strong>：</p>
+<ul>
+<li>与世隔绝。让各台虚拟机处于隔离的局域网内，只让它们相互通信，与外界（包括主机）隔绝；</li>
+</ul>
+<p><strong>Internal模式的IP样式</strong>:</p>
+<ul>
+<li>ip 169.254.147.9</li>
+</ul>
+<p>不得不说，正经人谁选择内网模式啊！</p>
+<p>附送，在CentOS7环境下，几个网卡的配置文件在：<code>/etc/sysconfig/network-scripts</code>文件夹下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>root@hadoop200m network-scripts<span class="o">]</span><span class="c1"># ll</span>
+total <span class="m">236</span>
+-rw-r--r--. <span class="m">1</span> root root   <span class="m">240</span> Aug <span class="m">16</span> 13:48 ifcfg-enp0s3
+-rw-r--r--. <span class="m">1</span> root root   <span class="m">286</span> Aug <span class="m">16</span> 14:49 ifcfg-enp0s8
+-rw-r--r--. <span class="m">1</span> root root   <span class="m">254</span> Mar <span class="m">29</span>  <span class="m">2019</span> ifcfg-lo
+lrwxrwxrwx. <span class="m">1</span> root root    <span class="m">24</span> Jan <span class="m">16</span>  <span class="m">2018</span> ifdown -&gt; ../../../usr/sbin/ifdown
+-rwxr-xr-x. <span class="m">1</span> root root   <span class="m">654</span> Mar <span class="m">29</span>  <span class="m">2019</span> ifdown-bnep
+-rwxr-xr-x. <span class="m">1</span> root root  <span class="m">6532</span> Mar <span class="m">29</span>  <span class="m">2019</span> ifdown-eth
+-rwxr-xr-x. <span class="m">1</span> root root   <span class="m">781</span> Mar <span class="m">29</span>  <span class="m">2019</span> ifdown-ippp
+-rwxr-xr-x. <span class="m">1</span> root root  <span class="m">4540</span> Mar <span class="m">29</span>  <span class="m">2019</span> ifdown-ipv6
+......
+</code></pre></td></tr></table>
+</div>
+</div><p>其中<code>ifcfg-enp0s3</code>是NAT模式下的网络配置文件，<code>ifcfg-enp0s8</code>是Host-Only模式下的网络配置文件；</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>root@hadoop200m network-scripts<span class="o">]</span><span class="c1"># more ifcfg-enp0s3</span>
+<span class="nv">TYPE</span><span class="o">=</span>Ethernet
+<span class="nv">PROXY_METHOD</span><span class="o">=</span>none
+<span class="nv">BROWSER_ONLY</span><span class="o">=</span>no
+<span class="nv">BOOTPROTO</span><span class="o">=</span>dhcp
+<span class="nv">DEFROUTE</span><span class="o">=</span>yes
+<span class="nv">IPV4_FAILURE_FATAL</span><span class="o">=</span>no
+<span class="nv">IPV6INIT</span><span class="o">=</span>yes
+<span class="nv">IPV6_AUTOCONF</span><span class="o">=</span>yes
+<span class="nv">IPV6_DEFROUTE</span><span class="o">=</span>yes
+<span class="nv">IPV6_FAILURE_FATAL</span><span class="o">=</span>no
+<span class="nv">IPV6_ADDR_GEN_MODE</span><span class="o">=</span>stable-privacy
+<span class="nv">NAME</span><span class="o">=</span>enp0s3
+<span class="nv">DEVICE</span><span class="o">=</span>enp0s3
+<span class="nv">ONBOOT</span><span class="o">=</span>yes
+
+<span class="o">[</span>root@hadoop200m network-scripts<span class="o">]</span><span class="c1"># more ifcfg-enp0s8</span>
+<span class="nv">TYPE</span><span class="o">=</span>Ethernet
+<span class="nv">PROXY_METHOD</span><span class="o">=</span>none
+<span class="nv">BROWSER_ONLY</span><span class="o">=</span>no
+<span class="nv">BOOTPROTO</span><span class="o">=</span>static
+<span class="nv">DEFROUTE</span><span class="o">=</span>yes
+<span class="nv">IPV4_FAILURE_FATAL</span><span class="o">=</span>no
+<span class="nv">IPV6INIT</span><span class="o">=</span>yes
+<span class="nv">IPV6_AUTOCONF</span><span class="o">=</span>yes
+<span class="nv">IPV6_DEFROUTE</span><span class="o">=</span>yes
+<span class="nv">IPV6_FAILURE_FATAL</span><span class="o">=</span>no
+<span class="nv">IPV6_ADDR_GEN_MODE</span><span class="o">=</span>stable-privacy
+<span class="nv">NAME</span><span class="o">=</span>enp0s8
+<span class="nv">DEVICE</span><span class="o">=</span>enp0s8
+<span class="nv">ONBOOT</span><span class="o">=</span>yes
+<span class="nv">IPADDR</span><span class="o">=</span>192.168.56.200
+<span class="nv">NETMASK</span><span class="o">=</span>255.255.255.0
+
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     <script>
   'use strict';
@@ -1613,13 +2326,13 @@
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fsql-execution-sequence%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fhive-window-func%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=%e6%b5%85%e8%b0%88SQL%e8%af%ad%e5%8f%a5%e7%9a%84%e6%89%a7%e8%a1%8c%e9%a1%ba%e5%ba%8f&url=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fsql-execution-sequence%2f&hashtags=SQL%2cHive%20SQL&via=twitter" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=%e8%af%b7%e4%b8%baHive%e5%bc%80%e6%89%87%e7%aa%97&url=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fhive-window-func%2f&hashtags=%2c&via=twitter" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -1746,26 +2459,50 @@
     <section class="related">
     
     
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        See Also
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/posts/%E6%97%B6%E9%9A%94%E4%BA%94%E4%B8%AA%E6%9C%88%E7%9A%84%E5%B0%91%E5%B9%B4%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86/" class="related__link">时隔五个月的少年又回来了</a>
+        </li>
+        
+        <li>
+          <a href="/posts/book-manage-system/" class="related__link">4.26_基础版图书管理系统(使用最纯粹的Java Web开发方式)</a>
+        </li>
+        
+        <li>
+          <a href="/posts/xiaomi/" class="related__link">4.29_SSM项目-小米商城学习笔记</a>
+        </li>
+        
+        <li>
+          <a href="/posts/mybatis-02/" class="related__link">4.28_MyBatis（补充版）</a>
+        </li>
+        
+        <li>
+          <a href="/posts/mybatis-study/" class="related__link">4.27_Mybatis基础学习</a>
+        </li>
+        
+    </ul>
+    
   </section>
     <div class="grow"></div>
 <nav class="pagination-single">
   
     
-      <a href="http://think.pengchangwen.site/posts/hive-meeting/" class="pagination-single__left">
+      <a href="http://think.pengchangwen.site/posts/sql-execution-sequence/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Hive认识我的第一天</div>      
+        <div class="pagination-single__left-title">浅谈SQL语句的执行顺序</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="http://think.pengchangwen.site/posts/hive-window-func/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">请为Hive开扇窗</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2121,10 +2858,23 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="false">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#浅谈sql语句的执行顺序">浅谈SQL语句的执行顺序</a>
+    <li><a href="#一hive中的开窗函数">一、Hive中的开窗函数</a>
       <ul>
-        <li><a href="#一sql语句执行顺序解析">一、SQL语句执行顺序解析</a></li>
-        <li><a href="#二附送hive中四个by的区别">二、附送：Hive中四个BY的区别</a></li>
+        <li><a href="#11-关于开窗函数">1.1 关于开窗函数</a></li>
+        <li><a href="#12-举个不太熟栗子">1.2 举个不太熟栗子。</a></li>
+      </ul>
+    </li>
+    <li><a href="#二几道关于hive-sql的题">二、几道关于Hive SQL的题</a>
+      <ul>
+        <li><a href="#21-单月访问次数和总访问次数">2.1 单月访问次数和总访问次数</a></li>
+        <li><a href="#22-学生课程成绩">2.2 学生课程成绩</a></li>
+      </ul>
+    </li>
+    <li><a href="#三附送科普virtualbox虚拟机网络">三、附送：科普VirtualBox虚拟机网络</a>
+      <ul>
+        <li><a href="#31-声明几个名词">3.1 声明几个名词</a></li>
+        <li><a href="#32-virtualbox中常见的网络接入模式">3.2 VirtualBox中常见的网络接入模式</a></li>
+        <li><a href="#33-各种网络接入模式详解">3.3 各种网络接入模式详解</a></li>
       </ul>
     </li>
   </ul>

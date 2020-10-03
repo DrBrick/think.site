@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 02 Oct 2020 19:10:59 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 21:01:25 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,15 @@
         <author>iierwin37@gmail.com (langchao)</author>
         <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>请为Hive开扇窗</title>
+        <link>http://think.pengchangwen.site/posts/hive-window-func/</link>
+        <pubDate>Sat, 03 Oct 2020 21:01:25 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/posts/hive-window-func/</guid>
+        <description>一、Hive中的开窗函数 1.1 关于开窗函数 什么是开窗函数？ 回答这个问题之前先要了解一下什么是聚合函数。聚合函数是SQL的基本函数，其功能是对一组</description>
       </item>
       
       <item>
