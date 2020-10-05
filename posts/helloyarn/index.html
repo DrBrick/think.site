@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浅谈SQL语句的执行顺序 – 浪潮</title>
+    <title>关于Hive和YARNの读书笔记 – 浪潮</title>
     
 
 
@@ -489,7 +489,7 @@
 
   
     
-    var permalink = JSON.parse("\"http://think.pengchangwen.site/posts/sql-execution-sequence/\"");
+    var permalink = JSON.parse("\"http://think.pengchangwen.site/posts/helloyarn/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1141,26 +1141,26 @@
 
 
     
-<meta name="description" content="SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。" />
+<meta name="description" content="这篇文章很多内容都是直接摘自上午看的《Hive性能调优实战》一书，主要内容是梳理了一下关于Hive、YARN以及MapReduce等知识点。" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-10-02T19:10:59&#43;0800">
-<meta name="modified" content="2020-10-02T19:10:59&#43;0800">
-<meta property="article:published_time" content="2020-10-02T19:10:59&#43;0800">
+<meta name="created" content="2020-10-05T21:12:17&#43;0800">
+<meta name="modified" content="2020-10-05T21:12:17&#43;0800">
+<meta property="article:published_time" content="2020-10-05T21:12:17&#43;0800">
 
 <meta name="author" content="niuniu">
-<meta property="article:author" content="http://think.pengchangwen.site/posts/sql-execution-sequence/@niuniu">
+<meta property="article:author" content="http://think.pengchangwen.site/posts/helloyarn/@niuniu">
 
 
 <meta property="og:site_name" content="浪潮">
-<meta property="og:title" content="浅谈SQL语句的执行顺序">
-<meta property="og:url" content="http://think.pengchangwen.site/posts/sql-execution-sequence/">
+<meta property="og:title" content="关于Hive和YARNの读书笔记">
+<meta property="og:url" content="http://think.pengchangwen.site/posts/helloyarn/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。">
+<meta property="og:description" content="这篇文章很多内容都是直接摘自上午看的《Hive性能调优实战》一书，主要内容是梳理了一下关于Hive、YARN以及MapReduce等知识点。">
 
 <meta name="generator" content="Hugo 0.75.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="http://think.pengchangwen.site/posts/sql-execution-sequence/">
+<link rel="canonical" href="http://think.pengchangwen.site/posts/helloyarn/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -1172,12 +1172,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "浅谈SQL语句的执行顺序",
-    "datePublished": "2020-10-02T19:10:59+08:00",
-    "dateModified": "2020-10-02T19:10:59+08:00",
-    "url" : "http://think.pengchangwen.site/posts/sql-execution-sequence/",
-    "description": "SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。",
-    "keywords": ["SQL","Hive"],
+    "headline": "关于Hive和YARNの读书笔记",
+    "datePublished": "2020-10-05T21:12:17+08:00",
+    "dateModified": "2020-10-05T21:12:17+08:00",
+    "url" : "http://think.pengchangwen.site/posts/helloyarn/",
+    "description": "这篇文章很多内容都是直接摘自上午看的《Hive性能调优实战》一书，主要内容是梳理了一下关于Hive、YARN以及MapReduce等知识点。",
+    "keywords": ["Hive","Hadoop"],
     "author": {
       "@type": "Person",
       "name": "niuniu"
@@ -1429,7 +1429,7 @@
   
   <li  class="is-active" >
     
-      <span>浅谈SQL语句的执行顺序</span>
+      <span>关于Hive和YARNの读书笔记</span>
     
   </li>
   
@@ -1442,11 +1442,11 @@
   </noscript>
   <div class="single hide">
     <script>document.querySelector('.single').classList.remove('hide')</script>
-    <h2 class="single__title">浅谈SQL语句的执行顺序</h2>
+    <h2 class="single__title">关于Hive和YARNの读书笔记</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Written At">📅&nbsp;Oct 2, 2020 </time>  &middot; <span class="single__info" title="Reading Time"> ☕ 4 min read </span>&middot; <span class="single__info" title="WRITTEN BY">✍️&nbsp;niuniu</span>
+  <time class="single__info" title="Written At">📅&nbsp;Oct 5, 2020 </time>  &middot; <span class="single__info" title="Reading Time"> ☕ 10 min read </span>&middot; <span class="single__info" title="WRITTEN BY">✍️&nbsp;niuniu</span>
   <span class="single__info">
     
   </span>
@@ -1458,101 +1458,168 @@
     🏷️
   
   
-    <li><a href="http://think.pengchangwen.site/tags/sql/" class="single__tag" title="SQL">#SQL</a></li>
+    <li><a href="http://think.pengchangwen.site/tags/hive/" class="single__tag" title="Hive">#Hive</a></li>
   
 
   
   
-    <li><a href="http://think.pengchangwen.site/tags/hive/" class="single__tag" title="Hive">#Hive</a></li>
+    <li><a href="http://think.pengchangwen.site/tags/hadoop/" class="single__tag" title="Hadoop">#Hadoop</a></li>
   
 
 </div>
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h2 id="浅谈sql语句的执行顺序">浅谈SQL语句的执行顺序</h2>
-<h3 id="一sql语句执行顺序解析">一、SQL语句执行顺序解析</h3>
-<p>SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句顺序执行的。因此在写SQL语句的时候很容易出现问题，最主要的问题还是记不住SQL命令，死记硬背效果好像也不是很好。</p>
-<p>需要知道的是，在SQL语句执行的过程中，都会产生一个<em>虚拟表</em>，<code>用来保存SQL语句的执行结果</code>。这些虚拟表对用户来说是透明的，只有最后一步生成的虚拟表才会返回给用户。如果没有再查询中指定某一子句，则将跳过相应的步骤。下面先给出SQL语句的执行顺序，并加以简单的解释。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="mi">7</span><span class="p">)</span> <span class="k">select</span>
-<span class="mi">8</span><span class="p">)</span> <span class="k">distinct</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
-<span class="mi">1</span><span class="p">)</span> <span class="k">from</span> <span class="o">&lt;</span><span class="n">left_table</span><span class="o">&gt;</span>
-<span class="mi">3</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">join_type</span><span class="o">&gt;</span> <span class="k">join</span> <span class="o">&lt;</span><span class="n">right_table</span><span class="o">&gt;</span>
-<span class="mi">2</span><span class="p">)</span> <span class="k">on</span> <span class="o">&lt;</span><span class="n">join_condition</span><span class="o">&gt;</span>
-<span class="mi">4</span><span class="p">)</span> <span class="k">where</span> <span class="o">&lt;</span><span class="n">where_condition</span><span class="o">&gt;</span>
-<span class="mi">5</span><span class="p">)</span> <span class="k">group</span> <span class="k">by</span> <span class="o">&lt;</span><span class="n">group_by_list</span><span class="o">&gt;</span>
-<span class="mi">6</span><span class="p">)</span> <span class="k">having</span> <span class="o">&lt;</span><span class="n">having_condition</span><span class="o">&gt;</span>
-<span class="mi">9</span><span class="p">)</span> <span class="k">order</span> <span class="k">by</span> <span class="o">&lt;</span><span class="n">order_by_list</span><span class="o">&gt;</span>
-<span class="mi">10</span><span class="p">)</span> <span class="k">limit</span> <span class="o">&lt;</span><span class="n">limit_number</span><span class="o">&gt;</span>
-</code></pre></td></tr></table>
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    What&#39;s on this Page
+  </button>
+  <div class="expand__content expand__content--toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一回顾hive的架构">一、回顾Hive的架构</a>
+      <ul>
+        <li><a href="#11-hive的基本结构">1.1 Hive的基本结构</a></li>
+        <li><a href="#12-关于hive的元数据">1.2 关于Hive的元数据</a></li>
+        <li><a href="#13-hive的知识体系">1.3 Hive的知识体系</a></li>
+      </ul>
+    </li>
+    <li><a href="#二yarn详解">二、YARN详解</a>
+      <ul>
+        <li><a href="#21-传统多线程编程和调度框架的对比">2.1 传统多线程编程和调度框架的对比</a></li>
+        <li><a href="#22-yarn的优点">2.2 YARN的优点</a></li>
+        <li><a href="#23-yarn的基本组成">2.3 YARN的基本组成</a></li>
+        <li><a href="#24-yarn工作流程">2.4 YARN工作流程</a></li>
+      </ul>
+    </li>
+    <li><a href="#三再谈mapreduce">三、再谈MapReduce</a>
+      <ul>
+        <li><a href="#31-移动数据不如移动计算的大数据计算思想">3.1 移动数据不如移动计算的大数据计算思想</a></li>
+        <li><a href="#32-map和reduce的工作流程">3.2 Map和Reduce的工作流程</a></li>
+        <li><a href="#33-mapreduce整体环节的浅析">3.3 MapReduce整体环节的浅析</a></li>
+        <li><a href="#34-关于combiner">3.4 关于Combiner</a></li>
+      </ul>
+    </li>
+    <li><a href="#四hdfs的基本组成">四、HDFS的基本组成</a></li>
+    <li><a href="#五附送今天下午骑单车去了">五、附送：今天下午骑单车去了</a></li>
+  </ul>
+</nav>
+  </div>
 </div>
-</div><p>1）<code>from</code>：对FROM子句中的左表&lt;left_table&gt;和右表&lt;right_table&gt;执行笛卡儿积（Cartesian product），产生虚拟表VT1。</p>
-<p>2）<code>on</code>： 对虚拟表VT1应用ON筛选，只有那些符合&lt;join_condition&gt;的行才被插入虚拟表VT2中。</p>
-<p>3）<code>join</code>：如果指定了OUTER JOIN（如LEFT OUTER JOIN、RIGHT OUTERJOIN），那么保留表中未匹配的行作为外部行添加到虚拟表VT2中，产生虚拟表VT3。如果FROM子句包含两个以上表，则对上一个连接生成的结果表VT3和下一个表重复执行步骤1）～步骤3），直到处理完所有的表为止。</p>
-<blockquote>
-<p>这里出现了两个陌生的名词：“保留表”、“外部行”。</p>
-<p>LEFT OUTER JOIN把左表记为保留表，RIGHT OUTER JOIN把右表记为保留表&hellip;</p>
-<p>一时半会也解释不清这个东西，我自己懂了就好了，先挖个坑，日后再补上具体数据来做详细解释说明。</p>
-</blockquote>
-<p>4）<code>where</code>：对虚拟表VT3应用WHERE过滤条件，只有符合&lt;where_condition&gt;的记录才被插入虚拟表VT4中。</p>
-<p>5）<code>group by</code>：根据GROUP BY子句中的列，对VT4中的记录进行分组操作，产生VT5。</p>
-<p>6）<code>having</code>：对虚拟表VT6应用HAVING过滤器，只有符合&lt;having_condition&gt;的记录才被插入虚拟表VT6中。</p>
-<p>7）<code>select</code>：选择指定的列，插入到虚拟表V7中。</p>
-<blockquote>
-<p>看到没有，select到第7步才被执行，所以千万别人认为写在第一行的就是第一个被执行的。</p>
-</blockquote>
-<p>8）<code>distinct</code>：去除重复数据，产生虚拟表V8。</p>
-<p>9）<code>order by</code>：将虚拟表V8中的记录按照&lt;order_by_list&gt;进行排序操作，产生虚拟表V9。</p>
-<blockquote>
-<p>ORDER BY 默认是升序排序，如果要指定为降序排序则需要加上 DESC 修饰。</p>
-</blockquote>
-<p>10）<code>limit</code>：取出指定行的记录，产生虚拟表V10，<strong>并返回给查询用户</strong>。</p>
-<blockquote>
-<p>值得注意的是：LIMIT n, m 表示从第n条记录开始选择m条记录。少量数据时，使用limit进行分页查询是没有任何问题的，但是对于大量数据而言，<code>LIMIT n, m</code>是很低效的。原因是LIMIT每次都是从头开始扫描，如果要取第100万行开始3条数据的话，就需要先扫描定位到第100万行，然后再取，可见其效率是很低很低的。</p>
-</blockquote>
-<h3 id="二附送hive中四个by的区别">二、附送：Hive中四个BY的区别</h3>
-<p>所谓四个BY指的是：</p>
+
+      <h2 id="一回顾hive的架构">一、回顾Hive的架构</h2>
+<h3 id="11-hive的基本结构">1.1 Hive的基本结构</h3>
+<p>在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive作业的工作流程：</p>
+<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_90" alt="https://res.weread.qq.com/wrepub/epub_27559616_90" /></p>
+<p>客户端提交SQL作业到HiveServer2, HiveServer2会根据用户提交的SQL作业及数据库中现有的元数据信息（实际生产中存放在MySQL中）生成一份<code>可供计算引擎执行的计划</code>。每个执行计划对应若干MapReduce作业，Hive会将所有的MapReduce作业都一一提交到YARN中，<strong>由YARN去负责创建MapReduce作业对应的子任务任务</strong>，并协调它们的运行。YARN创建的子任务会与HDFS进行交互，获取计算所需的数据，计算完成后将最终的结果写入HDFS或者本地。</p>
+<p>从整个Hive运行作业的过程我们可以知道Hive自身主要包含3个部分：</p>
 <ol>
-<li>order by</li>
-<li>sort by</li>
-<li>distribute by</li>
-<li>cluster by</li>
+<li>第一部分是客户端（Client）</li>
+<li>第二部分是HiveServer2</li>
+<li>第三部分是元数据以及元数据服务。</li>
 </ol>
-<p><code>关于order by</code>：</p>
+<h3 id="12-关于hive的元数据">1.2 关于Hive的元数据</h3>
+<p>Hive的元数据保存在Hive的metastore数据中，里面记录着Hive数据库、表、分区和列的一些当前状态信息，<strong>通过收集这些状态信息，可以帮助我们更好地监控Hive 数据库当前的状态</strong>，提前感知可能存在的问题；可以帮助基于成本代价的SQL 查询优化，做更为正确的自动优化操作。</p>
+<p>Hive的元数据主要分为5个大部分：</p>
+<ol>
+<li>数据库相关的元数据</li>
+<li>表相关的元数据</li>
+<li>分区相关的元数据</li>
+<li>文件存储相关的元数据</li>
+<li>其他（事务信息、锁信息以及权限相关信息）</li>
+</ol>
+<h3 id="13-hive的知识体系">1.3 Hive的知识体系</h3>
+<p>下面一张图摘自《Hive性能调优实战》，全面的展示了Hive的知识体系，其实这篇文章算是我阅读这本书的读书笔记吧，很多知识点讲的比较详细我就直接摘抄下来了。</p>
+<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_257" alt="https://res.weread.qq.com/wrepub/epub_27559616_257" /></p>
+<h2 id="二yarn详解">二、YARN详解</h2>
+<h3 id="21-传统多线程编程和调度框架的对比">2.1 传统多线程编程和调度框架的对比</h3>
+<p>在单机程序设计中， 为了快速处理一个大的数据集， 通常采用<strong>多线程并行编程</strong>。大体流程如下 ：<br />
+先由操作系统启动一个主线程， 由它负责数据切分、 任务分配、 子线程启动和销毁等工作， 而各个子线程只负责计算自己的数据， 当所有子线程处理完数据后， 主线程再退出。</p>
+<p>而，在生产环境中的大数据集群，所有作业或系统运行所需的资源，都不是直接向操作系统申请，而是交由资源管理器和调度框架代为申请。<code>每个作业或系统所需的资源都是由资源管理和调度框架统一分配、协调</code>。在业界中扮演这一角色的组件有YARN、Mesos等。</p>
+<h3 id="22-yarn的优点">2.2 YARN的优点</h3>
+<p>YARN作为资源调用框架有着如下优点：</p>
+<ol>
+<li><strong>提高系统的资源利用率</strong>。不同系统和不同业务在不同的时间点对硬件资源的需求是不一样的，例如一些离线业务通常在凌晨时间启动，除了这个阶段的离线业务对资源的占用比较高，其他时间段基本是空闲的，通过统一资源调度和协调，将这些时间段的资源分配给其他系统。不仅计算资源可以共享，由于允许多套系统部署在一个集群，也能增加系统存储资源的利用率。</li>
+<li><strong>协调不同作业/不同系统的资源，减少不同作业和不同系统之间的资源争抢</strong>。例如通过资源管理和调度框架并通过一定的资源分配策略，能够保证在多作业情况下，各个作业都能够得到足够的资源得以运行，而不会出现一个作业占用所有资源，导致其他作业全部阻塞的情况。</li>
+<li><strong>增强系统扩展性</strong>。资源管理和调度框架，允许硬件资源的动态伸缩，而不会影响作业的运行。</li>
+<li>资源调度与管理工具把控着资源的分配和任务的调度，直接影响程序的运行效率。如果任务得到资源少了，必将影响自身的程序运行效率，如果任务占用过多资源，在集群任务运行高峰期，必然导致挤占其他任务运行所需的资源。</li>
+</ol>
+<p>那么如何利用资源与调度管理工具？作为大数据集群的使用者，基于Hive 做业务的开发者要高效地利用资源与调度管理工具，需要知道两方面的内容：</p>
+<ul>
+<li>YARN运行的基本组成和工作原理，能够基本理清程序运行的整体流程，知道哪些过程或者配置可能成为瓶颈，可以先不用了解，但一定要有意识。</li>
+<li>YARN资源调度与分配算法。</li>
+</ul>
 <blockquote>
-<p>order by会对输入做<code>全局排序</code>，因此只有一个reducer，然而当只有一个reducer会导致当输入数据规模很大时，消耗较长的计算时间。</p>
+<p>这里有个感触就是，对学习任何一个大数据组件是不是也应该采用这种方式呢？第一要熟悉该组件的<code>基本组成和工作原理</code>，对其大体的<code>工作流程</code>要熟悉。当然了看一遍是不可能全部记住以及全部消化和理解的。不如多看几遍，很多陌生的名词头一次看或许印象不深，但是如果多看几遍甚至发到技术群讨论一下，印象和理解或许更加深刻，也有助于对该技术组件的学习。</p>
+<p>由此引申HDFS、MapReduce、Kafka、HBase、Spark、Flink&hellip;都按照这种套路来学，会不会有触类旁通的效果呢？</p>
 </blockquote>
-<p><code>关于sort by</code>：</p>
+<h3 id="23-yarn的基本组成">2.3 YARN的基本组成</h3>
+<p>YARN的基本结构由一个ResourceManager与多个NodeManager组成。ResourceManager负责对NodeManager所持有的资源进行统一管理和调度。当在处理一个作业时ResourceManager<code>会在NodeManager所在节点</code>创建一全权负责单个作业运行和监控的程序<strong>ApplicationMaster</strong>。</p>
+<ol>
+<li>
+<p>ResouceManager（简称RM）</p>
 <blockquote>
-<p>sort by会在数据进入reducer前完成排序，实现的是局部排序。因此，如果用 sort by进行排序并且设置 mapped. reduce. tasks &gt;1，则 sort by只会保证每个 reducer的输出有序，并不保证全局有序。</p>
-<p>所以在使用sort by之前还需要设置reduce的个数：</p>
-<p>set mapreduce.job.reducers=4;</p>
+<p>资源管理器负责整个集群资源的调度，该组件由两部分构成：调度器（Scheduler）和ApplicationsMaster（简称ASM）。调度器会根据特定调度器实现调度算法，结合作业所在的队列资源容量，将资源按调度算法分配给每个任务。分配的资源将用容器（container）形式提供，<code>容器是一个相对封闭独立的环境</code>，已经将CPU、内存及任务运行所需环境条件封装在一起。通过容器可以很好地限定每个任务使用的资源量。YARN调度器目前在生产环境中被用得较多的有两种：能力调度器（CapacityScheduler）和公平调度器（Fair Scheduler）。（还有一种FIFO Scheduler）</p>
 </blockquote>
-<p><code>关于distribute by</code>：</p>
+</li>
+<li>
+<p>ApplicationMaster（简称AM）</p>
 <blockquote>
-<p>distribute by是控制在map端如何拆分数据给 reduce端的。hive会根据 distribute by后面的列，对应  reduce的个数进行分发，默认是采用hash算法。sort by为每个 reduce产生一个排序文件。在有些情况下，<strong>你需要控制某个特定行应该到哪个 reducer</strong>，这通常是为了进行后续的<code>聚集操作</code>。distribute by刚好可以做这件事。因此， distribute by经常和 sort by配合使用。并且hive规定distribute by  语句要写在sort by语句之前。</p>
+<p><code>每个提交到集群的作业（job）都会有一个与之对应的AM 来管理</code>。它负责进行数据切分，并为当前应用程序向RM 去申请资源，当申请到资源时会和NodeManager 通信，启动容器并运行相应的任务。此外，AM还负责监控任务（task）的状态和执行的进度。</p>
 </blockquote>
-<p><code>关于cluster by</code>：</p>
+</li>
+<li>
+<p>NodeManage（简称NM）</p>
 <blockquote>
-<p>当distribute by 和 sort by 所指定的字段相同时，cluster by的效果等同于sort by + distribute by，但是cluster by 指定的列<code>只能是升序</code>，且补鞥呢指定asc和desc。</p>
+<p>NodeManager负责管理集群中<code>单个节点的资源和任务</code>，每个节点对应一个NodeManager, NodeManager负责接收ApplicationMaster的请求启动容器，监控容器的运行状态，并监控当前节点状态及当前节点的资源使用情况和容器的运行情况，并定时回报给ResourceManager。</p>
 </blockquote>
-<p>其实本人还有两个疑问，那就是<code>group by</code>和<code>partition by</code>。</p>
-<p>group by操作表示按照某些字段的值进行分组，有相同的值放到一起。</p>
-<p>partition by 按照字段对数据进行分组。</p>
+</li>
+</ol>
+<h3 id="24-yarn工作流程">2.4 YARN工作流程</h3>
+<p>YARN在工作时主要会经历3个步骤：</p>
+<p>（1）<code>ResourceManager收集NodeManager反馈的资源信息</code>，将这些资源分割成若干组，在YARN中以队列表示。（2）当YARN接收用户提交的作业后，会尝试为作业创建一个代理ApplicationMaster。</p>
+<p>（3）由ApplicationMaster<strong>将作业拆解成一个个任务</strong>（task），为每个任务申请运行所需的资源，并监控它们的运行。</p>
+<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_101" alt="https://res.weread.qq.com/wrepub/epub_27559616_101" /></p>
+<p>YARN在处理任务时的工作流程如下图所示。经历了以下几个步骤：</p>
+<p>（1）客户端向YARN提交一个作业（Application）。</p>
+<p>（2）作业提交后，RM根据从NM收集的资源信息，在有足够资源的节点分配一个容器，并与对应的NM进行通信，<code>要求它在该容器中启动AM</code>。</p>
+<p>（3）AM创建成功后向RM中的ASM注册自己，表示自己可以去管理一个作业（job）。</p>
+<p>（4）AM注册成功后，会对作业需要处理的数据进行切分，然后向RM申请资源，RM会根据给定的调度策略提供给请求的资源AM。</p>
+<p>（5）<strong>AM申请到资源成功后，会与集群中的NM通信，要求它启动任务</strong>。</p>
+<p>（6）NM接收到AM的要求后，根据作业提供的信息，启动对应的任务。</p>
+<p>（7）启动后的每个任务会定时向AM提供自己的状态信息和执行的进度。</p>
+<p>（8）作业运行完成后AM会向ASM注销和关闭自己。</p>
+<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_102" alt="https://res.weread.qq.com/wrepub/epub_27559616_102" /></p>
+<h2 id="三再谈mapreduce">三、再谈MapReduce</h2>
+<h3 id="31-移动数据不如移动计算的大数据计算思想">3.1 移动数据不如移动计算的大数据计算思想</h3>
+<p>一个完整的MapReduce任务提交到Hadoop集群，Mapper中的逻辑会<code>被分发到集群中的各个节点</code>，并读取该节点的本地数据进行处理，最后写入到本地。这种模式就是所谓的不移动数据，而只移动计算逻辑的模式。目前绝大部分的分布式计算引擎，相比于移动计算，移动数据需要消耗更多的网络I/O和磁盘I/O的资源。在进行调优时，我们借鉴这种设计方法，尽可能地减少数据在节点之间的传输。</p>
+<h3 id="32-map和reduce的工作流程">3.2 Map和Reduce的工作流程</h3>
+<p>Map 在读取数据时，先将数据拆分成若干数据，并读取到Map 方法中被处理。数据在输出的时候，被分成若干分区并写入内存缓存（buffer）中，内存缓存被数据填充到一定程度会溢出到磁盘并排序（缓冲区大小默认100M，数据超过80M时进行溢写操作），当Map 执行完后会将一个机器上输出的临时文件进行归并存入到HDFS中。</p>
+<p>当Reduce 启动时，会启动一个线程去读取Map 输出的数据，并写入到启动Reduce机器的内存中，在数据溢出到磁盘时会对数据进行再次排序（由此可见Reduce阶段是会有排序的）。当读取数据完成后会将临时文件进行合并，作为Reduce函数的数据源。整个过程如下图所示。</p>
+<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_113" alt="https://res.weread.qq.com/wrepub/epub_27559616_113" /></p>
+<h3 id="33-mapreduce整体环节的浅析">3.3 MapReduce整体环节的浅析</h3>
+<p>下面这张图体现的是MapReduce整体工作流程：</p>
+<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_121" alt="https://res.weread.qq.com/wrepub/epub_27559616_121" /></p>
+<p>一个完整的MapReduce任务提交到Hadoop集群，Reducer中的逻辑会被分发到集群中的各个节点。但是不同于Mapper读取本地文件，Reducer会去<code>拉取远程Map节点产生的数据</code>，这里必然也会涉及网络I/O 和磁盘I/O。从这里我们可以看到，如非需要对数据进行全局处理，例如全局排序，就关掉Reduce阶段的操作，可以提升程序性能。</p>
+<p>在写入到HDFS的过程中，为了下游Reducer任务<code>顺序快速拉取数据</code>，会将数据进行排序后再写入临时文件中，当整个Map 执行结束后会将临时文件归并成一个文件。如果不进行文件的排序归并，意味着下游Reducer任务拉取数据会频繁地搜索磁盘，即将顺序读变为随机读，这会对磁盘I/O产生极大的负载。</p>
+<p>Reducer任务启动后，会启动拉取数据的线程，从HDFS拉取所需要的数据。为什么不选用Mapper任务结束后直接推送到Reducer节点，这样可以节省写入到磁盘的操作，效率更高？因为采用缓存到HDFS，让Reducer主动来拉，当一个Reducer任务因为一些其他原因导致异常结束时，再启动一个新的Reducer依然能够读取到正确的数据。</p>
+<p>从HDFS拉取的数据，会先缓存到内存缓冲区，当数据达到一定的阈值后会将内存中的数据写入内存或者磁盘中的文件里。当从HDFS 拉取的数据能被预先分配的内存所容纳，数据会将内存缓存溢出的数据写入该内存中，当拉取的数据足够大时则会将数据写入文件，文件数量达到一定量级进行归并。</p>
+<h3 id="34-关于combiner">3.4 关于Combiner</h3>
+<p>Combiner用于处理数据的聚合，但是其只发生在本地的Mapper任务阶段，因此也被称为Map端的Reducer任务。使用Combiner的初衷是为了减少Shuffle过程的数据量，减轻系统的磁盘和网络压力。（Shuffle是一项昂贵的操作）</p>
+<p>Hive中提供了另外一种聚合方式——使用散列表，每个Mapper中直接使用散列表进行聚合，而不是另起Combiner聚合任务，这样<code>避免另外起一个任务和额外的数据读写所带来的开销</code>。散列表，可以类比Java中的HashMap。</p>
+<blockquote>
+<p>通常使用Map聚合往往是为了减少Map任务的输出，减少传输到下游任务的Shuffle数据量，但如果数据经过聚合后不能明显减少，那无疑就是浪费机器的I/O资源。</p>
+</blockquote>
+<h2 id="四hdfs的基本组成">四、HDFS的基本组成</h2>
+<p>偷个懒，不想写了&hellip;ಠ╭╮ಠ</p>
+<p>(；´д｀)ゞ</p>
+<p>༼༎ຶᴗ༎ຶ༽</p>
+<p>(′へ`、)</p>
+<h2 id="五附送今天下午骑单车去了">五、附送：今天下午骑单车去了</h2>
+<p>双脚一蹬就是13.7公里，骄傲！ㄟ( ▔, ▔ )ㄏ</p>
 
     </article>
     <script>
@@ -1613,13 +1680,13 @@
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fsql-execution-sequence%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fhelloyarn%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=%e6%b5%85%e8%b0%88SQL%e8%af%ad%e5%8f%a5%e7%9a%84%e6%89%a7%e8%a1%8c%e9%a1%ba%e5%ba%8f&url=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fsql-execution-sequence%2f&hashtags=SQL%2cHive&via=twitter" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=%e5%85%b3%e4%ba%8eHive%e5%92%8cYARN%e3%81%ae%e8%af%bb%e4%b9%a6%e7%ac%94%e8%ae%b0&url=http%3a%2f%2fthink.pengchangwen.site%2fposts%2fhelloyarn%2f&hashtags=Hive%2cHadoop&via=twitter" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -1756,6 +1823,18 @@
     <ul class="related-ul">
         
         <li>
+          <a href="/posts/keep-water-for-hive/" class="related__link">再来一道SQL题</a>
+        </li>
+        
+        <li>
+          <a href="/posts/hive-window-func/" class="related__link">请为Hive开扇窗</a>
+        </li>
+        
+        <li>
+          <a href="/posts/sql-execution-sequence/" class="related__link">浅谈SQL语句的执行顺序</a>
+        </li>
+        
+        <li>
           <a href="/posts/hive-meeting/" class="related__link">Hive认识我的第一天</a>
         </li>
         
@@ -1766,21 +1845,14 @@
 <nav class="pagination-single">
   
     
-      <a href="http://think.pengchangwen.site/posts/hive-meeting/" class="pagination-single__left">
+      <a href="http://think.pengchangwen.site/posts/keep-water-for-hive/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Hive认识我的第一天</div>      
+        <div class="pagination-single__left-title">再来一道SQL题</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="http://think.pengchangwen.site/posts/hive-window-func/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">请为Hive开扇窗</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2136,12 +2208,31 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="false">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#浅谈sql语句的执行顺序">浅谈SQL语句的执行顺序</a>
+    <li><a href="#一回顾hive的架构">一、回顾Hive的架构</a>
       <ul>
-        <li><a href="#一sql语句执行顺序解析">一、SQL语句执行顺序解析</a></li>
-        <li><a href="#二附送hive中四个by的区别">二、附送：Hive中四个BY的区别</a></li>
+        <li><a href="#11-hive的基本结构">1.1 Hive的基本结构</a></li>
+        <li><a href="#12-关于hive的元数据">1.2 关于Hive的元数据</a></li>
+        <li><a href="#13-hive的知识体系">1.3 Hive的知识体系</a></li>
       </ul>
     </li>
+    <li><a href="#二yarn详解">二、YARN详解</a>
+      <ul>
+        <li><a href="#21-传统多线程编程和调度框架的对比">2.1 传统多线程编程和调度框架的对比</a></li>
+        <li><a href="#22-yarn的优点">2.2 YARN的优点</a></li>
+        <li><a href="#23-yarn的基本组成">2.3 YARN的基本组成</a></li>
+        <li><a href="#24-yarn工作流程">2.4 YARN工作流程</a></li>
+      </ul>
+    </li>
+    <li><a href="#三再谈mapreduce">三、再谈MapReduce</a>
+      <ul>
+        <li><a href="#31-移动数据不如移动计算的大数据计算思想">3.1 移动数据不如移动计算的大数据计算思想</a></li>
+        <li><a href="#32-map和reduce的工作流程">3.2 Map和Reduce的工作流程</a></li>
+        <li><a href="#33-mapreduce整体环节的浅析">3.3 MapReduce整体环节的浅析</a></li>
+        <li><a href="#34-关于combiner">3.4 关于Combiner</a></li>
+      </ul>
+    </li>
+    <li><a href="#四hdfs的基本组成">四、HDFS的基本组成</a></li>
+    <li><a href="#五附送今天下午骑单车去了">五、附送：今天下午骑单车去了</a></li>
   </ul>
 </nav>
   </div>

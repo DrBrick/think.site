@@ -9,7 +9,7 @@
     <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
     <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 02 Oct 2020 19:10:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 21:12:17 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,11 +17,20 @@
     
       
       <item>
-        <title>Hive SQL</title>
-        <link>http://think.pengchangwen.site/tags/hive-sql/</link>
-        <pubDate>Fri, 02 Oct 2020 19:10:59 +0800</pubDate>
+        <title>Hadoop</title>
+        <link>http://think.pengchangwen.site/tags/hadoop/</link>
+        <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
         <author>iierwin37@gmail.com (langchao)</author>
-        <guid>http://think.pengchangwen.site/tags/hive-sql/</guid>
+        <guid>http://think.pengchangwen.site/tags/hadoop/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Hive</title>
+        <link>http://think.pengchangwen.site/tags/hive/</link>
+        <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
+        <author>iierwin37@gmail.com (langchao)</author>
+        <guid>http://think.pengchangwen.site/tags/hive/</guid>
         <description></description>
       </item>
       
@@ -31,15 +40,6 @@
         <pubDate>Fri, 02 Oct 2020 19:10:59 +0800</pubDate>
         <author>iierwin37@gmail.com (langchao)</author>
         <guid>http://think.pengchangwen.site/tags/sql/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Hive</title>
-        <link>http://think.pengchangwen.site/tags/hive/</link>
-        <pubDate>Thu, 01 Oct 2020 17:08:58 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
-        <guid>http://think.pengchangwen.site/tags/hive/</guid>
         <description></description>
       </item>
       

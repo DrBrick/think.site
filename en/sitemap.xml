@@ -14,7 +14,7 @@
   
   <url>
     <loc>http://think.pengchangwen.site/</loc>
-    <lastmod>2020-10-04T21:37:37+08:00</lastmod>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,33 +28,23 @@
   </url>
   
   <url>
+    <loc>http://think.pengchangwen.site/tags/hadoop/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/tags/hive/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://think.pengchangwen.site/posts/</loc>
-    <lastmod>2020-10-04T21:37:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://think.pengchangwen.site/posts/keep-water-for-hive/</loc>
-    <lastmod>2020-10-04T21:37:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://think.pengchangwen.site/posts/hive-window-func/</loc>
-    <lastmod>2020-10-03T21:01:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://think.pengchangwen.site/tags/hive-sql/</loc>
-    <lastmod>2020-10-02T19:10:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://think.pengchangwen.site/tags/sql/</loc>
-    <lastmod>2020-10-02T19:10:59+08:00</lastmod>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://think.pengchangwen.site/tags/</loc>
-    <lastmod>2020-10-02T19:10:59+08:00</lastmod>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -68,13 +58,28 @@
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/posts/sql-execution-sequence/</loc>
+    <loc>http://think.pengchangwen.site/posts/helloyarn/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/posts/keep-water-for-hive/</loc>
+    <lastmod>2020-10-04T21:37:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/posts/hive-window-func/</loc>
+    <lastmod>2020-10-03T21:01:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/tags/sql/</loc>
     <lastmod>2020-10-02T19:10:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/tags/hive/</loc>
-    <lastmod>2020-10-01T17:08:58+08:00</lastmod>
+    <loc>http://think.pengchangwen.site/posts/sql-execution-sequence/</loc>
+    <lastmod>2020-10-02T19:10:59+08:00</lastmod>
   </url>
   
   <url>
