@@ -6,8 +6,6 @@
     <description>Recent content in Posts on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
-    <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 05 Oct 2020 21:12:17 +0800</lastBuildDate>
     
@@ -20,7 +18,7 @@
         <title>关于Hive和YARNの读书笔记</title>
         <link>http://think.pengchangwen.site/posts/helloyarn/</link>
         <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/helloyarn/</guid>
         <description>一、回顾Hive的架构 1.1 Hive的基本结构 在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive</description>
       </item>
@@ -29,7 +27,7 @@
         <title>再来一道SQL题</title>
         <link>http://think.pengchangwen.site/posts/keep-water-for-hive/</link>
         <pubDate>Sun, 04 Oct 2020 21:37:37 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/keep-water-for-hive/</guid>
         <description>一、求每一年最高气温的那一天以及温度 1.1 数据准备 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 2014010114 2014010216 2014010317 2014010410 2014010506 2012010609</description>
       </item>
@@ -38,7 +36,7 @@
         <title>请为Hive开扇窗</title>
         <link>http://think.pengchangwen.site/posts/hive-window-func/</link>
         <pubDate>Sat, 03 Oct 2020 21:01:25 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/hive-window-func/</guid>
         <description>一、Hive中的开窗函数 1.1 关于开窗函数 什么是开窗函数？ 回答这个问题之前先要了解一下什么是聚合函数。聚合函数是SQL的基本函数，其功能是对一组</description>
       </item>
@@ -47,7 +45,7 @@
         <title>浅谈SQL语句的执行顺序</title>
         <link>http://think.pengchangwen.site/posts/sql-execution-sequence/</link>
         <pubDate>Fri, 02 Oct 2020 19:10:59 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/sql-execution-sequence/</guid>
         <description>浅谈SQL语句的执行顺序 一、SQL语句执行顺序解析 SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句</description>
       </item>
@@ -56,7 +54,7 @@
         <title>Hive认识我的第一天</title>
         <link>http://think.pengchangwen.site/posts/hive-meeting/</link>
         <pubDate>Thu, 01 Oct 2020 17:08:58 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/hive-meeting/</guid>
         <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
       </item>
@@ -65,7 +63,7 @@
         <title>时隔五个月的少年又回来了</title>
         <link>http://think.pengchangwen.site/posts/%E6%97%B6%E9%9A%94%E4%BA%94%E4%B8%AA%E6%9C%88%E7%9A%84%E5%B0%91%E5%B9%B4%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86/</link>
         <pubDate>Tue, 29 Sep 2020 23:44:55 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/%E6%97%B6%E9%9A%94%E4%BA%94%E4%B8%AA%E6%9C%88%E7%9A%84%E5%B0%91%E5%B9%B4%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86/</guid>
         <description>一眨眼就是五个月，整整五个月，你知道我这五个月都是怎么过来的吗？ 迷茫、踌躇、失意、自闭、堕落、颓废、自暴自弃&amp;hellip; 这注定是一段挥之</description>
       </item>
@@ -74,7 +72,7 @@
         <title>4.29_SSM项目-小米商城学习笔记</title>
         <link>http://think.pengchangwen.site/posts/xiaomi/</link>
         <pubDate>Wed, 29 Apr 2020 23:49:08 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/xiaomi/</guid>
         <description>★配置项目相关的数据 1.数据库数据 2. SSM框架整合 3. 单元测试 dao层单元测试 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32</description>
       </item>
@@ -83,7 +81,7 @@
         <title>4.28_MyBatis（补充版）</title>
         <link>http://think.pengchangwen.site/posts/mybatis-02/</link>
         <pubDate>Tue, 28 Apr 2020 22:51:15 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/mybatis-02/</guid>
         <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
       </item>
@@ -92,7 +90,7 @@
         <title>4.27_Mybatis基础学习</title>
         <link>http://think.pengchangwen.site/posts/mybatis-study/</link>
         <pubDate>Mon, 27 Apr 2020 23:29:57 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/mybatis-study/</guid>
         <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
       </item>
@@ -101,7 +99,7 @@
         <title>4.26_基础版图书管理系统(使用最纯粹的Java Web开发方式)</title>
         <link>http://think.pengchangwen.site/posts/book-manage-system/</link>
         <pubDate>Sun, 26 Apr 2020 23:30:52 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/book-manage-system/</guid>
         <description>★MVC开发模式 MVC是将程序分层的一种开发思想。 M：Model 业务数据（service、repository、entity） V：View 试</description>
       </item>
@@ -110,7 +108,7 @@
         <title>4.25_JSTL和JDBC的学习</title>
         <link>http://think.pengchangwen.site/posts/jstl-jdbc-study/</link>
         <pubDate>Sat, 25 Apr 2020 23:10:52 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/jstl-jdbc-study/</guid>
         <description>★JSTL详解 JSP标准标签库，JSP为开发者提供的一些列的标签；使用这些标签可以完成一些逻辑处理，比如循环遍历集合，让代码更加简洁，不会再</description>
       </item>
@@ -119,7 +117,7 @@
         <title>4.24_Session、Cookie和EL学习</title>
         <link>http://think.pengchangwen.site/posts/session-cookie-el-study/</link>
         <pubDate>Fri, 24 Apr 2020 23:36:40 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/session-cookie-el-study/</guid>
         <description>★HTTP请求状态码 200 正常 404 资源找不到 400 请求类型不匹配 500 Java程序抛出异常 response常用方法 转发 getRequestDispatcher 和重定向 sendRedirect 的区别 转发是指将同一个请</description>
       </item>
@@ -128,7 +126,7 @@
         <title>4.23_Servlet和JSP学习</title>
         <link>http://think.pengchangwen.site/posts/servlet-jsp-study/</link>
         <pubDate>Thu, 23 Apr 2020 22:35:02 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/servlet-jsp-study/</guid>
         <description>★第一部分 Tomcat介绍 tomcat是什么？ Tomcat是一个Web应用服务器，它可以使得你写的Java程序被别人访问（通过网络），类似的</description>
       </item>

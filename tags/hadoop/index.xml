@@ -6,8 +6,6 @@
     <description>Recent content in Hadoop on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
-    <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 05 Oct 2020 21:12:17 +0800</lastBuildDate>
     
@@ -20,7 +18,7 @@
         <title>关于Hive和YARNの读书笔记</title>
         <link>http://think.pengchangwen.site/posts/helloyarn/</link>
         <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/helloyarn/</guid>
         <description>一、回顾Hive的架构 1.1 Hive的基本结构 在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive</description>
       </item>

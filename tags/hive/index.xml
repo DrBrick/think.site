@@ -6,8 +6,6 @@
     <description>Recent content in Hive on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>iierwin37@gmail.com (langchao)</managingEditor>
-    <webMaster>iierwin37@gmail.com (langchao)</webMaster>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 05 Oct 2020 21:12:17 +0800</lastBuildDate>
     
@@ -20,7 +18,7 @@
         <title>关于Hive和YARNの读书笔记</title>
         <link>http://think.pengchangwen.site/posts/helloyarn/</link>
         <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/helloyarn/</guid>
         <description>一、回顾Hive的架构 1.1 Hive的基本结构 在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive</description>
       </item>
@@ -29,7 +27,7 @@
         <title>再来一道SQL题</title>
         <link>http://think.pengchangwen.site/posts/keep-water-for-hive/</link>
         <pubDate>Sun, 04 Oct 2020 21:37:37 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/keep-water-for-hive/</guid>
         <description>一、求每一年最高气温的那一天以及温度 1.1 数据准备 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 2014010114 2014010216 2014010317 2014010410 2014010506 2012010609</description>
       </item>
@@ -38,7 +36,7 @@
         <title>请为Hive开扇窗</title>
         <link>http://think.pengchangwen.site/posts/hive-window-func/</link>
         <pubDate>Sat, 03 Oct 2020 21:01:25 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/hive-window-func/</guid>
         <description>一、Hive中的开窗函数 1.1 关于开窗函数 什么是开窗函数？ 回答这个问题之前先要了解一下什么是聚合函数。聚合函数是SQL的基本函数，其功能是对一组</description>
       </item>
@@ -47,7 +45,7 @@
         <title>浅谈SQL语句的执行顺序</title>
         <link>http://think.pengchangwen.site/posts/sql-execution-sequence/</link>
         <pubDate>Fri, 02 Oct 2020 19:10:59 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/sql-execution-sequence/</guid>
         <description>浅谈SQL语句的执行顺序 一、SQL语句执行顺序解析 SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句</description>
       </item>
@@ -56,7 +54,7 @@
         <title>Hive认识我的第一天</title>
         <link>http://think.pengchangwen.site/posts/hive-meeting/</link>
         <pubDate>Thu, 01 Oct 2020 17:08:58 +0800</pubDate>
-        <author>iierwin37@gmail.com (langchao)</author>
+        
         <guid>http://think.pengchangwen.site/posts/hive-meeting/</guid>
         <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
       </item>
