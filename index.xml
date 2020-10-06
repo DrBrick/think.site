@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 05 Oct 2020 21:12:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 22:34:18 +0800</lastBuildDate>
     
         <atom:link href="http://think.pengchangwen.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,15 @@
         
         <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>浅谈HBase入门以及一些学习感悟</title>
+        <link>http://think.pengchangwen.site/posts/talk-about-hbase01/</link>
+        <pubDate>Tue, 06 Oct 2020 22:34:18 +0800</pubDate>
+        
+        <guid>http://think.pengchangwen.site/posts/talk-about-hbase01/</guid>
+        <description>一、前言 1.1 关于HBase我早就想学了 刚接触大数据的时候就听说过这些名词，Hadoop、HDFS、MapReduce、YARN、Hive、Sp</description>
       </item>
       
       <item>

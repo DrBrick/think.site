@@ -14,7 +14,7 @@
   
   <url>
     <loc>http://think.pengchangwen.site/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,23 +28,18 @@
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/tags/hadoop/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://think.pengchangwen.site/tags/hive/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+    <loc>http://think.pengchangwen.site/tags/hbase/</loc>
+    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://think.pengchangwen.site/posts/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://think.pengchangwen.site/tags/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -55,6 +50,21 @@
                 hreflang="en"
                 href="http://think.pengchangwen.site/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/posts/talk-about-hbase01/</loc>
+    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/tags/hadoop/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://think.pengchangwen.site/tags/hive/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
   </url>
   
   <url>
