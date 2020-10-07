@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on 浪潮</title>
-    <link>http://think.pengchangwen.site/categories/java/</link>
+    <link>http://blog.langchao2020.tech/categories/java/</link>
     <description>Recent content in Java on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 29 Apr 2020 23:49:08 +0800</lastBuildDate>
     
-        <atom:link href="http://think.pengchangwen.site/categories/java/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.langchao2020.tech/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>4.29_SSM项目-小米商城学习笔记</title>
-        <link>http://think.pengchangwen.site/posts/xiaomi/</link>
+        <link>http://blog.langchao2020.tech/posts/xiaomi/</link>
         <pubDate>Wed, 29 Apr 2020 23:49:08 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/xiaomi/</guid>
+        <guid>http://blog.langchao2020.tech/posts/xiaomi/</guid>
         <description>★配置项目相关的数据 1.数据库数据 2. SSM框架整合 3. 单元测试 dao层单元测试 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32</description>
       </item>
       
       <item>
         <title>4.28_MyBatis（补充版）</title>
-        <link>http://think.pengchangwen.site/posts/mybatis-02/</link>
+        <link>http://blog.langchao2020.tech/posts/mybatis-02/</link>
         <pubDate>Tue, 28 Apr 2020 22:51:15 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/mybatis-02/</guid>
+        <guid>http://blog.langchao2020.tech/posts/mybatis-02/</guid>
         <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
       </item>
       
       <item>
         <title>4.27_Mybatis基础学习</title>
-        <link>http://think.pengchangwen.site/posts/mybatis-study/</link>
+        <link>http://blog.langchao2020.tech/posts/mybatis-study/</link>
         <pubDate>Mon, 27 Apr 2020 23:29:57 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/mybatis-study/</guid>
+        <guid>http://blog.langchao2020.tech/posts/mybatis-study/</guid>
         <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
       </item>
       
       <item>
         <title>4.25_JSTL和JDBC的学习</title>
-        <link>http://think.pengchangwen.site/posts/jstl-jdbc-study/</link>
+        <link>http://blog.langchao2020.tech/posts/jstl-jdbc-study/</link>
         <pubDate>Sat, 25 Apr 2020 23:10:52 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/jstl-jdbc-study/</guid>
+        <guid>http://blog.langchao2020.tech/posts/jstl-jdbc-study/</guid>
         <description>★JSTL详解 JSP标准标签库，JSP为开发者提供的一些列的标签；使用这些标签可以完成一些逻辑处理，比如循环遍历集合，让代码更加简洁，不会再</description>
       </item>
       
       <item>
         <title>4.24_Session、Cookie和EL学习</title>
-        <link>http://think.pengchangwen.site/posts/session-cookie-el-study/</link>
+        <link>http://blog.langchao2020.tech/posts/session-cookie-el-study/</link>
         <pubDate>Fri, 24 Apr 2020 23:36:40 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/session-cookie-el-study/</guid>
+        <guid>http://blog.langchao2020.tech/posts/session-cookie-el-study/</guid>
         <description>★HTTP请求状态码 200 正常 404 资源找不到 400 请求类型不匹配 500 Java程序抛出异常 response常用方法 转发 getRequestDispatcher 和重定向 sendRedirect 的区别 转发是指将同一个请</description>
       </item>
       
       <item>
         <title>4.23_Servlet和JSP学习</title>
-        <link>http://think.pengchangwen.site/posts/servlet-jsp-study/</link>
+        <link>http://blog.langchao2020.tech/posts/servlet-jsp-study/</link>
         <pubDate>Thu, 23 Apr 2020 22:35:02 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/servlet-jsp-study/</guid>
+        <guid>http://blog.langchao2020.tech/posts/servlet-jsp-study/</guid>
         <description>★第一部分 Tomcat介绍 tomcat是什么？ Tomcat是一个Web应用服务器，它可以使得你写的Java程序被别人访问（通过网络），类似的</description>
       </item>
       

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hadoop on 浪潮</title>
-    <link>http://think.pengchangwen.site/tags/hadoop/</link>
+    <link>http://blog.langchao2020.tech/tags/hadoop/</link>
     <description>Recent content in Hadoop on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 05 Oct 2020 21:12:17 +0800</lastBuildDate>
     
-        <atom:link href="http://think.pengchangwen.site/tags/hadoop/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.langchao2020.tech/tags/hadoop/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>关于Hive和YARNの读书笔记</title>
-        <link>http://think.pengchangwen.site/posts/helloyarn/</link>
+        <link>http://blog.langchao2020.tech/posts/helloyarn/</link>
         <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/helloyarn/</guid>
+        <guid>http://blog.langchao2020.tech/posts/helloyarn/</guid>
         <description>一、回顾Hive的架构 1.1 Hive的基本结构 在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive</description>
       </item>
       

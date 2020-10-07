@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://think.pengchangwen.site/ko/categories/</loc>
+    <loc>http://blog.langchao2020.tech/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://think.pengchangwen.site/categories/"
+                href="http://blog.langchao2020.tech/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://think.pengchangwen.site/ko/categories/"
+                href="http://blog.langchao2020.tech/ko/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/ko/</loc>
+    <loc>http://blog.langchao2020.tech/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://think.pengchangwen.site/"
+                href="http://blog.langchao2020.tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://think.pengchangwen.site/ko/"
+                href="http://blog.langchao2020.tech/ko/"
                 />
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/ko/series/</loc>
+    <loc>http://blog.langchao2020.tech/ko/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://think.pengchangwen.site/series/"
+                href="http://blog.langchao2020.tech/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://think.pengchangwen.site/ko/series/"
+                href="http://blog.langchao2020.tech/ko/series/"
                 />
   </url>
   
   <url>
-    <loc>http://think.pengchangwen.site/ko/tags/</loc>
+    <loc>http://blog.langchao2020.tech/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://think.pengchangwen.site/tags/"
+                href="http://blog.langchao2020.tech/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://think.pengchangwen.site/ko/tags/"
+                href="http://blog.langchao2020.tech/ko/tags/"
                 />
   </url>
   

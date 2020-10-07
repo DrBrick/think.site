@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on 浪潮</title>
-    <link>http://think.pengchangwen.site/tags/sql/</link>
+    <link>http://blog.langchao2020.tech/tags/sql/</link>
     <description>Recent content in SQL on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 02 Oct 2020 19:10:59 +0800</lastBuildDate>
     
-        <atom:link href="http://think.pengchangwen.site/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.langchao2020.tech/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>浅谈SQL语句的执行顺序</title>
-        <link>http://think.pengchangwen.site/posts/sql-execution-sequence/</link>
+        <link>http://blog.langchao2020.tech/posts/sql-execution-sequence/</link>
         <pubDate>Fri, 02 Oct 2020 19:10:59 +0800</pubDate>
         
-        <guid>http://think.pengchangwen.site/posts/sql-execution-sequence/</guid>
+        <guid>http://blog.langchao2020.tech/posts/sql-execution-sequence/</guid>
         <description>浅谈SQL语句的执行顺序 一、SQL语句执行顺序解析 SQL语句和编程语言的语句有很大的不同，有一点原因在于SQL并不一定是按照你写的SQL语句</description>
       </item>
       

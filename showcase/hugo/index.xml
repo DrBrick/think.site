@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on 浪潮</title>
-    <link>http://think.pengchangwen.site/showcase/hugo/</link>
+    <link>http://blog.langchao2020.tech/showcase/hugo/</link>
     <description>Recent content in Hugo on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Jan 2020 21:04:11 +0900</lastBuildDate>
     
-        <atom:link href="http://think.pengchangwen.site/showcase/hugo/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.langchao2020.tech/showcase/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Hugo Zzo Theme</title>
-        <link>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zzo/</link>
+        <link>http://blog.langchao2020.tech/showcase/hugo/hugo-theme-zzo/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         
-        <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zzo/</guid>
+        <guid>http://blog.langchao2020.tech/showcase/hugo/hugo-theme-zzo/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Hugo zDoc Theme</title>
-        <link>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</link>
+        <link>http://blog.langchao2020.tech/showcase/hugo/hugo-theme-zdoc/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         
-        <guid>http://think.pengchangwen.site/showcase/hugo/hugo-theme-zdoc/</guid>
+        <guid>http://blog.langchao2020.tech/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
       </item>
       
