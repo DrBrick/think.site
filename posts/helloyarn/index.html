@@ -1513,7 +1513,7 @@
       <h2 id="一回顾hive的架构">一、回顾Hive的架构</h2>
 <h3 id="11-hive的基本结构">1.1 Hive的基本结构</h3>
 <p>在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive作业的工作流程：</p>
-<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_90" alt="https://res.weread.qq.com/wrepub/epub_27559616_90" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221727.jpeg" alt="Hive的基本结构" /></p>
 <p>客户端提交SQL作业到HiveServer2, HiveServer2会根据用户提交的SQL作业及数据库中现有的元数据信息（实际生产中存放在MySQL中）生成一份<code>可供计算引擎执行的计划</code>。每个执行计划对应若干MapReduce作业，Hive会将所有的MapReduce作业都一一提交到YARN中，<strong>由YARN去负责创建MapReduce作业对应的子任务任务</strong>，并协调它们的运行。YARN创建的子任务会与HDFS进行交互，获取计算所需的数据，计算完成后将最终的结果写入HDFS或者本地。</p>
 <p>从整个Hive运行作业的过程我们可以知道Hive自身主要包含3个部分：</p>
 <ol>
@@ -1533,7 +1533,7 @@
 </ol>
 <h3 id="13-hive的知识体系">1.3 Hive的知识体系</h3>
 <p>下面一张图摘自《Hive性能调优实战》，全面的展示了Hive的知识体系，其实这篇文章算是我阅读这本书的读书笔记吧，很多知识点讲的比较详细我就直接摘抄下来了。</p>
-<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_257" alt="https://res.weread.qq.com/wrepub/epub_27559616_257" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221806.jpeg" alt="Hive的知识体系" /></p>
 <h2 id="二yarn详解">二、YARN详解</h2>
 <h3 id="21-传统多线程编程和调度框架的对比">2.1 传统多线程编程和调度框架的对比</h3>
 <p>在单机程序设计中， 为了快速处理一个大的数据集， 通常采用<strong>多线程并行编程</strong>。大体流程如下 ：<br />
@@ -1582,7 +1582,7 @@
 <p>YARN在工作时主要会经历3个步骤：</p>
 <p>（1）<code>ResourceManager收集NodeManager反馈的资源信息</code>，将这些资源分割成若干组，在YARN中以队列表示。（2）当YARN接收用户提交的作业后，会尝试为作业创建一个代理ApplicationMaster。</p>
 <p>（3）由ApplicationMaster<strong>将作业拆解成一个个任务</strong>（task），为每个任务申请运行所需的资源，并监控它们的运行。</p>
-<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_101" alt="https://res.weread.qq.com/wrepub/epub_27559616_101" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221843.jpeg" alt="YARN将任务拆分" /></p>
 <p>YARN在处理任务时的工作流程如下图所示。经历了以下几个步骤：</p>
 <p>（1）客户端向YARN提交一个作业（Application）。</p>
 <p>（2）作业提交后，RM根据从NM收集的资源信息，在有足够资源的节点分配一个容器，并与对应的NM进行通信，<code>要求它在该容器中启动AM</code>。</p>
@@ -1592,17 +1592,17 @@
 <p>（6）NM接收到AM的要求后，根据作业提供的信息，启动对应的任务。</p>
 <p>（7）启动后的每个任务会定时向AM提供自己的状态信息和执行的进度。</p>
 <p>（8）作业运行完成后AM会向ASM注销和关闭自己。</p>
-<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_102" alt="https://res.weread.qq.com/wrepub/epub_27559616_102" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221925.jpeg" alt="YARN在处理任务时的工作流程" /></p>
 <h2 id="三再谈mapreduce">三、再谈MapReduce</h2>
 <h3 id="31-移动数据不如移动计算的大数据计算思想">3.1 移动数据不如移动计算的大数据计算思想</h3>
 <p>一个完整的MapReduce任务提交到Hadoop集群，Mapper中的逻辑会<code>被分发到集群中的各个节点</code>，并读取该节点的本地数据进行处理，最后写入到本地。这种模式就是所谓的不移动数据，而只移动计算逻辑的模式。目前绝大部分的分布式计算引擎，相比于移动计算，移动数据需要消耗更多的网络I/O和磁盘I/O的资源。在进行调优时，我们借鉴这种设计方法，尽可能地减少数据在节点之间的传输。</p>
 <h3 id="32-map和reduce的工作流程">3.2 Map和Reduce的工作流程</h3>
 <p>Map 在读取数据时，先将数据拆分成若干数据，并读取到Map 方法中被处理。数据在输出的时候，被分成若干分区并写入内存缓存（buffer）中，内存缓存被数据填充到一定程度会溢出到磁盘并排序（缓冲区大小默认100M，数据超过80M时进行溢写操作），当Map 执行完后会将一个机器上输出的临时文件进行归并存入到HDFS中。</p>
 <p>当Reduce 启动时，会启动一个线程去读取Map 输出的数据，并写入到启动Reduce机器的内存中，在数据溢出到磁盘时会对数据进行再次排序（由此可见Reduce阶段是会有排序的）。当读取数据完成后会将临时文件进行合并，作为Reduce函数的数据源。整个过程如下图所示。</p>
-<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_113" alt="https://res.weread.qq.com/wrepub/epub_27559616_113" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221958.jpeg" alt="Map和Reduce的工作流程" /></p>
 <h3 id="33-mapreduce整体环节的浅析">3.3 MapReduce整体环节的浅析</h3>
 <p>下面这张图体现的是MapReduce整体工作流程：</p>
-<p><img src="https://res.weread.qq.com/wrepub/epub_27559616_121" alt="https://res.weread.qq.com/wrepub/epub_27559616_121" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008222025.jpeg" alt="MapReduce整体工作流程" /></p>
 <p>一个完整的MapReduce任务提交到Hadoop集群，Reducer中的逻辑会被分发到集群中的各个节点。但是不同于Mapper读取本地文件，Reducer会去<code>拉取远程Map节点产生的数据</code>，这里必然也会涉及网络I/O 和磁盘I/O。从这里我们可以看到，如非需要对数据进行全局处理，例如全局排序，就关掉Reduce阶段的操作，可以提升程序性能。</p>
 <p>在写入到HDFS的过程中，为了下游Reducer任务<code>顺序快速拉取数据</code>，会将数据进行排序后再写入临时文件中，当整个Map 执行结束后会将临时文件归并成一个文件。如果不进行文件的排序归并，意味着下游Reducer任务拉取数据会频繁地搜索磁盘，即将顺序读变为随机读，这会对磁盘I/O产生极大的负载。</p>
 <p>Reducer任务启动后，会启动拉取数据的线程，从HDFS拉取所需要的数据。为什么不选用Mapper任务结束后直接推送到Reducer节点，这样可以节省写入到磁盘的操作，效率更高？因为采用缓存到HDFS，让Reducer主动来拉，当一个Reducer任务因为一些其他原因导致异常结束时，再启动一个新的Reducer依然能够读取到正确的数据。</p>

@@ -1485,7 +1485,7 @@
 <p>最后，良好的容错性。这一点是硬凑的，我理解不到这一层。</p>
 <p>稍微总结一下：Hive只适合用来做海量数据离线统计分析，也是数据仓库实现常用的技术之一。</p>
 <h2 id="二hive的架构">二、Hive的架构</h2>
-<p><img src="https://camo.githubusercontent.com/759c92fc0fbc480fb9d41684c5a314f89190d31b/68747470733a2f2f67697465652e636f6d2f68656962616979696e672f426967446174612d4e6f7465732f7261772f6d61737465722f70696374757265732f68697665e4bd93e7b3bbe69eb6e69e842e706e67" alt="img" /></p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221424.png" alt="Hive的架构" /></p>
 <ul>
 <li>用户接口：包括CLI、JDBC等方式（也就是客户端）</li>
 <li><strong>元数据MetaStore</strong>：Hive通常将元数据信息保存在传统关系型数据库中，如MySQL，但默认是放在Derby数据库中（这种数据库不支持多用户同时访问）。元数据信息包括：库名、表名、表所属的库名、表的列名/分区字段，表的属性（是否为外部表）、表中数据所在的HDFS目录等信息。【由此可见，元数据的重要性不言而喻。】</li>
@@ -1570,8 +1570,8 @@
 <li>数据查询语言 DQL（Data Query Language）</li>
 <li>数据控制语言 DCL（Data Control Language）</li>
 </ol>
-<p>其中还有一个事务控制语言 TCL （Transaction Control Language）。下面一张图很好的展示了各个层面的操作SQL命令；</p>
-<p><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190826175059/Types-of-SQL-Commands.jpg" alt="图片来源网络" /></p>
+<p>其中还有一个事务控制语言 TCL （Transaction Control Language）。下面一张图很好的展示了各个层面的操作SQL命令：</p>
+<p><img src="https://gitee.com/or14/images/raw/master/hugo/20201008221516.jpeg" alt="各个层面的操作SQL命令" /></p>
 <p>因此，可以简单的概括一下DDL、DML、DQL、DCL。</p>
 <ol>
 <li>

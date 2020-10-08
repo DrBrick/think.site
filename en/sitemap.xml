@@ -68,8 +68,28 @@
   </url>
   
   <url>
+    <loc>http://blog.langchao2020.tech/posts/talk-about-hbase01/</loc>
+    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.langchao2020.tech/tags/hadoop/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.langchao2020.tech/tags/hive/</loc>
-    <lastmod>2020-10-03T21:01:25+08:00</lastmod>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.langchao2020.tech/posts/helloyarn/</loc>
+    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.langchao2020.tech/posts/keep-water-for-hive/</loc>
+    <lastmod>2020-10-04T21:37:37+08:00</lastmod>
   </url>
   
   <url>
