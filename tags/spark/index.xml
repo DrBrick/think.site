@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spark on 浪潮</title>
+    <link>http://blog.langchao2020.tech/tags/spark/</link>
+    <description>Recent content in Spark on 浪潮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 15:57:05 +0800</lastBuildDate>
+    
+        <atom:link href="http://blog.langchao2020.tech/tags/spark/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>浅析Spark内存管理并附送入门级架构原理</title>
+        <link>http://blog.langchao2020.tech/posts/spark-mem-and-process/</link>
+        <pubDate>Thu, 08 Oct 2020 15:57:05 +0800</pubDate>
+        
+        <guid>http://blog.langchao2020.tech/posts/spark-mem-and-process/</guid>
+        <description>一、Spark Executor端内存管理模型详解 1.1 前言 众所周知Spark是一代基于内存进行计算的大数据计算引擎框架，它能够有效的利用内存进行</description>
+      </item>
+      
+    
+  </channel>
+</rss>

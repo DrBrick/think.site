@@ -14,7 +14,7 @@
   
   <url>
     <loc>http://blog.langchao2020.tech/</loc>
-    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
+    <lastmod>2020-10-08T15:57:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,23 +28,18 @@
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/hbase/</loc>
-    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.langchao2020.tech/posts/hbase-table-and-optimize/</loc>
-    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://blog.langchao2020.tech/posts/</loc>
-    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
+    <lastmod>2020-10-08T15:57:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.langchao2020.tech/tags/spark/</loc>
+    <lastmod>2020-10-08T15:57:05+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.langchao2020.tech/tags/</loc>
-    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
+    <lastmod>2020-10-08T15:57:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -58,28 +53,23 @@
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/talk-about-hbase01/</loc>
-    <lastmod>2020-10-06T22:34:18+08:00</lastmod>
+    <loc>http://blog.langchao2020.tech/posts/spark-mem-and-process/</loc>
+    <lastmod>2020-10-08T15:57:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/hadoop/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
+    <loc>http://blog.langchao2020.tech/tags/hbase/</loc>
+    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.langchao2020.tech/posts/hbase-table-and-optimize/</loc>
+    <lastmod>2020-10-07T21:39:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.langchao2020.tech/tags/hive/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.langchao2020.tech/posts/helloyarn/</loc>
-    <lastmod>2020-10-05T21:12:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.langchao2020.tech/posts/keep-water-for-hive/</loc>
-    <lastmod>2020-10-04T21:37:37+08:00</lastmod>
+    <lastmod>2020-10-03T21:01:25+08:00</lastmod>
   </url>
   
   <url>
@@ -105,11 +95,6 @@
   <url>
     <loc>http://blog.langchao2020.tech/about/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.langchao2020.tech/posts/%E6%97%B6%E9%9A%94%E4%BA%94%E4%B8%AA%E6%9C%88%E7%9A%84%E5%B0%91%E5%B9%B4%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86/</loc>
-    <lastmod>2020-09-29T23:44:55+08:00</lastmod>
   </url>
   
   <url>

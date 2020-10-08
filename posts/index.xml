@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 21:39:44 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2020 15:57:05 +0800</lastBuildDate>
     
         <atom:link href="http://blog.langchao2020.tech/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>浅析Spark内存管理并附送入门级架构原理</title>
+        <link>http://blog.langchao2020.tech/posts/spark-mem-and-process/</link>
+        <pubDate>Thu, 08 Oct 2020 15:57:05 +0800</pubDate>
+        
+        <guid>http://blog.langchao2020.tech/posts/spark-mem-and-process/</guid>
+        <description>一、Spark Executor端内存管理模型详解 1.1 前言 众所周知Spark是一代基于内存进行计算的大数据计算引擎框架，它能够有效的利用内存进行</description>
+      </item>
       
       <item>
         <title>HBase建表设计原则和优化</title>
@@ -21,33 +30,6 @@
         
         <guid>http://blog.langchao2020.tech/posts/hbase-table-and-optimize/</guid>
         <description>一、关于HBase建表时的几个设计原则 1.1 预分区 背景：HBase默认建表时有一个Region，且这个Region是没有RowKey边界的，所有</description>
-      </item>
-      
-      <item>
-        <title>浅谈HBase入门以及一些学习感悟</title>
-        <link>http://blog.langchao2020.tech/posts/talk-about-hbase01/</link>
-        <pubDate>Tue, 06 Oct 2020 22:34:18 +0800</pubDate>
-        
-        <guid>http://blog.langchao2020.tech/posts/talk-about-hbase01/</guid>
-        <description>一、前言 1.1 关于HBase我早就想学了 刚接触大数据的时候就听说过这些名词，Hadoop、HDFS、MapReduce、YARN、Hive、Sp</description>
-      </item>
-      
-      <item>
-        <title>关于Hive和YARNの读书笔记</title>
-        <link>http://blog.langchao2020.tech/posts/helloyarn/</link>
-        <pubDate>Mon, 05 Oct 2020 21:12:17 +0800</pubDate>
-        
-        <guid>http://blog.langchao2020.tech/posts/helloyarn/</guid>
-        <description>一、回顾Hive的架构 1.1 Hive的基本结构 在Hadoop 2.x版本以后，Hive所有运行的任务都是交由YARN来统一管理。下图所示为Hive</description>
-      </item>
-      
-      <item>
-        <title>再来一道SQL题</title>
-        <link>http://blog.langchao2020.tech/posts/keep-water-for-hive/</link>
-        <pubDate>Sun, 04 Oct 2020 21:37:37 +0800</pubDate>
-        
-        <guid>http://blog.langchao2020.tech/posts/keep-water-for-hive/</guid>
-        <description>一、求每一年最高气温的那一天以及温度 1.1 数据准备 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 2014010114 2014010216 2014010317 2014010410 2014010506 2012010609</description>
       </item>
       
       <item>
@@ -75,15 +57,6 @@
         
         <guid>http://blog.langchao2020.tech/posts/hive-meeting/</guid>
         <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
-      </item>
-      
-      <item>
-        <title>时隔五个月的少年又回来了</title>
-        <link>http://blog.langchao2020.tech/posts/%E6%97%B6%E9%9A%94%E4%BA%94%E4%B8%AA%E6%9C%88%E7%9A%84%E5%B0%91%E5%B9%B4%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86/</link>
-        <pubDate>Tue, 29 Sep 2020 23:44:55 +0800</pubDate>
-        
-        <guid>http://blog.langchao2020.tech/posts/%E6%97%B6%E9%9A%94%E4%BA%94%E4%B8%AA%E6%9C%88%E7%9A%84%E5%B0%91%E5%B9%B4%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86/</guid>
-        <description>一眨眼就是五个月，整整五个月，你知道我这五个月都是怎么过来的吗？ 迷茫、踌躇、失意、自闭、堕落、颓废、自暴自弃&amp;hellip; 这注定是一段挥之</description>
       </item>
       
       <item>
