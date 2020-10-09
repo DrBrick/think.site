@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 08 Oct 2020 15:57:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2020 19:41:25 +0800</lastBuildDate>
     
         <atom:link href="http://blog.langchao2020.tech/tags/spark/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>RDD知识点梳理</title>
+        <link>http://blog.langchao2020.tech/posts/about-rdd/</link>
+        <pubDate>Fri, 09 Oct 2020 19:41:25 +0800</pubDate>
+        
+        <guid>http://blog.langchao2020.tech/posts/about-rdd/</guid>
+        <description>一、RDD是什么有何特点？ 1.1 RDD的基本概念 什么是RDD？Spark官网给出的解释是： The main abstraction Spark provides is a resilient distributed dataset (RDD), which is a collection of elements partitioned across the nodes of the cluster that can be</description>
+      </item>
       
       <item>
         <title>浅析Spark内存管理并附送入门级架构原理</title>
