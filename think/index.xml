@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>think on 浪潮</title>
-    <link>http://blog.langchao2020.tech/think/</link>
+    <link>https://niub.link/think/</link>
     <description>Recent content in think on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     
-        <atom:link href="http://blog.langchao2020.tech/think/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://niub.link/think/index.xml" rel="self" type="application/rss+xml" />
     
     
     

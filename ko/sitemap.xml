@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.langchao2020.tech/ko/categories/</loc>
+    <loc>https://niub.link/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/categories/"
+                href="https://niub.link/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/categories/"
+                href="https://niub.link/ko/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/ko/</loc>
+    <loc>https://niub.link/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/"
+                href="https://niub.link/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/"
+                href="https://niub.link/ko/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/ko/series/</loc>
+    <loc>https://niub.link/ko/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/series/"
+                href="https://niub.link/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/series/"
+                href="https://niub.link/ko/series/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/ko/tags/</loc>
+    <loc>https://niub.link/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/tags/"
+                href="https://niub.link/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/tags/"
+                href="https://niub.link/ko/tags/"
                 />
   </url>
   

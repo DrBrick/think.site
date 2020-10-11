@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kafka on 浪潮</title>
+    <link>https://niub.link/tags/kafka/</link>
+    <description>Recent content in Kafka on 浪潮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 11 Oct 2020 21:30:13 +0800</lastBuildDate>
+    
+        <atom:link href="https://niub.link/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Kafka几个重要的图</title>
+        <link>https://niub.link/posts/kafka-02/</link>
+        <pubDate>Sun, 11 Oct 2020 21:30:13 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/kafka-02/</guid>
+        <description>一、Kafka中几个重要的架构示意图 1.1 Kafka架构体系图 由图可知，Kafka通过Zookeeper管理集群的元数据，发布订阅模式使用的是s</description>
+      </item>
+      
+      <item>
+        <title>Kafka副本机制和偏移量</title>
+        <link>https://niub.link/posts/kafka-01/</link>
+        <pubDate>Sat, 10 Oct 2020 20:44:07 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/kafka-01/</guid>
+        <description>一、Kafka副本机制 Kafka使用Zookeeper来维护集群Brokers的信息，每个Broker都有一个唯一的标识broker.id，</description>
+      </item>
+      
+    
+  </channel>
+</rss>

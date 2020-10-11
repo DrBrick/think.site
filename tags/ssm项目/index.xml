@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSM项目 on 浪潮</title>
-    <link>http://blog.langchao2020.tech/tags/ssm%E9%A1%B9%E7%9B%AE/</link>
+    <link>https://niub.link/tags/ssm%E9%A1%B9%E7%9B%AE/</link>
     <description>Recent content in SSM项目 on 浪潮</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 29 Apr 2020 23:49:08 +0800</lastBuildDate>
     
-        <atom:link href="http://blog.langchao2020.tech/tags/ssm%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://niub.link/tags/ssm%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>4.29_SSM项目-小米商城学习笔记</title>
-        <link>http://blog.langchao2020.tech/posts/xiaomi/</link>
+        <link>https://niub.link/posts/xiaomi/</link>
         <pubDate>Wed, 29 Apr 2020 23:49:08 +0800</pubDate>
         
-        <guid>http://blog.langchao2020.tech/posts/xiaomi/</guid>
+        <guid>https://niub.link/posts/xiaomi/</guid>
         <description>★配置项目相关的数据 1.数据库数据 2. SSM框架整合 3. 单元测试 dao层单元测试 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32</description>
       </item>
       

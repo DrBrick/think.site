@@ -3,271 +3,286 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.langchao2020.tech/showcase/hugo/hugo-theme-zzo/</loc>
+    <loc>https://niub.link/showcase/hugo/hugo-theme-zzo/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/showcase/hugo/hugo-theme-zdoc/</loc>
+    <loc>https://niub.link/showcase/hugo/hugo-theme-zdoc/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/</loc>
-    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+    <loc>https://niub.link/</loc>
+    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/"
+                href="https://niub.link/ko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/"
+                href="https://niub.link/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/</loc>
-    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+    <loc>https://niub.link/tags/kafka/</loc>
+    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/about-rdd/</loc>
-    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+    <loc>https://niub.link/posts/kafka-02/</loc>
+    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/spark/</loc>
-    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+    <loc>https://niub.link/posts/</loc>
+    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/</loc>
-    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+    <loc>https://niub.link/tags/</loc>
+    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/tags/"
+                href="https://niub.link/ko/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/tags/"
+                href="https://niub.link/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/spark-mem-and-process/</loc>
+    <loc>https://niub.link/posts/kafka-01/</loc>
+    <lastmod>2020-10-10T20:44:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/about-rdd/</loc>
+    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/tags/spark/</loc>
+    <lastmod>2020-10-09T19:41:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/spark-mem-and-process/</loc>
     <lastmod>2020-10-08T15:57:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/hbase/</loc>
+    <loc>https://niub.link/tags/hbase/</loc>
     <lastmod>2020-10-07T21:39:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/hbase-table-and-optimize/</loc>
+    <loc>https://niub.link/posts/hbase-table-and-optimize/</loc>
     <lastmod>2020-10-07T21:39:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/talk-about-hbase01/</loc>
+    <loc>https://niub.link/posts/talk-about-hbase01/</loc>
     <lastmod>2020-10-06T22:34:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/hadoop/</loc>
+    <loc>https://niub.link/tags/hadoop/</loc>
     <lastmod>2020-10-05T21:12:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/hive/</loc>
+    <loc>https://niub.link/tags/hive/</loc>
     <lastmod>2020-10-05T21:12:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/helloyarn/</loc>
+    <loc>https://niub.link/posts/helloyarn/</loc>
     <lastmod>2020-10-05T21:12:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/keep-water-for-hive/</loc>
+    <loc>https://niub.link/posts/keep-water-for-hive/</loc>
     <lastmod>2020-10-04T21:37:37+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/hive-window-func/</loc>
+    <loc>https://niub.link/posts/hive-window-func/</loc>
     <lastmod>2020-10-03T21:01:25+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/sql/</loc>
+    <loc>https://niub.link/tags/sql/</loc>
     <lastmod>2020-10-02T19:10:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/sql-execution-sequence/</loc>
+    <loc>https://niub.link/posts/sql-execution-sequence/</loc>
     <lastmod>2020-10-02T19:10:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/hive-meeting/</loc>
+    <loc>https://niub.link/posts/hive-meeting/</loc>
     <lastmod>2020-10-01T17:08:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/about/</loc>
+    <loc>https://niub.link/about/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/xiaomi/</loc>
+    <loc>https://niub.link/posts/xiaomi/</loc>
     <lastmod>2020-04-29T23:49:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/categories/</loc>
+    <loc>https://niub.link/categories/</loc>
     <lastmod>2020-04-29T23:49:08+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/categories/"
+                href="https://niub.link/ko/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/categories/"
+                href="https://niub.link/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/categories/java/</loc>
+    <loc>https://niub.link/categories/java/</loc>
     <lastmod>2020-04-29T23:49:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/ssm%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://niub.link/tags/ssm%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2020-04-29T23:49:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/mybatis-02/</loc>
+    <loc>https://niub.link/posts/mybatis-02/</loc>
     <lastmod>2020-04-28T22:51:15+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/javaweb/</loc>
+    <loc>https://niub.link/tags/javaweb/</loc>
     <lastmod>2020-04-28T22:51:15+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/mybatis-study/</loc>
+    <loc>https://niub.link/posts/mybatis-study/</loc>
     <lastmod>2020-04-27T23:29:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/book-manage-system/</loc>
+    <loc>https://niub.link/posts/book-manage-system/</loc>
     <lastmod>2020-04-26T23:30:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/jstl-jdbc-study/</loc>
+    <loc>https://niub.link/posts/jstl-jdbc-study/</loc>
     <lastmod>2020-04-25T23:10:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/session-cookie-el-study/</loc>
+    <loc>https://niub.link/posts/session-cookie-el-study/</loc>
     <lastmod>2020-04-24T23:36:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/posts/servlet-jsp-study/</loc>
+    <loc>https://niub.link/posts/servlet-jsp-study/</loc>
     <lastmod>2020-04-23T22:35:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/reproduced/</loc>
+    <loc>https://niub.link/reproduced/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/series/</loc>
+    <loc>https://niub.link/series/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://blog.langchao2020.tech/ko/series/"
+                href="https://niub.link/ko/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://blog.langchao2020.tech/series/"
+                href="https://niub.link/series/"
                 />
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://niub.link/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/series/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://niub.link/series/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/categories/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>https://niub.link/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/reproduced/managing-oneself/</loc>
+    <loc>https://niub.link/reproduced/managing-oneself/</loc>
     <lastmod>2020-03-11T21:26:06+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/reproduced/my-worldview/</loc>
+    <loc>https://niub.link/reproduced/my-worldview/</loc>
     <lastmod>2020-02-19T21:38:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/showcase/hugo/</loc>
+    <loc>https://niub.link/showcase/hugo/</loc>
     <lastmod>2020-01-19T21:04:11+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/showcase/</loc>
+    <loc>https://niub.link/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/gallery/cartoon/</loc>
+    <loc>https://niub.link/gallery/cartoon/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/gallery/</loc>
+    <loc>https://niub.link/gallery/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/gallery/photo/</loc>
+    <loc>https://niub.link/gallery/photo/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/archive/</loc>
+    <loc>https://niub.link/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/tags/index/</loc>
+    <loc>https://niub.link/tags/index/</loc>
   </url>
   
   <url>
-    <loc>http://blog.langchao2020.tech/think/</loc>
+    <loc>https://niub.link/think/</loc>
   </url>
   
 </urlset>
