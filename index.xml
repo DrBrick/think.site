@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 11 Oct 2020 21:30:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 23:13:41 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,15 @@
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         
         <guid>https://niub.link/showcase/hugo/hugo-theme-zdoc/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Keep</title>
+        <link>https://niub.link/gallery/keep/</link>
+        <pubDate>Sun, 11 Oct 2020 23:13:41 +0800</pubDate>
+        
+        <guid>https://niub.link/gallery/keep/</guid>
         <description></description>
       </item>
       
@@ -227,15 +236,6 @@
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         
         <guid>https://niub.link/gallery/cartoon/</guid>
-        <description>Sample images from Pixabay</description>
-      </item>
-      
-      <item>
-        <title>Photo</title>
-        <link>https://niub.link/gallery/photo/</link>
-        <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
-        
-        <guid>https://niub.link/gallery/photo/</guid>
         <description>Sample images from Pixabay</description>
       </item>
       

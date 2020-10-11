@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://niub.link/</loc>
-    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
+    <lastmod>2020-10-11T23:13:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -25,6 +25,16 @@
                 hreflang="en"
                 href="https://niub.link/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://niub.link/gallery/</loc>
+    <lastmod>2020-10-11T23:13:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/gallery/keep/</loc>
+    <lastmod>2020-10-11T23:13:41+08:00</lastmod>
   </url>
   
   <url>
@@ -263,26 +273,12 @@
   </url>
   
   <url>
-    <loc>https://niub.link/gallery/</loc>
-    <lastmod>2019-10-31T10:20:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://niub.link/gallery/photo/</loc>
-    <lastmod>2019-10-31T10:20:16+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://niub.link/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://niub.link/tags/index/</loc>
-  </url>
-  
-  <url>
-    <loc>https://niub.link/think/</loc>
   </url>
   
 </urlset>
