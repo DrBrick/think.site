@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://niub.link/</loc>
-    <lastmod>2020-10-11T23:13:41+08:00</lastmod>
+    <lastmod>2020-10-12T22:22:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -24,6 +24,36 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://niub.link/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://niub.link/tags/java/</loc>
+    <lastmod>2020-10-12T22:22:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/hello-jvm/</loc>
+    <lastmod>2020-10-12T22:22:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/</loc>
+    <lastmod>2020-10-12T22:22:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/tags/</loc>
+    <lastmod>2020-10-12T22:22:25+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://niub.link/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://niub.link/tags/"
                 />
   </url>
   
@@ -45,26 +75,6 @@
   <url>
     <loc>https://niub.link/posts/kafka-02/</loc>
     <lastmod>2020-10-11T21:30:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://niub.link/posts/</loc>
-    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://niub.link/tags/</loc>
-    <lastmod>2020-10-11T21:30:13+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://niub.link/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://niub.link/tags/"
-                />
   </url>
   
   <url>
