@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 12 Oct 2020 22:22:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 23:16:00 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,15 @@
         
         <guid>https://niub.link/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>微信读书笔记截图01</title>
+        <link>https://niub.link/posts/read-note01/</link>
+        <pubDate>Tue, 13 Oct 2020 23:16:00 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/read-note01/</guid>
+        <description>一、Spark海量数据处理：技术详解与平台实战 二、MySQL技术内幕：SQL编程</description>
       </item>
       
       <item>
