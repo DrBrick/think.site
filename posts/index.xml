@@ -20,7 +20,7 @@
         <pubDate>Tue, 13 Oct 2020 23:16:00 +0800</pubDate>
         
         <guid>https://niub.link/posts/read-note01/</guid>
-        <description>一、Spark海量数据处理：技术详解与平台实战 二、MySQL技术内幕：SQL编程</description>
+        <description>一、Spark海量数据处理：技术详解与平台实战 ★几句重要的 函数式编程属于声明式编程，与其相对的是命令式编程。 架构师技术的灵魂，它体现了技术对</description>
       </item>
       
       <item>
@@ -129,69 +129,6 @@
         
         <guid>https://niub.link/posts/hive-meeting/</guid>
         <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
-      </item>
-      
-      <item>
-        <title>4.29_SSM项目-小米商城学习笔记</title>
-        <link>https://niub.link/posts/xiaomi/</link>
-        <pubDate>Wed, 29 Apr 2020 23:49:08 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/xiaomi/</guid>
-        <description>★配置项目相关的数据 1.数据库数据 2. SSM框架整合 3. 单元测试 dao层单元测试 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32</description>
-      </item>
-      
-      <item>
-        <title>4.28_MyBatis（补充版）</title>
-        <link>https://niub.link/posts/mybatis-02/</link>
-        <pubDate>Tue, 28 Apr 2020 22:51:15 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/mybatis-02/</guid>
-        <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
-      </item>
-      
-      <item>
-        <title>4.27_Mybatis基础学习</title>
-        <link>https://niub.link/posts/mybatis-study/</link>
-        <pubDate>Mon, 27 Apr 2020 23:29:57 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/mybatis-study/</guid>
-        <description>★MyBatis基础 1.什么是MyBatis？ MyBatis是一个实现了数据持久化的开源框架，这句话的终点是数据持久化。问题来了，什么是数据</description>
-      </item>
-      
-      <item>
-        <title>4.26_基础版图书管理系统(使用最纯粹的Java Web开发方式)</title>
-        <link>https://niub.link/posts/book-manage-system/</link>
-        <pubDate>Sun, 26 Apr 2020 23:30:52 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/book-manage-system/</guid>
-        <description>★MVC开发模式 MVC是将程序分层的一种开发思想。 M：Model 业务数据（service、repository、entity） V：View 试</description>
-      </item>
-      
-      <item>
-        <title>4.25_JSTL和JDBC的学习</title>
-        <link>https://niub.link/posts/jstl-jdbc-study/</link>
-        <pubDate>Sat, 25 Apr 2020 23:10:52 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/jstl-jdbc-study/</guid>
-        <description>★JSTL详解 JSP标准标签库，JSP为开发者提供的一些列的标签；使用这些标签可以完成一些逻辑处理，比如循环遍历集合，让代码更加简洁，不会再</description>
-      </item>
-      
-      <item>
-        <title>4.24_Session、Cookie和EL学习</title>
-        <link>https://niub.link/posts/session-cookie-el-study/</link>
-        <pubDate>Fri, 24 Apr 2020 23:36:40 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/session-cookie-el-study/</guid>
-        <description>★HTTP请求状态码 200 正常 404 资源找不到 400 请求类型不匹配 500 Java程序抛出异常 response常用方法 转发 getRequestDispatcher 和重定向 sendRedirect 的区别 转发是指将同一个请</description>
-      </item>
-      
-      <item>
-        <title>4.23_Servlet和JSP学习</title>
-        <link>https://niub.link/posts/servlet-jsp-study/</link>
-        <pubDate>Thu, 23 Apr 2020 22:35:02 +0800</pubDate>
-        
-        <guid>https://niub.link/posts/servlet-jsp-study/</guid>
-        <description>★第一部分 Tomcat介绍 tomcat是什么？ Tomcat是一个Web应用服务器，它可以使得你写的Java程序被别人访问（通过网络），类似的</description>
       </item>
       
     
