@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 23:32:13 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2020 23:25:41 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>SQL必知必会笔记摘要</title>
+        <link>https://niub.link/posts/sql-biz/</link>
+        <pubDate>Fri, 16 Oct 2020 23:25:41 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/sql-biz/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>自闭的一天，什么也不想说</title>
