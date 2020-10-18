@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 17 Oct 2020 23:31:12 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 22:06:43 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,15 @@
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         
         <guid>https://niub.link/showcase/hugo/hugo-theme-zdoc/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>微信读书笔记截图（二）</title>
+        <link>https://niub.link/posts/read-note02/</link>
+        <pubDate>Sun, 18 Oct 2020 22:06:43 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/read-note02/</guid>
         <description></description>
       </item>
       
