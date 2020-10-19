@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://niub.link/</loc>
-    <lastmod>2020-10-18T22:06:43+08:00</lastmod>
+    <lastmod>2020-10-19T23:42:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -29,7 +29,12 @@
   
   <url>
     <loc>https://niub.link/posts/</loc>
-    <lastmod>2020-10-18T22:06:43+08:00</lastmod>
+    <lastmod>2020-10-19T23:42:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/noreason/</loc>
+    <lastmod>2020-10-19T23:42:12+08:00</lastmod>
   </url>
   
   <url>
