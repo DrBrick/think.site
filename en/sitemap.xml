@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://niub.link/</loc>
-    <lastmod>2020-10-19T23:42:12+08:00</lastmod>
+    <lastmod>2020-10-20T23:20:26+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -29,7 +29,12 @@
   
   <url>
     <loc>https://niub.link/posts/</loc>
-    <lastmod>2020-10-19T23:42:12+08:00</lastmod>
+    <lastmod>2020-10-20T23:20:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/hbase-yl/</loc>
+    <lastmod>2020-10-20T23:20:26+08:00</lastmod>
   </url>
   
   <url>
@@ -270,6 +275,10 @@
   <url>
     <loc>https://niub.link/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/%E5%85%B3%E4%BA%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</loc>
   </url>
   
 </urlset>

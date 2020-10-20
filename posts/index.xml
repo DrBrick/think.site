@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 23:42:12 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2020 23:20:26 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>《HBase原理与实践》笔记（一）</title>
+        <link>https://niub.link/posts/hbase-yl/</link>
+        <pubDate>Tue, 20 Oct 2020 23:20:26 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/hbase-yl/</guid>
+        <description>▶ 说明： 带有&amp;quot;&amp;raquo;&amp;ldquo;符号的是书中的原文，其上面是自己写的笔记或者感触。</description>
+      </item>
       
       <item>
         <title>人生的转变往往只在那一刻的决断</title>
@@ -183,6 +192,15 @@
         
         <guid>https://niub.link/posts/hive-meeting/</guid>
         <description>一、Hive简介 1.1 什么是Hive Hive官网给出的定义是：“The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided</description>
+      </item>
+      
+      <item>
+        <title></title>
+        <link>https://niub.link/posts/%E5%85%B3%E4%BA%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://niub.link/posts/%E5%85%B3%E4%BA%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</guid>
+        <description>关于垃圾回收 ★ 如何判断某个对象是否为垃圾且需要被回收？ ★ 垃圾回收算法有哪些？ ★ 不同内存区域的回收方式？ ★ 垃圾收集器的分类有哪些？ 多线程编程 进</description>
       </item>
       
     
