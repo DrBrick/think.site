@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 20 Oct 2020 23:20:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 00:09:55 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,15 @@
         
         <guid>https://niub.link/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>继续补充读书笔记（弥补21号该发的博文）</title>
+        <link>https://niub.link/posts/faild-sry/</link>
+        <pubDate>Thu, 22 Oct 2020 00:09:55 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/faild-sry/</guid>
+        <description>健走7.22公里 微信阅读2.33小时（技术书籍1小时左右） 弥补21号该发的博客（猛然回头发现到了22号的00:03分） 继续摘抄明朝那些事里面</description>
       </item>
       
       <item>
