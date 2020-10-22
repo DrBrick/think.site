@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 22 Oct 2020 00:09:55 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 23:17:16 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,15 @@
         
         <guid>https://niub.link/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>Flink是如何解决端到端Exactly-Once的？</title>
+        <link>https://niub.link/posts/flink01/</link>
+        <pubDate>Thu, 22 Oct 2020 23:17:16 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/flink01/</guid>
+        <description>★ 关于故障恢复与一致性保障 Flink内部状态的一致性主要依赖Checkpoint机制，外部交互的一致性主要依赖Source和Sink提供的一</description>
       </item>
       
       <item>
