@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://niub.link/</loc>
-    <lastmod>2020-10-22T23:17:16+08:00</lastmod>
+    <lastmod>2020-10-23T23:57:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,17 +28,22 @@
   </url>
   
   <url>
+    <loc>https://niub.link/posts/</loc>
+    <lastmod>2020-10-23T23:57:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://niub.link/posts/wuli/</loc>
+    <lastmod>2020-10-23T23:57:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://niub.link/tags/flink/</loc>
     <lastmod>2020-10-22T23:17:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://niub.link/posts/flink01/</loc>
-    <lastmod>2020-10-22T23:17:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://niub.link/posts/</loc>
     <lastmod>2020-10-22T23:17:16+08:00</lastmod>
   </url>
   

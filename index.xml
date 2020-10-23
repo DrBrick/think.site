@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 浪潮 {year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 22 Oct 2020 23:17:16 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 23:57:52 +0800</lastBuildDate>
     
         <atom:link href="https://niub.link/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,15 @@
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         
         <guid>https://niub.link/showcase/hugo/hugo-theme-zdoc/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>入坑中学物理</title>
+        <link>https://niub.link/posts/wuli/</link>
+        <pubDate>Fri, 23 Oct 2020 23:57:52 +0800</pubDate>
+        
+        <guid>https://niub.link/posts/wuli/</guid>
         <description></description>
       </item>
       
