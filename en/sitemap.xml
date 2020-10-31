@@ -33,6 +33,26 @@
   </url>
   
   <url>
+    <loc>https://niub.link/tags/</loc>
+    <lastmod>2020-10-31T23:05:30+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://niub.link/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://niub.link/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://niub.link/tags/usa/</loc>
+    <lastmod>2020-10-31T23:05:30+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://niub.link/posts/concise-usa/</loc>
     <lastmod>2020-10-31T23:05:30+08:00</lastmod>
   </url>
@@ -50,21 +70,6 @@
   <url>
     <loc>https://niub.link/posts/flink01/</loc>
     <lastmod>2020-10-22T23:17:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://niub.link/tags/</loc>
-    <lastmod>2020-10-22T23:17:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://niub.link/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://niub.link/tags/"
-                />
   </url>
   
   <url>
